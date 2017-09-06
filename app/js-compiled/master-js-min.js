@@ -1,0 +1,1 @@
+function x(e){return e+10}var slider="1.Homepage",person={name:"Bojana",age:34},comp="Prva komponenta",page="index",pages=["404","articles"];

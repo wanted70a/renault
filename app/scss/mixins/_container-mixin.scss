@@ -1,0 +1,7 @@
+//test-mixin
+
+@mixin container($width, $padding, $margin){
+	width:$width;
+	margin:$margin;
+	padding:$padding;
+}
