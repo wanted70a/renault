@@ -1,4 +1,4 @@
-/*
+
 @mixin breakpoint($point) {
    @if $point == desktop {
      @media screen and(min-width: 1024px) { @content ; }
@@ -12,8 +12,9 @@
 
   }
 }
-*/
 
+/*
+bokijev kod - testiranje zasto hrom ne radi
 @mixin breakpoint($break) {
 
   @if $break == mobile {
@@ -41,3 +42,4 @@
   }
 
 }
+*/

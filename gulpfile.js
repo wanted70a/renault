@@ -55,7 +55,7 @@ gulp.task('min-js', function(){
 gulp.task('watch', function(){
 	browserSync.init({
 	    server: {
-	    	port: 4000,
+	    	
 	      baseDir: "app/"
 	    }
   	});
