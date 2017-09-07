@@ -162,54 +162,149 @@ section,
 summary {
   display: block; }
 
-/*
-bokijev kod - testiranje zasto hrom ne radi
-@mixin breakpoint($break) {
+* {
+  box-sizing: border-box; }
 
-  @if $break == mobile {
-      @media (max-width: 767px)                           { @content; }
-  }
+html {
+  font-size: 10px; }
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 10px; } }
+  @media screen and (min-width: 1024px) {
+    html {
+      font-size: 10px; } }
 
-  @else if $break == tablet {
-      @media (min-width: 768px)                           { @content; }
-  }
+h2 {
+  font-size: 26px;
+  font-size: 2.6rem; }
+  @media screen and (min-width: 768px) {
+    h2 {
+      font-size: 40px;
+      font-size: 4rem; } }
+  @media screen and (min-width: 1024px) {
+    h2 {
+      font-size: 60px;
+      font-size: 6rem; } }
 
-  @else if $break == phoneAndTablet {
-      @media (max-width: 1023px)                          { @content; }
-  }
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
 
-  @else if $break == tabletAndDesktop {
-      @media (min-width: 768px)                           { @content; }
-  }
+.text--regular {
+  font-weight: 400; }
 
-  @else if $break == desktop {
-      @media (min-width: 1024px)                          { @content; }
-  }
+.text--bold {
+  font-weight: 700; }
 
-  @else if $break == desktopLarge {
-      @media (min-width: 1900px)                          { @content; }
-  }
+.text--bolder {
+  font-weight: 900; }
 
-}
-*/
-@media screen and (max-width: 767px) {
-  .test {
-    width: 100%;
-    height: 30%;
-    background-color: yellow;
-    display: block;
-    margin: 10px 0;
-    padding: 0; } }
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  font-size: 100%;
+  position: relative;
+  font-family: 'Lato', sans-serif; }
 
-@media screen and (min-width: 768px) {
-  .test {
-    background-color: green;
-    float: left;
-    width: 50%; } }
+.row {
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0; }
 
-@media screen and (min-width: 1024px) {
-  .test {
-    background-color: blue;
-    display: inline-block;
-    white-space: no-wrap;
-    width: 25%; } }
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0; }
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      width: 84.63%;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0; } }
+  @media screen and (min-width: 1024px) {
+    .wrapper {
+      width: 79.47%;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0; } }
+
+.box {
+  width: 100%;
+  border: 2px solid red;
+  height: 2000px;
+  background-color: blue; }
+
+.c-header {
+  background-color: #000000;
+  position: fixed;
+  height: 6.6rem; }
+  .c-header--mobile {
+    height: 100px; }
+    @media screen and (min-width: 1024px) {
+      .c-header--mobile {
+        display: none; } }
+  .c-header--desktop {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .c-header--desktop {
+        display: none; } }
+    @media screen and (min-width: 1024px) {
+      .c-header--desktop {
+        display: block; } }
+    .c-header--desktop .nav--desktop {
+      padding: 0;
+      margin: 0;
+      margin-top: 2.9rem;
+      position: relative;
+      text-align: center; }
+      .c-header--desktop .nav--desktop__social {
+        color: #ffffff;
+        font-size: 1.8rem;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        position: absolute;
+        left: 3rem;
+        top: -.5rem; }
+        .c-header--desktop .nav--desktop__social i {
+          margin-right: 2.35rem; }
+      .c-header--desktop .nav--desktop__links {
+        list-style-type: none;
+        padding: 0;
+        left: 26.2rem;
+        display: inline-block;
+        text-align: center;
+        width: 85%; }
+      .c-header--desktop .nav--desktop__links li {
+        display: inline-block; }
+        .c-header--desktop .nav--desktop__links li:nth-child(3) a {
+          margin-right: 28rem; }
+        .c-header--desktop .nav--desktop__links li:nth-child(1) a {
+          margin-left: 9.5rem; }
+      .c-header--desktop .nav--desktop__link {
+        font-size: 1.2rem;
+        display: inline-block;
+        color: #ffcc33;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-right: 5.5rem;
+        vertical-align: top;
+        letter-spacing: .1em; }
+      .c-header--desktop .nav--desktop__link--img {
+        position: absolute;
+        left: 74.8rem;
+        top: -2rem; }
+      .c-header--desktop .nav--desktop__search {
+        color: #ffffff;
+        font-size: 1.8rem;
+        display: inline-block;
+        position: absolute;
+        right: 3.8rem;
+        top: -.5rem; }

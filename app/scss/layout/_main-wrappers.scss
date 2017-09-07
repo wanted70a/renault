@@ -1,0 +1,29 @@
+body{
+	margin:0 auto;
+	padding:0;
+	width:100%;
+	font-size: 100%;
+  	position: relative;
+  	font-family: 'Lato', sans-serif;
+
+
+}
+
+.row{
+	@include container(100%,0,0);
+	
+}
+
+.wrapper{
+	@include container(100%,0,0 auto);
+	
+	@include breakpoint(tablet){
+		@include container(84.63%,0,0 auto);
+		
+	}
+
+	@include breakpoint(desktop){
+		@include container(79.47%,0,0 auto);
+		
+	}
+}

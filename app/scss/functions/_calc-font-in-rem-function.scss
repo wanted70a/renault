@@ -1,0 +1,6 @@
+//$base-font is @ scss/variables/var-typo.scss
+
+@function calculateRem($size) {
+  $remSize: $size / $base-font-size-num;
+  @return #{$remSize}rem;
+}

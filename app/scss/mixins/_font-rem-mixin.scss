@@ -1,0 +1,24 @@
+//font size in rem and falback for px
+$base-font-size-px:10px;
+$base-font-size-num:10;
+
+//px to rems with fallback
+@mixin px-to-rem($size) {
+  font-size: #{$size}px;
+  font-size: calculateRem($size);
+}
+
+//font size for all viewports
+@mixin font-size($mob, $tablet, $desktop){
+	@include px-to-rem($mob)
+
+	@include breakpoint(tablet){
+		@include px-to-rem($tablet);
+		
+	}
+
+	@include breakpoint(desktop){
+		@include px-to-rem($desktop);
+		
+	}
+}

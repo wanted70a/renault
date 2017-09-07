@@ -3,5 +3,6 @@
 @mixin container($width, $padding, $margin){
 	width:$width;
 	margin:$margin;
-	padding:$padding;
+	padding-left:$padding;
+	padding-right:$padding;
 }

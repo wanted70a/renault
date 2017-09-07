@@ -1,45 +1,20 @@
+//variables
+$breakpoint-mobile: 767px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
 
+//mixin
 @mixin breakpoint($point) {
    @if $point == desktop {
-     @media screen and(min-width: 1024px) { @content ; }
+     @media screen and(min-width: $breakpoint-desktop) { @content ; }
   }
     @else if $point == tablet {
-     @media screen and(min-width: 768px) { @content ; }
+     @media screen and(min-width: $breakpoint-tablet) { @content ; }
   }
  
   @else if $point == mobile {
-     @media screen and(max-width: 767px)  { @content ; }
+     @media screen and(max-width: $breakpoint-mobile)  { @content ; }
 
   }
 }
 
-/*
-bokijev kod - testiranje zasto hrom ne radi
-@mixin breakpoint($break) {
-
-  @if $break == mobile {
-      @media (max-width: 767px)                           { @content; }
-  }
-
-  @else if $break == tablet {
-      @media (min-width: 768px)                           { @content; }
-  }
-
-  @else if $break == phoneAndTablet {
-      @media (max-width: 1023px)                          { @content; }
-  }
-
-  @else if $break == tabletAndDesktop {
-      @media (min-width: 768px)                           { @content; }
-  }
-
-  @else if $break == desktop {
-      @media (min-width: 1024px)                          { @content; }
-  }
-
-  @else if $break == desktopLarge {
-      @media (min-width: 1900px)                          { @content; }
-  }
-
-}
-*/

@@ -1,0 +1,21 @@
+$base-font-size:10px;
+
+
+html{
+	font-size: $base-font-size;
+
+	@include breakpoint(tablet){
+		font-size: $base-font-size;
+		
+	}
+
+	@include breakpoint(desktop){
+		font-size: $base-font-size;
+		
+	}
+}
+
+h2{
+	@include font-size(26, 40, 60);
+}
+
