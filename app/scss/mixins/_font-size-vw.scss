@@ -1,0 +1,18 @@
+//psd mockups widths
+$site-mob-design:640;
+$site-tab-design:768;
+$site-desk-design:1700;
+
+// vw Font Size for HTML
+@mixin fontSizeVw($fs-phone, $fs-tablet, $fs-desktop) {
+  font-size: #{$fs-desktop}px;
+  @include breakpoint(mobile) {
+    font-size: calcVw($fs-phone, $site-mob-design);
+  }
+  @include breakpoint(tablet) {
+    font-size: calcVw($fs-tablet, $site-tab-design);
+  }
+  @include breakpoint(desktop) {
+    font-size: calcVw($fs-desktop, $site-desk-design);
+  }
+}
