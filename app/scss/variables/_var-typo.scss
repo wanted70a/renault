@@ -5,4 +5,9 @@ html {
   @include fontSizeVw($font-size-base, $font-size-base, $font-size-base);
 }
 
+@font-face {
+    font-family: Airways;
+    src: url('../assets/fonts/Airways.woff');
+}
+
 

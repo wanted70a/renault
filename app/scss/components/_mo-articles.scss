@@ -1,0 +1,23 @@
+.mo-article--dropdown{
+		display:inline-block;
+		width:37.8%;
+		margin-bottom: 1.7rem;
+		text-align: left;
+
+	&__img{
+		float:left;
+	}
+
+	&__desc{
+		float:left;
+		position:relative;
+		font-size: calculateRem(13);
+		letter-spacing: .05em;
+		left:calculateRem(20);
+		top:calculateRem(-3);
+		width:58%;
+		line-height: calculateRem(15);
+		
+	}
+
+}
