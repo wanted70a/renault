@@ -33,6 +33,10 @@ $header-height-desktop:6.6rem;
 		font-size:calculateRem(40);
 
 		@include breakpoint(tablet){}
+
+		&.active{
+
+		}
 	}
 
 	&__search{
@@ -46,7 +50,9 @@ $header-height-desktop:6.6rem;
 	}
 
 	&__menu{
-
+		display: none;
+		position:absolute;
+		
 		#myBusiness{
 			.active{
 				color:$yellow;
@@ -60,11 +66,11 @@ $header-height-desktop:6.6rem;
 		top:-0;
 		padding-left:calculateRem(38);
 		padding-top:calculateRem(143);
-		display: block;
 		height:100vh;
 		overflow-y: scroll;
 
 		@include breakpoint(tablet){
+			display: none;
 			width:70.7031%;
 			top:-0;
 			padding-left:calculateRem(67);
@@ -203,6 +209,11 @@ $header-height-desktop:6.6rem;
 	&__link--img{
 		display:inline-block;
 		margin-top:-1rem;
+
+		@media (max-width: 400px) {
+			width:50%;
+		}
+		
 	}
 
 	@include breakpoint(tablet){

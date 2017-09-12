@@ -4,10 +4,21 @@
 	<meta charset="utf-8">
 	<title>Renault</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="assets/images/RenaultVU_Favicon.png" />
 	<link rel="stylesheet" type="text/css" href="css/master-css.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 </head>
 <body>
+	<div class='search-box'>
+		<i class='fa fa-times search-box__close'></i>
+		<form class='search-box__form' action="" >
+		  <div class='search-box__input'>
+		  	 <input type="text" name="searc box">
+		  	 <i class='fa fa-search'></i>
+		  </div>
+		</form>
+	</div>
+<!-- HEADER -->
 	<header class='c-header row'>
 		<nav>
 			<div class='nav--desktop row text--center'>
@@ -107,122 +118,90 @@
 			</div>
 		
 			<div class='nav--mob__menu'>
-			<ul class='nav--mob__links'>
-				<li id='myBusiness'>
-					<i class="fa fa-chevron-down" aria-hidden="true"></i>
-					<a class='nav--mob__link text--bold' href="#">MY business</a>
-					<ul class='nav--mob__subMenu'>
-						<li>
-							<a class='nav--mob__subLink' href="#">Start a business</a>
-						</li>
-						<li><a class='nav--mob__subLink' href="#">Finance</a></li>
-						<li><a class='nav--mob__subLink' href="#">Insurance</a></li>
-						<li><a class='nav--mob__subLink' href="#">Legal</a></li>
-						<li><a class='nav--mob__subLink' href="#">Communicaton</a></li>
-					</ul>
-				</li>
-				
-				<li>
-					<i class="fa fa-chevron-down" aria-hidden="true"></i>
-					<a class='nav--mob__link text--bold' href="#">MY VAN</a>
-				</li>
+				<ul class='nav--mob__links'>
+					<li id='myBusiness'>
+						<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						<a class='nav--mob__link text--bold' href="#">MY business</a>
+						<ul class='nav--mob__subMenu'>
+							<li>
+								<a class='nav--mob__subLink' href="#">Start a business</a>
+							</li>
+							<li><a class='nav--mob__subLink' href="#">Finance</a></li>
+							<li><a class='nav--mob__subLink' href="#">Insurance</a></li>
+							<li><a class='nav--mob__subLink' href="#">Legal</a></li>
+							<li><a class='nav--mob__subLink' href="#">Communicaton</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						<a class='nav--mob__link text--bold' href="#">MY VAN</a>
+					</li>
 
-				<li>
-					<i class="fa fa-chevron-down" aria-hidden="true"></i>
-					<a class='nav--mob__link text--bold' href="#">FAQ</a>
-				</li>
+					<li>
+						<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						<a class='nav--mob__link text--bold' href="#">FAQ</a>
+					</li>
 
-				<li>
-					<i class="fa fa-chevron-down" aria-hidden="true"></i>
-					<a class='nav--mob__link text--bold' href="#">We, the vans driver</a>
-				</li>
+					<li>
+						<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						<a class='nav--mob__link text--bold' href="#">We, the vans driver</a>
+					</li>
 
-				<li>
-					<i class="fa fa-chevron-down" aria-hidden="true"></i>
-					<a class='nav--mob__link text--bold' href="#">What's new</a>
-				</li>
+					<li>
+						<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						<a class='nav--mob__link text--bold' href="#">What's new</a>
+					</li>
 
-				<li>
-					<i class="fa fa-chevron-down" aria-hidden="true"></i>
-					<a class='nav--mob__link text--bold' href="#">Videos </a>
-				</li>
-			</ul>
-		
-			<div class="nav--mob__social">
-				<i class="fa fa-facebook" aria-hidden="true"></i>
-				<i class="fa fa-youtube-play" aria-hidden="true"></i>
+					<li>
+						<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						<a class='nav--mob__link text--bold' href="#">Videos </a>
+					</li>
+				</ul>
+			
+				<div class="nav--mob__social">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					<i class="fa fa-youtube-play" aria-hidden="true"></i>
+				</div>
 			</div>
-
-		</div>
-
 		</nav>
-
-
-
 	</header>
 
-	<!--  
-	<div class='my-van--drop row clearfix'>
-		<ul class='my-van--drop__links'>
-			<li><a class='my-van--drop__link text--bold' href='#'>Choose My Van</a></li>
-			<li><a class='my-van--drop__link text--bold' href='#'>Customize my van</a></li>
-			<li><a class='my-van--drop__link text--bold' href='#'>Finance my van</a></li>
-		</ul>
-
-		<ul class='my-van--drop__links'>
-			<li><a class='my-van--drop__link text--bold' href='#'>legal questions</a></li>
-			<li><a class='my-van--drop__link text--bold' href='#'>quiz</a></li>
-			
-		</ul>
-
-		<ul class='my-van--drop__articles'>
-			<h2 class='my-van--drop__articles__title  text--bolder'>TOP <span>articles</span></h2>
-			<li class='mo-article--dropdown clearfix'>
-				<div class="mo-article--dropdown__img">
-					<img src='https://dummyimage.com/68x55/919191/fff.jpg' alt='renault van'/>
-				</div>	
-
-				<div class="mo-article--dropdown__desc">
-					<p class='text--bold'>Proin rhoncus eros ac ante pellentesque, id lobortis turpis</p>
-				</div>
-			</li>
-
-			<li class='mo-article--dropdown clearfix'>
-				<div class="mo-article--dropdown__img">
-					<img src='https://dummyimage.com/68x55/919191/fff.jpg' alt='renault van'/>
-				</div>	
-
-				<div class="mo-article--dropdown__desc">
-					<p class='text--bold'>Proin rhoncus eros ac ante pellentesque, id lobortis turpis</p>
-				</div>
-			</li>
-
-			<li class='mo-article--dropdown clearfix'>
-				<div class="mo-article--dropdown__img">
-					<img src='https://dummyimage.com/68x55/919191/fff.jpg' alt='renault van'/>
-				</div>	
-
-				<div class="mo-article--dropdown__desc">
-					<p class='text--bold'>Proin rhoncus eros ac ante pellentesque, id lobortis turpis</p>
-				</div>
-			</li>
-
-			<li class='mo-article--dropdown clearfix'>
-				<div class="mo-article--dropdown__img">
-					<img src='https://dummyimage.com/68x55/919191/fff.jpg' alt='renault van'/>
-				</div>	
-
-				<div class="mo-article--dropdown__desc">
-					<p class='text--bold'>Proin rhoncus eros ac ante pellentesque, id lobortis turpis</p>
-				</div>
-			</li>
-		</ul>
-	</div>
-	-->
-
+<!-- MAIN CONTENT -->
+	<div class='tint'></div>
 	<section class='wrapper wrapper--main'>
-		<div class='box'></div>
+
+			<div class='box'>
+				<button class='btn btn--center btn--white-yellow btn--shdw btn--m'>PLUS DE NEWS</button>
+				<button class='btn btn--center btn--white-black btn--shdw btn--m'>PLUS DE NEWS</button>
+				<button class='btn btn--s btn--white-black btn--shdw btn--m'>COMMENCER LE TEST</button>
+				
+				<div class='label label--mo'>
+					<h2>OVO JE LABEL ZA MO</h2>
+				</div>
+
+				<div class='label label--page-title'>
+					<h3>OVO JE LPAGE TITLE</h3>
+				</div>
+
+				<div class='label label--article-top-hero'>
+					<h3>Lorem ipsum dolores is a dummy</h3>
+				</div>
+
+			</div>
 	</section>
+
+
+<!-- FOOTER -->
+	<footer class='footer wrapper text--center'>
+		<div class='footer__logo'>
+			<img src='assets/images/renault-logo-footer.png'/>
+		</div>
+		<ul class='footer__links'>
+			<li><a class='footer__link' href="#">CGU</a></li>
+			<li><a class='footer__link' href="#">MENTIONS LEGALES</a></li>
+		</ul>
+	</footer>
 
 <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"

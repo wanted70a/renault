@@ -1,0 +1,47 @@
+.btn{
+	display:block;
+	border:0;
+	outline:0;
+	@include fontSize(20, 10.8, 12);
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:.1em;
+	padding:2.5rem;
+	transition: all 0.25s ease;
+	
+	&.btn--s{
+		font-size:calculateRem(12);//yellow quiz on articles
+		padding:1.7rem 3rem;
+	}
+	
+	&.btn--center{
+		margin:0 auto;
+		margin-top:60px;//PROPERI ZA TESTIRANJE
+	}
+
+
+	&.btn--shdw{
+		box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+	}
+
+	&.btn--white-black{
+		background-color:$white;
+		color:$black;
+
+		&:hover{
+			background-color:$black;
+			color:$white;
+		}
+	}
+
+	&.btn--white-yellow{
+		background-color:$white;
+		color:$black;
+		transition: all 0.5s ease;
+
+		&:hover{
+			background-color:$yellow;
+			color:$black;
+		}
+	}
+}

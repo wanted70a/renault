@@ -1,3 +1,12 @@
+html{
+	//Bilo je problema kad sam dodao footer
+	//overflow-x:hidden;
+
+	&.no-scroll{
+		overflow-y: hidden;
+	}
+}
+
 body{
 	margin:0 auto;
 	padding:0;
@@ -5,8 +14,11 @@ body{
 	font-size: 100%;
   	position: relative;
   	font-family: 'Lato', sans-serif;
+  	overflow-x:hidden;
 
-
+	&.no-scroll{
+		overflow-y: hidden;
+	}
 }
 
 .row{
@@ -16,6 +28,8 @@ body{
 
 .wrapper{
 	@include container(100%,0,0 auto);
+	overflow-x:hidden;
+	position:relative;
 	
 	@include breakpoint(tablet){
 		@include container(84.63%,0,0 auto);
@@ -28,7 +42,8 @@ body{
 	}
 
 	&--main{
-			margin-top:$header-height-mobile;
+		margin-top:$header-height-mobile;
+		
 		@include breakpoint(tablet){
 			margin-top:$header-height-mobile;
 			
@@ -37,6 +52,22 @@ body{
 		@include breakpoint(desktop){
 			margin-top:$header-height-desktop;
 			
+		}
+
+		&.active{
+			margin-left:84.7031%;
+			position:fixed;
+			overflow-y: hidden;
+		
+			@include breakpoint(tablet){
+				margin-left:70.7031%;;
+				
+			}
+
+			@include breakpoint(desktop){
+				padding-left:auto;
+				
+			}
 		}
 	}
 }
