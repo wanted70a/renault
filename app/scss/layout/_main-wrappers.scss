@@ -28,9 +28,9 @@ body{
 
 .wrapper{
 	@include container(100%,0,0 auto);
-	overflow-x:hidden;
+	//overflow-x:hidden;
 	position:relative;
-	
+	display:block;
 	@include breakpoint(tablet){
 		@include container(84.63%,0,0 auto);
 		
@@ -42,6 +42,8 @@ body{
 	}
 
 	&--main{
+		width:100%;
+		margin:0 auto;
 		margin-top:$header-height-mobile;
 		
 		@include breakpoint(tablet){
@@ -51,6 +53,7 @@ body{
 
 		@include breakpoint(desktop){
 			margin-top:$header-height-desktop;
+			//margin-top:0;
 			
 		}
 

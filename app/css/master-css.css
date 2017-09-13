@@ -226,8 +226,8 @@ body {
   margin: 0 auto;
   padding-left: 0;
   padding-right: 0;
-  overflow-x: hidden;
-  position: relative; }
+  position: relative;
+  display: block; }
   @media screen and (min-width: 768px) {
     .wrapper {
       width: 84.63%;
@@ -241,6 +241,8 @@ body {
       padding-left: 0;
       padding-right: 0; } }
   .wrapper--main {
+    width: 100%;
+    margin: 0 auto;
     margin-top: 8.5rem; }
     @media screen and (min-width: 768px) {
       .wrapper--main {
@@ -261,7 +263,6 @@ body {
 
 .box {
   width: 100%;
-  border: 2px solid red;
   height: 2000px;
   background-color: blue; }
 
@@ -636,12 +637,17 @@ body {
   @media screen and (min-width: 1024px) {
     .btn {
       font-size: 1.2rem; } }
+  @media screen and (min-width: 768px) {
+    .btn {
+      padding: 0.5rem 1.3rem; } }
+  @media screen and (min-width: 1024px) {
+    .btn {
+      padding: 1rem 2.8rem; } }
   .btn.btn--s {
     font-size: 1.2rem;
     padding: 1.7rem 3rem; }
   .btn.btn--center {
-    margin: 0 auto;
-    margin-top: 60px; }
+    margin: 0 auto; }
   .btn.btn--shdw {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); }
   .btn.btn--white-black {
@@ -652,11 +658,45 @@ body {
       color: #ffffff; }
   .btn.btn--white-yellow {
     background-color: #ffffff;
-    color: #000000;
-    transition: all 0.5s ease; }
+    color: #000000; }
     .btn.btn--white-yellow:hover {
       background-color: #ffcc33;
       color: #000000; }
+  .btn.btn--heroSlider {
+    background-color: #ffcc33;
+    color: #000000;
+    letter-spacing: 0.04em;
+    font-weight: bold;
+    margin-bottom: 2.8rem;
+    padding: 1rem 1.7rem; }
+    @media screen and (max-width: 767px) {
+      .btn.btn--heroSlider {
+        font-size: 1.2rem; } }
+    @media screen and (min-width: 768px) {
+      .btn.btn--heroSlider {
+        font-size: 0.8rem; } }
+    @media screen and (min-width: 1024px) {
+      .btn.btn--heroSlider {
+        font-size: 1.2rem; } }
+    @media screen and (min-width: 768px) {
+      .btn.btn--heroSlider {
+        padding: 0.5rem 1.3rem;
+        margin-bottom: 1rem; } }
+    @media screen and (min-width: 1024px) {
+      .btn.btn--heroSlider {
+        padding: 1rem 2.8rem;
+        margin-bottom: 1.8rem; } }
+    .btn.btn--heroSlider:hover {
+      background-color: #000000;
+      color: #ffffff; }
+  .btn.btn--start-quiz {
+    letter-spacing: 0.05em;
+    position: relative;
+    left: -0.3rem; }
+    @media screen and (min-width: 1024px) {
+      .btn.btn--start-quiz {
+        margin-top: 2.8rem;
+        padding: 1.3rem 2.5rem; } }
 
 .label {
   background-color: #ffcc33; }
@@ -720,6 +760,84 @@ body {
         .label.label--article-top-hero h3 {
           font-size: 1.1rem; } }
 
+.start-quiz {
+  width: 100%;
+  margin: 0 auto; }
+  .start-quiz__banner {
+    background: url("../assets/images/quiz-start-banner/quiz-start-mobile.jpg") no-repeat;
+    width: 100%;
+    padding-top: 9.3rem;
+    padding-bottom: 35rem;
+    position: relative; }
+    .start-quiz__banner__content {
+      position: absolute;
+      left: 31.2vw; }
+    .start-quiz__banner .title {
+      font-weight: 900;
+      line-height: 1.1; }
+      @media screen and (max-width: 767px) {
+        .start-quiz__banner .title {
+          font-size: 4.5rem; } }
+      @media screen and (min-width: 768px) {
+        .start-quiz__banner .title {
+          font-size: 2.2rem; } }
+      @media screen and (min-width: 1024px) {
+        .start-quiz__banner .title {
+          font-size: 3.2rem; } }
+      .start-quiz__banner .title .subTitle {
+        display: block;
+        font-family: Airways;
+        font-weight: 400; }
+        @media screen and (max-width: 767px) {
+          .start-quiz__banner .title .subTitle {
+            font-size: 4.248rem; } }
+        @media screen and (min-width: 768px) {
+          .start-quiz__banner .title .subTitle {
+            font-size: 2.2rem; } }
+        @media screen and (min-width: 1024px) {
+          .start-quiz__banner .title .subTitle {
+            font-size: 3rem; } }
+        .start-quiz__banner .title .subTitle span {
+          font-weight: 400;
+          font-family: 'Lato';
+          letter-spacing: 0.055em; }
+          @media screen and (max-width: 767px) {
+            .start-quiz__banner .title .subTitle span {
+              font-size: 4.248rem; } }
+          @media screen and (min-width: 768px) {
+            .start-quiz__banner .title .subTitle span {
+              font-size: 2.2rem; } }
+          @media screen and (min-width: 1024px) {
+            .start-quiz__banner .title .subTitle span {
+              font-size: 3rem; } }
+    .start-quiz__banner .description {
+      position: relative;
+      letter-spacing: 0.05em;
+      line-height: 1.285; }
+      @media screen and (max-width: 767px) {
+        .start-quiz__banner .description {
+          font-size: 2.6rem; } }
+      @media screen and (min-width: 768px) {
+        .start-quiz__banner .description {
+          font-size: 2.2rem; } }
+      @media screen and (min-width: 1024px) {
+        .start-quiz__banner .description {
+          font-size: 1.4rem; } }
+      @media screen and (min-width: 768px) {
+        .start-quiz__banner .description {
+          display: none; } }
+      @media screen and (min-width: 1024px) {
+        .start-quiz__banner .description {
+          display: block;
+          left: -0.3rem;
+          margin-top: 1.9rem; } }
+    @media screen and (min-width: 768px) {
+      .start-quiz__banner {
+        background: url("../assets/images/quiz-start-banner/quiz-start-tablet.jpg") no-repeat; } }
+    @media screen and (min-width: 1024px) {
+      .start-quiz__banner {
+        background: url("../assets/images/quiz-start-banner/quiz-start-desk.jpg") no-repeat; } }
+
 .footer {
   padding: 5.5rem 0; }
   .footer__logo img {
@@ -750,3 +868,160 @@ body {
     @media screen and (min-width: 1024px) {
       .footer__link {
         font-size: 1rem; } }
+
+.hero-slider {
+  position: relative;
+  width: 100%; }
+  .hero-slider__controls {
+    position: absolute;
+    z-index: 3000;
+    top: 51%; }
+    @media screen and (min-width: 768px) {
+      .hero-slider__controls {
+        top: 51%; } }
+    @media screen and (min-width: 1024px) {
+      .hero-slider__controls {
+        top: 51%; } }
+  .hero-slider__prev {
+    display: inline-block;
+    left: 4.9rem;
+    background: url("../assets/images/sliders/hero/control-left-yellow.png") no-repeat;
+    background-size: 100% 100%;
+    height: 3.2vw;
+    width: 3.2vw;
+    visibility: hidden;
+    transition: all 0.3s ease; }
+    @media screen and (min-width: 768px) {
+      .hero-slider__prev {
+        left: 2.1rem;
+        visibility: visible; } }
+    @media screen and (min-width: 1024px) {
+      .hero-slider__prev {
+        left: 4.9rem;
+        visibility: visible; } }
+    .hero-slider__prev:hover {
+      background: url("../assets/images/sliders/hero/control-left-white.png") no-repeat;
+      background-size: 100% 100%;
+      height: 3.2vw;
+      width: 3.2vw; }
+  .hero-slider__next {
+    display: inline-block;
+    right: 5.5rem;
+    background: url("../assets/images/sliders/hero/control-right-yellow.png") no-repeat;
+    background-size: 100% 100%;
+    height: 3.2vw;
+    width: 3.2vw;
+    visibility: hidden; }
+    @media screen and (min-width: 768px) {
+      .hero-slider__next {
+        right: 2.4rem;
+        visibility: visible; } }
+    @media screen and (min-width: 1024px) {
+      .hero-slider__next {
+        right: 5.5rem;
+        visibility: visible; } }
+    .hero-slider__next:hover {
+      background: url("../assets/images/sliders/hero/control-right-white.png") no-repeat;
+      background-size: 100% 100%;
+      height: 3.2vw;
+      width: 3.2vw; }
+  .hero-slider__counter {
+    position: absolute;
+    z-index: 1000;
+    color: #ffffff;
+    letter-spacing: 0em;
+    font-weight: bold;
+    right: 6.5%;
+    bottom: 5.7rem; }
+    @media screen and (max-width: 767px) {
+      .hero-slider__counter {
+        font-size: 2.5rem; } }
+    @media screen and (min-width: 768px) {
+      .hero-slider__counter {
+        font-size: 1.2rem; } }
+    @media screen and (min-width: 1024px) {
+      .hero-slider__counter {
+        font-size: 2.2rem; } }
+    @media screen and (min-width: 768px) {
+      .hero-slider__counter {
+        right: auto;
+        bottom: 2.5rem;
+        left: 15.5%; } }
+    @media screen and (min-width: 1024px) {
+      .hero-slider__counter {
+        right: auto;
+        bottom: 6.5rem;
+        left: 15.5%; } }
+    .hero-slider__counter .current {
+      color: #ffcc33; }
+  .hero-slider__slide {
+    position: relative; }
+  .hero-slider__img {
+    width: 100%;
+    height: 100%; }
+  .hero-slider__description {
+    position: absolute;
+    z-index: 3000;
+    top: 19%;
+    left: 6.4%;
+    text-transform: uppercase; }
+    @media screen and (min-width: 768px) {
+      .hero-slider__description {
+        top: 37.55%;
+        left: 15.35%; } }
+    @media screen and (min-width: 1024px) {
+      .hero-slider__description {
+        top: 38.8%;
+        left: 15.35%; } }
+    .hero-slider__description .title {
+      color: #ffcc33;
+      font-weight: bold;
+      letter-spacing: -0.02em; }
+      @media screen and (max-width: 767px) {
+        .hero-slider__description .title {
+          font-size: 3rem; } }
+      @media screen and (min-width: 768px) {
+        .hero-slider__description .title {
+          font-size: 1.6rem; } }
+      @media screen and (min-width: 1024px) {
+        .hero-slider__description .title {
+          font-size: 3.6rem; } }
+    .hero-slider__description .subTitle {
+      color: #ffffff;
+      font-weight: bold;
+      letter-spacing: -0.02em;
+      line-height: 1.01; }
+      @media screen and (max-width: 767px) {
+        .hero-slider__description .subTitle {
+          font-size: 4rem; } }
+      @media screen and (min-width: 768px) {
+        .hero-slider__description .subTitle {
+          font-size: 3.2rem; } }
+      @media screen and (min-width: 1024px) {
+        .hero-slider__description .subTitle {
+          font-size: 7rem; } }
+      .hero-slider__description .subTitle span {
+        text-transform: none;
+        display: block;
+        letter-spacing: 0.01em;
+        margin-top: 0.4rem; }
+        @media screen and (max-width: 767px) {
+          .hero-slider__description .subTitle span {
+            font-size: 1rem; } }
+        @media screen and (min-width: 768px) {
+          .hero-slider__description .subTitle span {
+            font-size: 1.6rem; } }
+        @media screen and (min-width: 1024px) {
+          .hero-slider__description .subTitle span {
+            font-size: 3.2rem; } }
+        @media screen and (max-width: 767px) {
+          .hero-slider__description .subTitle span {
+            display: none; } }
+      @media screen and (max-width: 767px) {
+        .hero-slider__description .subTitle {
+          margin-top: .5rem;
+          letter-spacing: -0.03em; } }
+
+.kontrola {
+  background: url("../assets/images/sliders/hero/control-left-yellow.png") no-repeat;
+  background-size: 100% 100%; }

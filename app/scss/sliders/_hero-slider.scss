@@ -1,0 +1,182 @@
+.hero-slider{
+	position:relative;
+	width:100%;
+	&__controls{
+		position:absolute;
+		z-index:3000;
+		top:51%;
+
+		@include breakpoint(tablet){ 
+			top:51%;
+			
+		}
+
+		@include breakpoint(desktop){ 
+			top:51%;
+		}
+	}
+
+	&__prev{
+		display:inline-block;
+		left:4.9rem;
+		background:url('../assets/images/sliders/hero/control-left-yellow.png') no-repeat;
+		background-size:100% 100%;
+		height:3.2vw;
+		width:3.2vw;
+		visibility:hidden;
+		transition:all 0.3s ease;
+
+		@include breakpoint(tablet){ 
+			left:2.1rem;
+			visibility:visible;
+			
+		}
+
+		@include breakpoint(desktop){ 
+			left:4.9rem;
+			visibility:visible;
+		}
+
+		&:hover{
+			background:url('../assets/images/sliders/hero/control-left-white.png') no-repeat;
+			background-size:100% 100%;
+			height:3.2vw;
+			width:3.2vw;
+		}
+	
+	}
+
+	&__next{
+		display:inline-block;
+		right:5.5rem;
+		background:url('../assets/images/sliders/hero/control-right-yellow.png') no-repeat;
+		background-size:100% 100%;
+		height:3.2vw;
+		width:3.2vw;
+		visibility:hidden;
+		
+		@include breakpoint(tablet){ 
+			right:2.4rem;
+			visibility:visible;
+			
+		}
+
+		@include breakpoint(desktop){ 
+			right:5.5rem;
+			visibility:visible;
+		}
+
+		&:hover{
+			background:url('../assets/images/sliders/hero/control-right-white.png') no-repeat;
+			background-size:100% 100%;
+			height:3.2vw;
+			width:3.2vw;
+		}
+
+	}
+
+
+	&__counter{
+		position:absolute;
+		z-index:1000;
+		color:$white;
+		@include fontSize(25,12,22);
+		letter-spacing:0em;
+		font-weight:bold;
+		//right:4.2rem;
+		right:6.5%;
+		bottom:5.7rem;
+
+		@include breakpoint(tablet){ 
+			right:auto;
+			bottom:2.5rem;
+			left:15.5%;
+		}
+
+		@include breakpoint(desktop){ 
+			right:auto;
+			bottom:6.5rem;
+			left:15.5%;
+		}
+
+		.current{
+			color:$yellow;
+		}
+
+		.total{
+
+		}
+
+	}
+
+
+	&__slide{
+		position:relative;
+	}
+
+	&__img{
+		width:100%;
+		height:100%;
+	}
+
+	&__description{
+		position:absolute;
+		z-index:3000;
+		top:19%;
+		left:6.4%;
+		text-transform: uppercase;
+
+		@include breakpoint(tablet){ 
+			top:37.55%;
+			left:15.35%;
+			
+		}
+
+		@include breakpoint(desktop){ 
+			top:38.8%;
+			left:15.35%;
+		}
+		
+		.title{
+			color:$yellow;
+			font-weight:bold;
+			@include fontSize(30, 16, 36);
+			letter-spacing:-0.02em;
+			
+
+		}
+
+		.subTitle{
+			color:$white;
+			font-weight:bold;
+			@include fontSize(40, 32, 70);
+			letter-spacing:-0.02em;
+			line-height:1.01;
+			
+			
+			span{
+				text-transform: none;
+				display: block;
+				@include fontSize(10, 16, 32);
+				letter-spacing:0.01em;
+				margin-top:0.4rem;
+
+				@include breakpoint(mobile){ 
+					display:none;
+				}
+
+			}
+
+			@include breakpoint(mobile){ 
+				margin-top:.5rem;
+				letter-spacing:-0.03em;
+
+			}
+		}
+	}
+}
+
+.kontrola{
+	background:url('../assets/images/sliders/hero/control-left-yellow.png') no-repeat;
+	background-size:100% 100%;
+}

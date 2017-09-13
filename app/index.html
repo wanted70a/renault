@@ -5,13 +5,16 @@
 	<title>Renault</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="assets/images/RenaultVU_Favicon.png" />
+	<!-- SLICK CSS -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+
 	<link rel="stylesheet" type="text/css" href="css/master-css.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 </head>
 <body>
 	<div class='search-box'>
 		<i class='fa fa-times search-box__close'></i>
-		<form class='search-box__form' action="" >
+		<form class='search-box__form'>
 		  <div class='search-box__input'>
 		  	 <input type="text" name="searc box">
 		  	 <i class='fa fa-search'></i>
@@ -96,7 +99,7 @@
 					</ul>
 				</div>
 				<a  href='#'>
-					<img class='nav--desktop__link--img' src='assets/images/renault-logo-207x98.png'/>
+					<img class='nav--desktop__link--img' src='assets/images/renault-logo-207x98.png' alt='logo'/>
 				</a>
 				<div class='nav--desktop__search'>
 					<i class="fa fa-search" aria-hidden="true"></i>
@@ -113,7 +116,7 @@
 				</div>
 
 				<a  href='#'>
-					<img class='nav--mob__link--img' src='assets/images/renault-logo-mobile.png'/>
+					<img class='nav--mob__link--img' src='assets/images/renault-logo-mobile.png' alt='logo-mobile'/>
 				</a>
 			</div>
 		
@@ -169,45 +172,78 @@
 
 <!-- MAIN CONTENT -->
 	<div class='tint'></div>
-	<section class='wrapper wrapper--main'>
+	<div class='wrapper wrapper--main'>
+		<!-- SLICK SLIDER -->
+		<div class='hero-slider'>
+			
+			<!-- CONTROLS -->			
+			<div class='hero-slider__controls hero-slider__prev'></div> 
+			<div class='hero-slider__controls hero-slider__next'></div>
 
-			<div class='box'>
-				<button class='btn btn--center btn--white-yellow btn--shdw btn--m'>PLUS DE NEWS</button>
-				<button class='btn btn--center btn--white-black btn--shdw btn--m'>PLUS DE NEWS</button>
-				<button class='btn btn--s btn--white-black btn--shdw btn--m'>COMMENCER LE TEST</button>
-				
-				<div class='label label--mo'>
-					<h2>OVO JE LABEL ZA MO</h2>
-				</div>
-
-				<div class='label label--page-title'>
-					<h3>OVO JE LPAGE TITLE</h3>
-				</div>
-
-				<div class='label label--article-top-hero'>
-					<h3>Lorem ipsum dolores is a dummy</h3>
-				</div>
-
+			<!-- SLIDE COUNTER -->
+			<div class='hero-slider__counter'>
+				<p>
+					<span class='current'>01</span> / <span class='total'></span>
+				</p>
 			</div>
-	</section>
+			
+			<!-- SLIDER WITH SLIDES -->
+			<div class='hero-slider__slider'>
+				<div class="hero-slider__slide">
+					<div class='hero-slider__description'>
+						<button class='btn btn--heroSlider'>Lorem Ipsum</button>	
+						<h2 class='title'>COMMUNICATION</h2>
+						<p class='subTitle'>
+							Maecenas velit nunc,<br>ultricies a fringilla 
+							<span>
+								Etiam tincidunt diam et nisl
+							</span>
+						</p>
+					</div>
+					<img class='hero-slider__img' src='assets/images/sliders/hero/slider-img-desk-01.jpg' alt='renault'/>
+				</div>
 
+				<div class="hero-slider__slide">
+					<img class='hero-slider__img' src='assets/images/sliders/hero/slider-img-desk-01.jpg' alt='renault'/>
+				</div>
+			</div>
+		</div>	
+		
+		<div class='wrapper'>
+			<!-- QUIZ SECTION -->
+			<section class='start-quiz'>
+				<div class='start-quiz__banner'>
+					<div class='start-quiz__banner__content'>
+							<h3 class='title'>QUEL VEHICULE <span class='subTitle'>est fait <span> POUR VOUS ?</span></span></h3>
+							<p class='description'>Cras luctus hendrerit neque lacinia<br>scelerisque. Integer nulla turpis, mattis at<br>libero et, vehicula congue augue. Suspendisse</p>
+							<button class='btn btn--white-black btn--start-quiz'>COMMENCER LE TEST</button>
+					</div>
+				</div>
 
-<!-- FOOTER -->
-	<footer class='footer wrapper text--center'>
-		<div class='footer__logo'>
-			<img src='assets/images/renault-logo-footer.png'/>
+			</section>
 		</div>
-		<ul class='footer__links'>
-			<li><a class='footer__link' href="#">CGU</a></li>
-			<li><a class='footer__link' href="#">MENTIONS LEGALES</a></li>
-		</ul>
-	</footer>
+		
 
+	
+		<!-- FOOTER -->
+		<footer class='footer wrapper text--center'>
+			<div class='footer__logo'>
+				<img src='assets/images/renault-logo-footer.png' alt='logo-footer'/>
+			</div>
+			<ul class='footer__links'>
+				<li><a class='footer__link' href="#">CGU</a></li>
+				<li><a class='footer__link' href="#">MENTIONS LEGALES</a></li>
+			</ul>
+		</footer>
+	</div>
 <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous">
 </script>
+<!-- SLICK JS -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <script type="text/javascript" src='/js-compiled/master-js.js'></script>
 </body>
