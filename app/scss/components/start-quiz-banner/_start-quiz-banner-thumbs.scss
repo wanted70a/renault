@@ -1,0 +1,149 @@
+.start-quiz{
+	&__thumbs{
+		display:none;
+		position:relative;
+	
+		@include breakpoint(tablet){ 
+			display:block;
+			top:-3rem;
+			left:1rem;
+
+		}
+
+		@include breakpoint(desktop){ 
+			//display:block;
+			top:-6rem;
+			left:2.2rem;
+		}
+
+	}
+
+
+	&__thumb{
+		position:relative;
+
+		@include breakpoint(tablet){ 
+			//float:left;
+			width:26.6%;
+			margin-right:6.6%;
+
+			&:nth-child(1){
+				@include breakpoint(tablet){
+					top:0rem;
+				}
+
+				@include breakpoint(desktop){
+					h3{
+						top:-0.5rem;
+						left:0.1rem;
+					}
+				}
+			}
+
+			&:nth-child(2){
+				
+
+				@include breakpoint(tablet){
+					top:-0.5rem;
+
+					h3{
+						top:-0.3rem;
+						left:0.7rem;
+					
+					}
+				}
+
+				@include breakpoint(desktop){
+					top:-1.2rem;
+					left:0.5rem;
+
+					h3{
+						top:-0.5rem;
+					}
+
+					p{
+						left:0.8rem;
+						top:-0.2rem;
+					}
+				}
+
+			}
+
+			&:nth-child(3){
+		
+				@include breakpoint(tablet){
+					
+					top:-1.5rem;
+					left:1rem;
+
+					h3{
+						top:-0.1rem;
+						left:0rem;
+					}
+				}
+
+				@include breakpoint(desktop){
+					top:-3.5rem;
+					left:1.6rem;
+
+					h3{
+						top:-0.3rem;
+						left:0.5rem;
+					}
+
+					p{
+						width:59%;
+						margin:0 auto;
+						left:0.5rem;
+					}
+				}
+			}
+
+			img{
+				vertical-align:bottom;
+			}
+
+		}
+
+		@include breakpoint(desktop){ 
+
+
+		}
+
+
+		&__description{
+			text-align:center;
+
+			h3{
+				position:relative;
+
+				@include breakpoint(tablet){ 
+					font-size:calculateRem(13.36);
+					font-weight:900;
+					letter-spacing:-0.025rem;
+				}
+
+				@include breakpoint(desktop){
+					font-size:calculateRem(22);
+					letter-spacing:-0.025rem;
+				}
+			}
+
+			p{
+				position:relative;
+				@include breakpoint(tablet){ 
+					display:none;
+				}
+
+				@include breakpoint(desktop){
+					display:block;
+					font-size:calculateRem(14);
+					letter-spacing:0.05em;
+				}
+			}
+
+		}
+	}
+}
+
+

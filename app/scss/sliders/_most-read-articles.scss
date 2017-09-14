@@ -1,0 +1,161 @@
+.most-read-articles{
+	background-color:$gray;
+
+	@include breakpoint(tablet){
+		.container-1{
+			position:relative;
+			width:12.962%;
+			float:left;
+		}
+			
+
+		.container-7{
+			position:relative;
+			width:87.037%;
+			float:left;
+		}
+
+	}
+
+	@include breakpoint(desktop){
+		min-height:31.5rem;
+		
+		.container-1{
+			position:relative;
+			width:12.962%;
+			float:left;
+			
+		}
+
+		.container-7{
+			position:relative;
+			width:87.037%;
+			float:left;
+			
+		}
+	}
+
+
+	&__title{
+
+		@include breakpoint(tablet){
+
+		}
+
+		@include breakpoint(desktop){
+
+		}
+	}
+
+
+	&__slider{
+		position:relative;
+		left:auto;
+		
+		@include breakpoint(tablet){
+			left:4.3rem;
+			width:86%;
+			bottom:2.7rem;
+		}
+		
+		@include breakpoint(desktop){
+			
+			bottom:6.5rem;
+			width:88%;
+			left:8.2rem;
+			//margin:0 auto;
+		}
+
+
+		&__prev{
+			display:inline-block;
+			background:url('../assets/images/sliders/latest-news/control-left-gray.png') no-repeat;
+			background-size:100% 100%;
+			height:3.2vw;
+			width:3.2vw;
+			transition:all 0.3s ease;
+			z-index:999;
+			position:absolute;
+			left:0;
+			top:7.8rem;
+
+			@include breakpoint(tablet){
+				display:inline-block;
+				left:0;
+				top:4rem;
+			}
+
+			@include breakpoint(desktop){
+				display:inline-block;
+				left:0;
+				top:7.8rem;
+			}
+
+		}
+
+		&__next{
+			display:inline-block;
+			background:url('../assets/images/sliders/latest-news/control-right-gray.png') no-repeat;
+			background-size:100% 100%;
+			height:3.2vw;
+			width:3.2vw;
+			transition:all 0.3s ease;
+			z-index:999;
+			position:absolute;
+			right:0;
+			top:7.8rem;
+
+
+			@include breakpoint(tablet){
+				display:inline-block;
+				right:0;
+				top:4rem;
+			}
+
+
+			@include breakpoint(desktop){
+				display:inline-block;
+				right:0;
+				top:7.8rem;
+			}
+		}
+
+	}
+
+	&__slide{
+		float:left;	
+		width:50%;	
+		
+		@include breakpoint(tablet){
+			margin-right:0.8%;
+
+			p{
+				margin-top:1.2rem;
+				margin-left:0rem;
+				font-size:calculateRem(12);
+				letter-spacing: 0.05rem;
+				line-height:1.1;
+			}
+		}
+		
+		@include breakpoint(desktop){
+
+			margin-right:0.5%;
+			//width:23%;
+
+			p{
+				margin-top:2.3rem;
+				margin-left:0.2rem;
+				font-size:calculateRem(16);
+				letter-spacing: 0.1rem;
+				line-height:1.25;
+			}
+
+			img{
+				width:100%;
+			}
+		}
+	}
+
+
+}

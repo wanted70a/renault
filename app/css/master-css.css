@@ -189,6 +189,12 @@ html {
   .clearfix:after {
     clear: both; }
 
+.float--left {
+  float: left; }
+
+.float--right {
+  float: right; }
+
 .text--regular {
   font-weight: 400; }
 
@@ -623,7 +629,7 @@ body {
   display: block;
   border: 0;
   outline: 0;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .1em;
   padding: 2.5rem;
@@ -690,13 +696,25 @@ body {
       background-color: #000000;
       color: #ffffff; }
   .btn.btn--start-quiz {
-    letter-spacing: 0.05em;
+    letter-spacing: 0.10em;
     position: relative;
-    left: -0.3rem; }
+    padding: 2.5rem 1.2rem;
+    left: -0.3rem;
+    margin: 0 auto;
+    top: 31rem; }
+    @media screen and (min-width: 768px) {
+      .btn.btn--start-quiz {
+        left: auto;
+        padding: 1rem 1.3rem;
+        letter-spacing: 0em;
+        top: 6.6rem; } }
     @media screen and (min-width: 1024px) {
       .btn.btn--start-quiz {
-        margin-top: 2.8rem;
-        padding: 1.3rem 2.5rem; } }
+        margin: 0;
+        padding: 1.3rem 3rem;
+        left: 31.2vw;
+        top: 16.6rem;
+        letter-spacing: 0em; } }
 
 .label {
   background-color: #ffcc33; }
@@ -766,15 +784,22 @@ body {
   .start-quiz__banner {
     background: url("../assets/images/quiz-start-banner/quiz-start-mobile.jpg") no-repeat;
     width: 100%;
-    padding-top: 9.3rem;
-    padding-bottom: 35rem;
-    position: relative; }
+    padding-top: 6.6rem;
+    padding-bottom: 42.2rem;
+    position: relative;
+    background-size: cover; }
     .start-quiz__banner__content {
       position: absolute;
-      left: 31.2vw; }
+      left: 17.5vw; }
+      @media screen and (min-width: 768px) {
+        .start-quiz__banner__content {
+          left: 29.8vw; } }
+      @media screen and (min-width: 1024px) {
+        .start-quiz__banner__content {
+          left: 31.2vw; } }
     .start-quiz__banner .title {
       font-weight: 900;
-      line-height: 1.1; }
+      line-height: 1.15; }
       @media screen and (max-width: 767px) {
         .start-quiz__banner .title {
           font-size: 4.5rem; } }
@@ -784,6 +809,9 @@ body {
       @media screen and (min-width: 1024px) {
         .start-quiz__banner .title {
           font-size: 3.2rem; } }
+      @media screen and (min-width: 1024px) {
+        .start-quiz__banner .title {
+          line-height: 1.15; } }
       .start-quiz__banner .title .subTitle {
         display: block;
         font-family: Airways;
@@ -800,7 +828,9 @@ body {
         .start-quiz__banner .title .subTitle span {
           font-weight: 400;
           font-family: 'Lato';
-          letter-spacing: 0.055em; }
+          letter-spacing: 0.065em;
+          position: relative;
+          left: 0.5rem; }
           @media screen and (max-width: 767px) {
             .start-quiz__banner .title .subTitle span {
               font-size: 4.248rem; } }
@@ -810,10 +840,20 @@ body {
           @media screen and (min-width: 1024px) {
             .start-quiz__banner .title .subTitle span {
               font-size: 3rem; } }
+          @media screen and (min-width: 768px) {
+            .start-quiz__banner .title .subTitle span {
+              left: 0rem;
+              top: 0.1rem;
+              letter-spacing: 0.055em; } }
+          @media screen and (min-width: 1024px) {
+            .start-quiz__banner .title .subTitle span {
+              left: 0.5rem; } }
     .start-quiz__banner .description {
       position: relative;
       letter-spacing: 0.05em;
-      line-height: 1.285; }
+      line-height: 1.29;
+      width: 80%;
+      margin-top: 3.5rem; }
       @media screen and (max-width: 767px) {
         .start-quiz__banner .description {
           font-size: 2.6rem; } }
@@ -829,14 +869,107 @@ body {
       @media screen and (min-width: 1024px) {
         .start-quiz__banner .description {
           display: block;
-          left: -0.3rem;
-          margin-top: 1.9rem; } }
+          left: -0.2rem;
+          margin-top: 1.6rem;
+          width: 38%; } }
     @media screen and (min-width: 768px) {
       .start-quiz__banner {
-        background: url("../assets/images/quiz-start-banner/quiz-start-tablet.jpg") no-repeat; } }
+        background: url("../assets/images/quiz-start-banner/quiz-start-tablet.jpg") no-repeat;
+        background-size: cover;
+        padding-top: 3.8rem;
+        padding-bottom: 14.2rem; } }
     @media screen and (min-width: 1024px) {
       .start-quiz__banner {
-        background: url("../assets/images/quiz-start-banner/quiz-start-desk.jpg") no-repeat; } }
+        background: url("../assets/images/quiz-start-banner/quiz-start-desk.jpg") no-repeat;
+        background-size: cover;
+        padding-top: 9.3rem;
+        padding-bottom: 30.8rem; } }
+
+.start-quiz__thumbs {
+  display: none;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .start-quiz__thumbs {
+      display: block;
+      top: -3rem;
+      left: 1rem; } }
+  @media screen and (min-width: 1024px) {
+    .start-quiz__thumbs {
+      top: -6rem;
+      left: 2.2rem; } }
+
+.start-quiz__thumb {
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .start-quiz__thumb {
+      width: 26.6%;
+      margin-right: 6.6%; } }
+  @media screen and (min-width: 768px) and (min-width: 768px) {
+    .start-quiz__thumb:nth-child(1) {
+      top: 0rem; } }
+  @media screen and (min-width: 768px) and (min-width: 1024px) {
+    .start-quiz__thumb:nth-child(1) h3 {
+      top: -0.5rem;
+      left: 0.1rem; } }
+  @media screen and (min-width: 768px) and (min-width: 768px) {
+    .start-quiz__thumb:nth-child(2) {
+      top: -0.5rem; }
+      .start-quiz__thumb:nth-child(2) h3 {
+        top: -0.3rem;
+        left: 0.7rem; } }
+  @media screen and (min-width: 768px) and (min-width: 1024px) {
+    .start-quiz__thumb:nth-child(2) {
+      top: -1.2rem;
+      left: 0.5rem; }
+      .start-quiz__thumb:nth-child(2) h3 {
+        top: -0.5rem; }
+      .start-quiz__thumb:nth-child(2) p {
+        left: 0.8rem;
+        top: -0.2rem; } }
+  @media screen and (min-width: 768px) and (min-width: 768px) {
+    .start-quiz__thumb:nth-child(3) {
+      top: -1.5rem;
+      left: 1rem; }
+      .start-quiz__thumb:nth-child(3) h3 {
+        top: -0.1rem;
+        left: 0rem; } }
+  @media screen and (min-width: 768px) and (min-width: 1024px) {
+    .start-quiz__thumb:nth-child(3) {
+      top: -3.5rem;
+      left: 1.6rem; }
+      .start-quiz__thumb:nth-child(3) h3 {
+        top: -0.3rem;
+        left: 0.5rem; }
+      .start-quiz__thumb:nth-child(3) p {
+        width: 59%;
+        margin: 0 auto;
+        left: 0.5rem; } }
+  @media screen and (min-width: 768px) {
+      .start-quiz__thumb img {
+        vertical-align: bottom; } }
+  .start-quiz__thumb__description {
+    text-align: center; }
+    .start-quiz__thumb__description h3 {
+      position: relative; }
+      @media screen and (min-width: 768px) {
+        .start-quiz__thumb__description h3 {
+          font-size: 1.336rem;
+          font-weight: 900;
+          letter-spacing: -0.025rem; } }
+      @media screen and (min-width: 1024px) {
+        .start-quiz__thumb__description h3 {
+          font-size: 2.2rem;
+          letter-spacing: -0.025rem; } }
+    .start-quiz__thumb__description p {
+      position: relative; }
+      @media screen and (min-width: 768px) {
+        .start-quiz__thumb__description p {
+          display: none; } }
+      @media screen and (min-width: 1024px) {
+        .start-quiz__thumb__description p {
+          display: block;
+          font-size: 1.4rem;
+          letter-spacing: 0.05em; } }
 
 .footer {
   padding: 5.5rem 0; }
@@ -874,7 +1007,7 @@ body {
   width: 100%; }
   .hero-slider__controls {
     position: absolute;
-    z-index: 3000;
+    z-index: 999;
     top: 51%; }
     @media screen and (min-width: 768px) {
       .hero-slider__controls {
@@ -1025,3 +1158,104 @@ body {
 .kontrola {
   background: url("../assets/images/sliders/hero/control-left-yellow.png") no-repeat;
   background-size: 100% 100%; }
+
+.most-read-articles {
+  background-color: #f6f6f6; }
+  @media screen and (min-width: 768px) {
+    .most-read-articles .container-1 {
+      position: relative;
+      width: 12.962%;
+      float: left; }
+    .most-read-articles .container-7 {
+      position: relative;
+      width: 87.037%;
+      float: left; } }
+  @media screen and (min-width: 1024px) {
+    .most-read-articles {
+      min-height: 31.5rem; }
+      .most-read-articles .container-1 {
+        position: relative;
+        width: 12.962%;
+        float: left; }
+      .most-read-articles .container-7 {
+        position: relative;
+        width: 87.037%;
+        float: left; } }
+  .most-read-articles__slider {
+    position: relative;
+    left: auto; }
+    @media screen and (min-width: 768px) {
+      .most-read-articles__slider {
+        left: 4.3rem;
+        width: 86%;
+        bottom: 2.7rem; } }
+    @media screen and (min-width: 1024px) {
+      .most-read-articles__slider {
+        bottom: 6.5rem;
+        width: 88%;
+        left: 8.2rem; } }
+    .most-read-articles__slider__prev {
+      display: inline-block;
+      background: url("../assets/images/sliders/latest-news/control-left-gray.png") no-repeat;
+      background-size: 100% 100%;
+      height: 3.2vw;
+      width: 3.2vw;
+      transition: all 0.3s ease;
+      z-index: 999;
+      position: absolute;
+      left: 0;
+      top: 7.8rem; }
+      @media screen and (min-width: 768px) {
+        .most-read-articles__slider__prev {
+          display: inline-block;
+          left: 0;
+          top: 4rem; } }
+      @media screen and (min-width: 1024px) {
+        .most-read-articles__slider__prev {
+          display: inline-block;
+          left: 0;
+          top: 7.8rem; } }
+    .most-read-articles__slider__next {
+      display: inline-block;
+      background: url("../assets/images/sliders/latest-news/control-right-gray.png") no-repeat;
+      background-size: 100% 100%;
+      height: 3.2vw;
+      width: 3.2vw;
+      transition: all 0.3s ease;
+      z-index: 999;
+      position: absolute;
+      right: 0;
+      top: 7.8rem; }
+      @media screen and (min-width: 768px) {
+        .most-read-articles__slider__next {
+          display: inline-block;
+          right: 0;
+          top: 4rem; } }
+      @media screen and (min-width: 1024px) {
+        .most-read-articles__slider__next {
+          display: inline-block;
+          right: 0;
+          top: 7.8rem; } }
+  .most-read-articles__slide {
+    float: left;
+    width: 50%; }
+    @media screen and (min-width: 768px) {
+      .most-read-articles__slide {
+        margin-right: 0.8%; }
+        .most-read-articles__slide p {
+          margin-top: 1.2rem;
+          margin-left: 0rem;
+          font-size: 1.2rem;
+          letter-spacing: 0.05rem;
+          line-height: 1.1; } }
+    @media screen and (min-width: 1024px) {
+      .most-read-articles__slide {
+        margin-right: 0.5%; }
+        .most-read-articles__slide p {
+          margin-top: 2.3rem;
+          margin-left: 0.2rem;
+          font-size: 1.6rem;
+          letter-spacing: 0.1rem;
+          line-height: 1.25; }
+        .most-read-articles__slide img {
+          width: 100%; } }

@@ -2,45 +2,85 @@
 	width:100%;
 	margin:0 auto;
 
+	
+
 	&__banner{
 		background: url('../assets/images/quiz-start-banner/quiz-start-mobile.jpg') no-repeat;
 		width:100%;
-		padding-top:9.3rem;
-		padding-bottom:35rem;
+		padding-top:6.6rem;
+		padding-bottom:42.2rem;
 		position:relative;
+		background-size:cover;
 
 		&__content{
 			position:absolute;
 			//left:39.5%;
-			left:31.2vw;
+			left:17.5vw;
+
+			@include breakpoint(tablet){
+				left:29.8vw;
+			}
+
+			@include breakpoint(desktop){
+				//left:39.5%;
+				left:31.2vw;
+			}
 		}
 
 		.title{
 			font-weight:900;
 			@include fontSize(45, 22, 32);
-			line-height:1.1;
+			line-height:1.15;
+
+			@include breakpoint(tablet){
+				
+			}
+
+			@include breakpoint(desktop){
+				line-height:1.15;
+			}
 
 			.subTitle{
 				display:block;
 				font-family: Airways;
 				font-weight:400;
 				@include fontSize(42.48, 22, 30);
+
+				@include breakpoint(tablet){
+				
+				}
+
+				@include breakpoint(desktop){
+					
+				}
 				
 				span{
 					@include fontSize(42.48, 22, 30);
 					font-weight:400;
 					font-family: 'Lato';
-					letter-spacing: 0.055em;
+					letter-spacing: 0.065em;
+					position:relative;
+					left:0.5rem;
+
+					@include breakpoint(tablet){
+						left:0rem;
+						top:0.1rem;
+						letter-spacing: 0.055em;
+					}
+
+					@include breakpoint(desktop){
+						left:0.5rem;
+					}
 				}
 			}
 		}
 
 		.description{
 			position:relative;
-			//left:-0.3rem;
-			//margin-top:1.9rem;
 			letter-spacing: 0.05em;
-			line-height: 1.285;
+			line-height: 1.29;
+			width:80%;
+			margin-top:3.5rem;
 			@include fontSize(26, 22, 14);
 
 			@include breakpoint(tablet){
@@ -49,18 +89,25 @@
 
 			@include breakpoint(desktop){
 				display:block;
-				left:-0.3rem;
-				margin-top:1.9rem;
+				left:-0.2rem;
+				margin-top:1.6rem;
+				width:38%;
 			}
 		}
 		
 
 		@include breakpoint(tablet){
 			background: url('../assets/images/quiz-start-banner/quiz-start-tablet.jpg') no-repeat;
+			background-size:cover;
+			padding-top:3.8rem;
+			padding-bottom:14.2rem;
 		}
 
 		@include breakpoint(desktop){
 			background: url('../assets/images/quiz-start-banner/quiz-start-desk.jpg') no-repeat;
+			background-size:cover;
+			padding-top:9.3rem;
+			padding-bottom:30.8rem;
 		}
 	}
 }

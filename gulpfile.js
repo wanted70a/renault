@@ -34,7 +34,7 @@ gulp.task('min-css', function(){
 gulp.task('concat-js', function(){
 	gulp.src('app/js-dev/**/*.js')
 		.pipe(order([
-			'sliders/slider-test.js',
+			'plugins/picturefill.js',
 			'**/*.js'
 		]))
 		.pipe(concat('master-js.js'))
