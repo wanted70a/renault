@@ -1,5 +1,24 @@
 .most-read-articles{
 	background-color:$gray;
+	padding-bottom:4.5rem;
+	
+	@include breakpoint(tablet){
+		padding-bottom:1.8rem;
+	}
+
+	@include breakpoint(desktop){
+		padding-bottom:1.8rem;
+	}
+	
+	.container-1{
+		width:100%;
+		display:block;
+	}
+
+	.container-7{
+		width:100%;
+		display:block;
+	}
 
 	@include breakpoint(tablet){
 		.container-1{
@@ -51,11 +70,14 @@
 	&__slider{
 		position:relative;
 		left:auto;
+		width:87.5%;
+		@include breakpoint(mobile){margin:0 auto;}
 		
 		@include breakpoint(tablet){
 			left:4.3rem;
 			width:86%;
 			bottom:2.7rem;
+
 		}
 		
 		@include breakpoint(desktop){
@@ -68,7 +90,7 @@
 
 
 		&__prev{
-			display:inline-block;
+			display:none;
 			background:url('../assets/images/sliders/latest-news/control-left-gray.png') no-repeat;
 			background-size:100% 100%;
 			height:3.2vw;
@@ -94,7 +116,7 @@
 		}
 
 		&__next{
-			display:inline-block;
+			display:none;
 			background:url('../assets/images/sliders/latest-news/control-right-gray.png') no-repeat;
 			background-size:100% 100%;
 			height:3.2vw;
@@ -123,11 +145,33 @@
 	}
 
 	&__slide{
-		float:left;	
-		width:50%;	
+
+		@include breakpoint(mobile){
+			width:50%;
+			margin:0;
+			margin-top:6rem;
+			float:left;
+
+
+			p{
+				font-weight:700;
+				font-size:calculateRem(26);
+				width:85%;
+				letter-spacing:0.04em;
+				margin-top:1.6rem;
+				line-height:1.25;
+			}
+			
+			&:nth-child(even){
+				position:relative;
+				left:0.8rem;
+			}
+
+		}	
 		
 		@include breakpoint(tablet){
 			margin-right:0.8%;
+			float:left;	
 
 			p{
 				margin-top:1.2rem;
@@ -135,11 +179,13 @@
 				font-size:calculateRem(12);
 				letter-spacing: 0.05rem;
 				line-height:1.1;
+				font-weight:700;
+
 			}
 		}
 		
 		@include breakpoint(desktop){
-
+			float:left;	
 			margin-right:0.5%;
 			//width:23%;
 
@@ -154,6 +200,11 @@
 			img{
 				width:100%;
 			}
+		}
+
+		&.no-mobile{
+			display:block;
+			@include breakpoint(mobile){display:none;}
 		}
 	}
 

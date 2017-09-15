@@ -10,6 +10,7 @@ $(window).on('load', function() {
 
 		
 		if($windowWidth > 767){
+			
 			$carousel.slick({
 				slidesToShow: 4,
 	  			slidesToScroll: 1,

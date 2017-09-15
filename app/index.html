@@ -10,6 +10,11 @@
 
 	<link rel="stylesheet" type="text/css" href="css/master-css.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+
+	 <script>
+	    // Picture element HTML5 shiv
+	    document.createElement( "picture" );
+	  </script>
 </head>
 <body>
 	<div class='search-box'>
@@ -210,6 +215,95 @@
 		</div>	
 		
 		<div class='wrapper'>
+			<!-- ARTICLES NEWS DE LA SEMAINE -->
+			<section class='news-de-la-semaine clearfix'>
+				<div class='container-1 clearfix'>
+					<h2>NEWS <span>de la</span> <span>SEMAINE</span></h2>
+					
+					<div class='article article--s article--floated article--spaced fix-top'>
+						<div class='article-img'>
+							<picture>
+							  <source srcset="https://dummyimage.com/235x310/000/fff.jpg" media="(min-width: 1024px)">
+							  <source srcset="https://dummyimage.com/200x264/000/fff.jpg" media="(min-width: 768px)">
+							  <img srcset="https://dummyimage.com/200x264/000/fff.jpg" alt='slide'>
+							</picture>
+							<div class='label label--mo'>
+								<h3>FAN DE VU</h3>
+							</div>
+						</div>
+						<div class='article-body'>
+							<h2 class='title'>Quel statut juridique choisir pour mon entreprise artisanale ? </h2>
+							<p class='description'>
+								Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. 
+							</p>
+						</div>
+					</div>
+
+					<div class='article article--m  article--floated article--spaced'>
+						<div class='article-img'>
+							<picture>
+							  <source srcset="https://dummyimage.com/405x535/000/fff.jpg" media="(min-width: 1024px)">
+							  <source srcset="https://dummyimage.com/200x264/000/fff.jpg" media="(min-width: 768px)">
+							  <img srcset="https://dummyimage.com/200x264/000/fff.jpg" alt='slide'>
+							</picture>
+							<div class='label label--mo'>
+								<h3>FAN DE VU</h3>
+							</div>
+						</div>
+
+						<div class='article-body'>
+							<h2 class='title'>10 idées originales pour gagner de la place dans mon utilitaire.</h2>
+							<p class='description'>
+								Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. Suspendisse id commodo tellus. Phasellus ac cursus elit, ac tincidunt nulla. Duis eget sapien sem. Fusce eu dolor sit amet nunc efficitur
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class='container-2'>
+					<div class='article article--full'>
+						<div class='article-img'>
+							<picture>
+							  <source srcset="https://dummyimage.com/578x473/000/fff.jpg" media="(min-width: 1024px)">
+							  <source srcset="https://dummyimage.com/276x228/000/fff.jpg" media="(min-width: 768px)">
+							  <img srcset="https://dummyimage.com/276x228/000/fff.jpg" alt='slide'>
+							</picture>
+							<div class='label label--mo'>
+								<h3>FAN DE VU</h3>
+							</div>
+						</div>
+
+						<div class='article-body'>
+							<h2 class='title'>10 idées originales pour gagner de la place dans mon utilitaire.</h2>
+							<p class='description'>
+								Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. Suspendisse id commodo tellus. Phasellus ac cursus elit, ac tincidunt nulla. Duis eget sapien sem. Fusce eu dolor sit amet nunc efficitur
+							</p>
+						</div>
+					</div>
+
+					<div class='article-landsc article--full fix-top clearfix'>
+						<div class='article-img img--m padded-r'>
+							<picture>
+							  <source srcset="https://dummyimage.com/320x263/000/fff.jpg" media="(min-width: 1024px)">
+							  <source srcset="https://dummyimage.com/320x263/000/fff.jpg" media="(min-width: 768px)">
+							  <img srcset="https://dummyimage.com/320x263/000/fff.jpg" alt='slide'>
+							</picture>
+							<div class='label label--mo'>
+								<h3>FAN DE VU</h3>
+							</div>
+						</div>
+
+						<div class='article-body body--m'>
+							<h2 class='title'>Comment fabriquer un rangement pour ses outils?</h2>
+							<p class='description'>
+								Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. 
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
 			<!-- QUIZ SECTION -->
 			<section class='start-quiz'>
 				<div class='start-quiz__banner'>
@@ -248,14 +342,16 @@
 					</div>
 				</div>
 			</section>
+
+
 		</div>
 
-		
+		<div class='separator short margin'></div>	
 		<!-- MOST READ ARTICLES SLIDER -->
-		<section class='row most-read-articles'>	
+		<section class='row most-read-articles'>
 			<div class='wrapper clearfix'>
 				<div class='container-1'>
-					<h2 class='most-read-articles__title'>les PLUS LUS</h2>
+					<h2 class='section-title most-read'><span class='cursive'>les</span>PLUS <span class='bold-text'>LUS</span></h2>
 				</div>
 
 				<div class='container-7'>
@@ -264,29 +360,45 @@
 					<div class='most-read-articles__slider__next'></div>
 
 					<!-- SLIDER -->
-					<div class='most-read-articles__slider'>
+					<div class='most-read-articles__slider clearfix'>
 						<div class='most-read-articles__slide'>
-							<img src="https://dummyimage.com/234x192/000/fff" alt='slide'>
+							<picture>
+							  <source srcset="https://dummyimage.com/234x192/000/fff.jpg" media="(min-width: 768px)">
+							  <img srcset="https://dummyimage.com/272x222/000/fff.jpg" alt='slide'>
+							</picture>
+
 							<p>Renault Véhicule utilitaire propose un système de motricité sur terrain instable</p>
 						</div>
 
 						<div class='most-read-articles__slide'>
-							<img src="https://dummyimage.com/234x192/000/fff" alt='slide'>
+							<picture>
+							  <source srcset="https://dummyimage.com/234x192/000/fff.jpg" media="(min-width: 768px)">
+							  <img srcset="https://dummyimage.com/272x222/000/fff.jpg" alt='slide'>
+							</picture>
 							<p>Renault Véhicule utilitaire propose un système de motricité sur terrain instable</p>
 						</div>
 
 						<div class='most-read-articles__slide'>
-							<img src="https://dummyimage.com/234x192/000/fff" alt='slide'>
+							<picture>
+							  <source srcset="https://dummyimage.com/234x192/000/fff.jpg" media="(min-width: 768px)">
+							  <img srcset="https://dummyimage.com/272x222/000/fff.jpg" alt='slide'>
+							</picture>
 							<p>Renault Véhicule utilitaire propose un système de motricité sur terrain instable</p>
 						</div>
 
 						<div class='most-read-articles__slide'>
-							<img src="https://dummyimage.com/234x192/000/fff" alt='slide'>
+							<picture>
+							  <source srcset="https://dummyimage.com/234x192/000/fff.jpg" media="(min-width: 768px)">
+							  <img srcset="https://dummyimage.com/272x222/000/fff.jpg" alt='slide'>
+							</picture>
 							<p>Renault Véhicule utilitaire propose un système de motricité sur terrain instable</p>
 						</div>
 
-						<div class='most-read-articles__slide'>
-							<img src="https://dummyimage.com/234x192/000/fff" alt='slide'>
+						<div class='most-read-articles__slide no-mobile'>
+							<picture>
+							  <source srcset="https://dummyimage.com/234x192/000/fff.jpg" media="(min-width: 768px)">
+							  <img srcset="https://dummyimage.com/272x222/000/fff.jpg" alt='slide'>
+							</picture>
 							<p>Renault Véhicule utilitaire propose un système de motricité sur terrain instable</p>
 						</div>
 

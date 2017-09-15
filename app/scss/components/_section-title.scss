@@ -1,0 +1,66 @@
+.section-title{
+	font-size:calculateRem(40);
+	letter-spacing:0.05em;
+	
+	&.most-read{
+		padding-top:5.2rem;
+		padding-left:6.9%;
+	}
+
+	&.semaine{
+		padding-top:0rem;
+		padding-left:0%;
+	}
+
+	.cursive{
+		font-family: Airways;
+		font-size: calculateRem(50);
+		letter-spacing:0em;
+		margin-right:1.7rem;
+		position:relative;
+		top:-0.4rem;
+	}
+
+	.bold-text{
+		letter-spacing:0em;
+		font-size:calculateRem(45);
+		font-weight:900;
+
+	}
+
+	@include breakpoint(tablet){
+		font-size:calculateRem(18);
+
+		&.most-read{
+			padding-top:3.2rem;
+			padding-left:3%;
+		}
+
+		.bold-text{
+			display:block;
+			font-size:calculateRem(18);
+		}
+
+		.cursive{
+			font-size:calculateRem(18);
+			margin-right:auto;
+		}
+	}
+
+	@include breakpoint(desktop){
+		font-size:calculateRem(30);
+
+		&.most-read{
+			padding-top:6.2rem;
+		}
+		
+
+		.bold-text{
+			font-size:calculateRem(32);
+		}
+
+		.cursive{
+			font-size:calculateRem(30);
+		}
+	}
+}

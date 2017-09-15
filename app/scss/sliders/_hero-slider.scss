@@ -78,7 +78,7 @@
 
 	&__counter{
 		position:absolute;
-		z-index:1000;
+		z-index:800;
 		color:$white;
 		@include fontSize(25,12,22);
 		letter-spacing:0em;
