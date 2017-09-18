@@ -6,7 +6,18 @@
 		position:absolute;
 		bottom:0;
 		left:0;
-		padding:1.6rem 2.5rem;
+		padding:1.4rem 2.5rem;
+
+
+		@include breakpoint(tablet){
+			padding:0.9rem 1.9rem;
+
+		}
+
+		@include breakpoint(desktop){ 
+			padding:1.5rem 2.5rem;
+		}
+
 		
 		h3{
 			@include fontSize(12, 8, 12);

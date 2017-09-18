@@ -1,0 +1,71 @@
+.fan-de-vu{
+	
+	.container-1{
+		margin:0 auto;
+		background-color:$gray;
+
+		@include breakpoint(tablet){ 
+			
+
+		}
+
+		@include breakpoint(desktop){ 
+			
+
+		}
+
+		.inner{
+			margin:0 auto;
+			width: 87.352%;
+			padding-top: 6.1rem;
+			padding-bottom:15rem;
+
+			@include breakpoint(tablet){ 
+				width: 87.352%;
+				padding-top: 5rem;
+				padding-bottom:7rem;
+			}
+
+			@include breakpoint(desktop){ 
+				width: 87.352%;
+				padding-top: 9.6rem;
+				padding-bottom:13.5rem;
+			}
+		}
+	}
+
+
+	.container-2{
+			position:relative;
+			margin:0 auto;
+			width: 87.352%;
+			top:-8rem;
+			
+
+			@include breakpoint(tablet){ 
+				width: 87.352%;
+				top:-3.4rem;
+				
+			}
+
+			@include breakpoint(desktop){ 
+				width: 87.352%;
+				top:-6rem;
+			}
+
+			.inner{
+				float:right;
+				width:100%;
+
+				@include breakpoint(tablet){ 
+					width: 80%;
+					
+				}
+
+				@include breakpoint(desktop){ 
+					width: 85.436%;
+					
+				}
+			}
+	}
+}

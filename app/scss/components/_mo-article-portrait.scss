@@ -1,11 +1,40 @@
 .article{
 	
 	&.article--s{
-		width:33.909%;
+		width:38.796%;
+
+		@include breakpoint(tablet){
+			width:46.117% ;
+		}
+
+		@include breakpoint(desktop){
+			width:38.796%;
+		}
+	}
+
+	&.article--s-equal{
+		width:50%;
+		
+
+		@include breakpoint(tablet){
+			width:33.333% ;
+		}
+
+		@include breakpoint(desktop){
+			width:33.333%;
+		}
 	}
 
 	&.article--m{
-		width:59.091%;
+		width:61.204%;
+
+		@include breakpoint(tablet){
+			width:53.883%;
+		}
+
+		@include breakpoint(desktop){
+			width:61.204%;
+		}
 	}
 
 	&.article--full{
@@ -13,15 +42,43 @@
 	}
 
 	&.fix-top{
-		margin-top:33%;
+		margin-top:34%;
+
+		@include breakpoint(tablet){
+			margin-top:14.9%;
+		}
+
+		@include breakpoint(desktop){
+			margin-top:34.1%;
+		}
 	}
 
 	&.article--center{
 		margin:0 auto;
 	}
 
-	&.article--spaced{
-		margin-right:3.5%;
+	&.article--padded-r{
+		padding-right:3.5%;
+
+		@include breakpoint(tablet){
+
+		}
+
+		@include breakpoint(desktop){
+			
+		}
+	}
+
+	&.article--padded-r-desktop{
+		padding-right:0%;
+
+		@include breakpoint(tablet){
+			padding-right:0%;
+		}
+
+		@include breakpoint(desktop){
+			padding-right:3%;
+		}
 	}
 	
 	&.article--floated{
@@ -43,16 +100,26 @@
 			@include fontSize(28, 14, 18);
 			font-weight:900;
 			letter-spacing: 0.05em;
+			margin-top:1.4rem;
+			line-height: 1.14;
+
+			@include breakpoint(tablet){
+				margin-top:1.3rem;
+				line-height: 1.4;
+			}
 
 			@include breakpoint(desktop){
 				margin-top:3.1rem;
 				line-height: 1.4;
+				margin-top:3rem;
 			}
 		}
 
 		.description{
 			display: none;
 			color:$light-gray;
+			margin-top:2.1rem;
+
 			@include breakpoint(desktop){
 				margin-top:2.1rem;
 				display: block;
@@ -62,4 +129,5 @@
 			}
 		}
 	}
+
 }

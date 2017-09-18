@@ -1,0 +1,67 @@
+.news-de-la-semaine{
+	//margin:50px 0;//testing parametar
+	position: relative;
+	padding-top:4rem;
+	padding-bottom:6rem;
+	width:87.5%;
+	margin:0 auto;
+	//top:2.5rem;
+	
+	@include breakpoint(tablet){
+		padding-top:2.8rem;
+		padding-bottom:5.3rem;
+		width:100%;
+		margin:0 auto;
+		//top:3.5rem;
+	}
+
+	@include breakpoint(desktop){
+		position: relative;
+		padding-top:7.5rem;
+		padding-bottom:6rem;
+		width:93.639%;
+		margin:0;
+		//top:2.5rem;
+	}
+
+	.container-1{
+		display:block;
+		float:none;
+		padding-right:0;
+		padding-right:0;
+
+		@include breakpoint(tablet){
+			padding-top:13.2%;
+			width:57.450%;
+			float:left;
+			padding-right:2%;
+		}
+
+		@include breakpoint(desktop){
+			padding-top:13.1%;
+			padding-right:2%;
+			width:54.344%;
+			float:left;
+		}
+
+	}
+
+	.container-2{
+		display:block;
+		float:none;
+		padding-top:8.5rem;
+
+		@include breakpoint(tablet){
+			width:42.550%;
+			float:left;
+			padding-top:0;
+		}
+		
+		@include breakpoint(desktop){
+			width:45.656%;
+			float:left;
+			padding-top:0;
+		}
+	}
+
+}

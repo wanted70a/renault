@@ -19,18 +19,34 @@
 		padding:1rem 2.8rem;
 		//margin-bottom:1.8rem;
 	}
+
+	&.btn--center{
+		margin:0 auto;
+		//margin-top:60px;//PROPERI ZA TESTIRANJE
+	}
 	
 	&.btn--s{
 		font-size:calculateRem(12);//yellow quiz on articles
 		padding:1.7rem 3rem;
 	}
-	
-	&.btn--center{
-		margin:0 auto;
-		//margin-top:60px;//PROPERI ZA TESTIRANJE
+
+	&.btn--m{
+		//pluse de news - news semaine
+		@include fontSize(15, 10.8, 12);
+		margin-top:1rem;
+		padding:2rem 2rem;
+
+		@include breakpoint(tablet){
+			margin-top:0rem;
+		}
+
+		@include breakpoint(desktop){ 
+			margin-top:1rem;
+			padding:2rem 2rem;
+		}
+
 	}
-
-
+	
 	&.btn--shdw{
 		box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
 	}
