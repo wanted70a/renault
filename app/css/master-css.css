@@ -365,7 +365,7 @@ body {
   .fan-de-vu .container-1 .inner {
     margin: 0 auto;
     width: 87.352%;
-    padding-top: 6.1rem;
+    padding-top: 6.3rem;
     padding-bottom: 15rem; }
     @media screen and (min-width: 768px) {
       .fan-de-vu .container-1 .inner {
@@ -393,13 +393,125 @@ body {
       top: -6rem; } }
   .fan-de-vu .container-2 .inner {
     float: right;
-    width: 100%; }
+    width: 100%;
+    position: relative; }
     @media screen and (min-width: 768px) {
       .fan-de-vu .container-2 .inner {
-        width: 80%; } }
+        width: 87.383%;
+        left: 1.8%;
+        top: 0.2rem; } }
     @media screen and (min-width: 1024px) {
       .fan-de-vu .container-2 .inner {
-        width: 85.436%; } }
+        width: 87.383%;
+        left: 1.8%;
+        top: -0.5rem; } }
+
+.vu-astuces .separator {
+  position: absolute;
+  height: 1px;
+  background-color: #f6f6f6;
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .vu-astuces .separator {
+      display: block;
+      top: 0.8rem;
+      left: -4rem; } }
+  @media screen and (min-width: 1024px) {
+    .vu-astuces .separator {
+      top: 4.3rem;
+      left: 0;
+      display: block; } }
+
+.vu-astuces .inner {
+  padding-left: 0;
+  width: 87.352%;
+  margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .vu-astuces .inner {
+      width: 100%;
+      padding-left: 0; } }
+  @media screen and (min-width: 1024px) {
+    .vu-astuces .inner {
+      padding-left: 6.333%;
+      margin: 0; } }
+  .vu-astuces .inner .container-1 {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 7.1rem;
+    padding-top: 0rem; }
+    @media screen and (min-width: 768px) {
+      .vu-astuces .inner .container-1 {
+        margin-bottom: 0;
+        float: left;
+        width: 57.230%;
+        padding-top: 3rem;
+        padding-right: 1.8%; } }
+    @media screen and (min-width: 1024px) {
+      .vu-astuces .inner .container-1 {
+        width: 54.344%;
+        float: left;
+        padding-right: 1.8%;
+        padding-top: 9rem; } }
+  .vu-astuces .inner .container-2 {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 8.3rem; }
+    @media screen and (min-width: 768px) {
+      .vu-astuces .inner .container-2 {
+        float: left;
+        width: 42.770%;
+        margin-bottom: 0rem; } }
+    @media screen and (min-width: 1024px) {
+      .vu-astuces .inner .container-2 {
+        width: 45.656%;
+        float: left; } }
+  .vu-astuces .inner .container-3 {
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .vu-astuces .inner .container-3 {
+        width: 55.527%;
+        left: 31.8%;
+        top: -6.3rem; } }
+    @media screen and (min-width: 1024px) {
+      .vu-astuces .inner .container-3 {
+        width: 52.527%;
+        left: 27.2%;
+        top: -5.3rem; } }
+
+.foire-aux-questions {
+  position: relative;
+  border-top: 1px solid #f6f6f6; }
+  .foire-aux-questions .inner {
+    background-color: #f6f6f6;
+    position: relative;
+    min-height: 51.7rem; }
+    @media screen and (min-width: 768px) {
+      .foire-aux-questions .inner {
+        min-height: 20.4rem;
+        width: 100%; } }
+    @media screen and (min-width: 1024px) {
+      .foire-aux-questions .inner {
+        min-height: 39.7rem;
+        width: 93.703%; } }
+  .foire-aux-questions .foire-aux-questions-slider {
+    width: 67.193%;
+    position: absolute;
+    left: 20.45%;
+    top: -23.3%; }
+    @media screen and (min-width: 768px) {
+      .foire-aux-questions .foire-aux-questions-slider {
+        width: 69.230%;
+        position: absolute;
+        left: 19.2%;
+        top: -44%; } }
+    @media screen and (min-width: 1024px) {
+      .foire-aux-questions .foire-aux-questions-slider {
+        width: 67.193%;
+        position: absolute;
+        left: 20.45%;
+        top: -23.3%; } }
 
 .box {
   width: 100%;
@@ -989,13 +1101,34 @@ body {
       width: 38.796%; } }
 
 .article.article--s-equal {
-  width: 50%; }
+  width: 50%;
+  padding-right: 2%; }
   @media screen and (min-width: 768px) {
     .article.article--s-equal {
-      width: 33.333%; } }
+      width: 33.333%;
+      padding-right: 2%; } }
   @media screen and (min-width: 1024px) {
     .article.article--s-equal {
-      width: 33.333%; } }
+      width: 33.333%;
+      padding-right: 2%; } }
+
+.article.article--vu-l {
+  width: 51%; }
+  @media screen and (min-width: 768px) {
+    .article.article--vu-l {
+      width: 57.500%; } }
+  @media screen and (min-width: 1024px) {
+    .article.article--vu-l {
+      width: 51.879%; } }
+
+.article.article--vu-m {
+  width: 49%; }
+  @media screen and (min-width: 768px) {
+    .article.article--vu-m {
+      width: 42.500%; } }
+  @media screen and (min-width: 1024px) {
+    .article.article--vu-m {
+      width: 48.121%; } }
 
 .article.article--m {
   width: 61.204%; }
@@ -1010,7 +1143,7 @@ body {
   width: 100%; }
 
 .article.fix-top {
-  margin-top: 34%; }
+  margin-top: 32.2%; }
   @media screen and (min-width: 768px) {
     .article.fix-top {
       margin-top: 14.9%; } }
@@ -1022,7 +1155,13 @@ body {
   margin: 0 auto; }
 
 .article.article--padded-r {
-  padding-right: 3.5%; }
+  padding-right: 2%; }
+  @media screen and (min-width: 768px) {
+    .article.article--padded-r {
+      padding-right: 3.5%; } }
+  @media screen and (min-width: 1024px) {
+    .article.article--padded-r {
+      padding-right: 3.5%; } }
 
 .article.article--padded-r-desktop {
   padding-right: 0%; }
@@ -1178,6 +1317,8 @@ body {
   background-color: #ffffff; }
   .article-land-to-port.article--shdw {
     box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.5); }
+  .article-land-to-port .article--shdw {
+    box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.5); }
   .article-land-to-port.article--full {
     width: 100%; }
   .article-land-to-port .article-body {
@@ -1203,10 +1344,10 @@ body {
       width: 49.215%; }
       @media screen and (min-width: 768px) {
         .article-land-to-port .article-body.body--m {
-          width: 40.518%; } }
+          width: 38.5%; } }
       @media screen and (min-width: 1024px) {
         .article-land-to-port .article-body.body--m {
-          width: 40.518%; } }
+          width: 42.353%; } }
     .article-land-to-port .article-body .title {
       font-weight: 900;
       letter-spacing: 0.05em;
@@ -1262,10 +1403,10 @@ body {
       width: 50.785%; }
       @media screen and (min-width: 768px) {
         .article-land-to-port .article-img.img--m {
-          width: 59.482%; } }
+          width: 61.5%; } }
       @media screen and (min-width: 1024px) {
         .article-land-to-port .article-img.img--m {
-          width: 59.482%; } }
+          width: 57.647%; } }
     .article-land-to-port .article-img.img--l {
       width: 100%; }
       @media screen and (min-width: 768px) {
@@ -1502,7 +1643,7 @@ body {
 .news-de-la-semaine .section-title {
   position: absolute;
   font-weight: 900;
-  top: 4%; }
+  top: 3.8%; }
   @media screen and (max-width: 767px) {
     .news-de-la-semaine .section-title {
       font-size: 4.5rem; } }
@@ -1570,60 +1711,207 @@ body {
     .news-de-la-semaine .article-landsc .title {
       width: 100%; } }
 
-.fan-de-vu .section-title {
+.fan-de-vu {
+  margin-top: 9.8rem; }
+  @media screen and (min-width: 768px) {
+    .fan-de-vu {
+      margin-top: 6.5rem; } }
+  @media screen and (min-width: 1024px) {
+    .fan-de-vu {
+      margin-top: 12.2rem; } }
+  .fan-de-vu .section-title {
+    letter-spacing: 0.05em; }
+    @media screen and (max-width: 767px) {
+      .fan-de-vu .section-title {
+        font-size: 4.5rem; } }
+    @media screen and (min-width: 768px) {
+      .fan-de-vu .section-title {
+        font-size: 2rem; } }
+    @media screen and (min-width: 1024px) {
+      .fan-de-vu .section-title {
+        font-size: 3rem; } }
+    .fan-de-vu .section-title .subTitle-1 {
+      letter-spacing: 0em;
+      font-weight: 400;
+      font-family: Airways; }
+      @media screen and (max-width: 767px) {
+        .fan-de-vu .section-title .subTitle-1 {
+          font-size: 5rem; } }
+      @media screen and (min-width: 768px) {
+        .fan-de-vu .section-title .subTitle-1 {
+          font-size: 2rem; } }
+      @media screen and (min-width: 1024px) {
+        .fan-de-vu .section-title .subTitle-1 {
+          font-size: 3rem; } }
+    .fan-de-vu .section-title .subTitle-2 {
+      letter-spacing: 0em;
+      font-weight: 900; }
+      @media screen and (max-width: 767px) {
+        .fan-de-vu .section-title .subTitle-2 {
+          font-size: 4rem; } }
+      @media screen and (min-width: 768px) {
+        .fan-de-vu .section-title .subTitle-2 {
+          font-size: 2rem; } }
+      @media screen and (min-width: 1024px) {
+        .fan-de-vu .section-title .subTitle-2 {
+          font-size: 3.2rem; } }
+  .fan-de-vu .container-1 .inner:nth-child(1) .article-body {
+    padding-left: 9%;
+    padding-right: 8%;
+    padding-top: 4rem;
+    padding-bottom: 6.5rem; }
+    @media screen and (min-width: 768px) {
+      .fan-de-vu .container-1 .inner:nth-child(1) .article-body {
+        padding-left: 7.5%;
+        padding-right: 2%;
+        padding-top: 3.3rem;
+        padding-bottom: 2rem; } }
+    @media screen and (min-width: 1024px) {
+      .fan-de-vu .container-1 .inner:nth-child(1) .article-body {
+        padding-left: 7.5%;
+        padding-right: 5%;
+        padding-top: 5rem;
+        padding-bottom: 8rem; } }
+  @media screen and (max-width: 767px) {
+    .fan-de-vu .container-2 .inner .article:nth-child(2) {
+      position: relative;
+      left: 1rem; } }
+  @media screen and (max-width: 767px) {
+    .fan-de-vu .container-2 .inner .article:nth-child(3) {
+      margin-top: 10rem; } }
+  .fan-de-vu .container-2 .inner .article .title {
+    margin-top: 1.7rem; }
+    @media screen and (min-width: 768px) {
+      .fan-de-vu .container-2 .inner .article .title {
+        margin-top: 1rem; } }
+    @media screen and (min-width: 1024px) {
+      .fan-de-vu .container-2 .inner .article .title {
+        margin-top: 1.9rem; } }
+
+.vu-astuces {
+  margin-top: 1.8rem;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .vu-astuces {
+      margin-top: 2.7rem; } }
+  @media screen and (min-width: 1024px) {
+    .vu-astuces {
+      margin-top: 8.2rem; } }
+  .vu-astuces .section-title {
+    font-weight: 900;
+    margin-bottom: 4.4rem; }
+    @media screen and (max-width: 767px) {
+      .vu-astuces .section-title {
+        font-size: 4.5rem; } }
+    @media screen and (min-width: 768px) {
+      .vu-astuces .section-title {
+        font-size: 2rem; } }
+    @media screen and (min-width: 1024px) {
+      .vu-astuces .section-title {
+        font-size: 3.2rem; } }
+    @media screen and (min-width: 768px) {
+      .vu-astuces .section-title {
+        margin-bottom: 3.3rem; } }
+    @media screen and (min-width: 1024px) {
+      .vu-astuces .section-title {
+        margin-bottom: 6rem; } }
+    .vu-astuces .section-title .subTitle {
+      letter-spacing: 0em;
+      font-weight: 400;
+      font-family: Airways;
+      display: inline; }
+      @media screen and (max-width: 767px) {
+        .vu-astuces .section-title .subTitle {
+          font-size: 5rem; } }
+      @media screen and (min-width: 768px) {
+        .vu-astuces .section-title .subTitle {
+          font-size: 2rem; } }
+      @media screen and (min-width: 1024px) {
+        .vu-astuces .section-title .subTitle {
+          font-size: 3rem; } }
+      @media screen and (min-width: 768px) {
+        .vu-astuces .section-title .subTitle {
+          display: inline; } }
+      @media screen and (min-width: 1024px) {
+        .vu-astuces .section-title .subTitle {
+          display: inline; } }
+    .vu-astuces .section-title .subTitle-2 {
+      letter-spacing: 0.05em;
+      font-weight: 400;
+      display: block; }
+      @media screen and (max-width: 767px) {
+        .vu-astuces .section-title .subTitle-2 {
+          font-size: 4rem; } }
+      @media screen and (min-width: 768px) {
+        .vu-astuces .section-title .subTitle-2 {
+          font-size: 2rem; } }
+      @media screen and (min-width: 1024px) {
+        .vu-astuces .section-title .subTitle-2 {
+          font-size: 3rem; } }
+  @media screen and (min-width: 768px) {
+    .vu-astuces .container-3 .article:nth-child(1) {
+      width: 46.111%; } }
+  @media screen and (min-width: 1024px) {
+    .vu-astuces .container-3 .article:nth-child(1) {
+      width: 51.879%; } }
+  @media screen and (min-width: 768px) {
+    .vu-astuces .container-3 .article:nth-child(2) {
+      width: 53.889%; } }
+  @media screen and (min-width: 1024px) {
+    .vu-astuces .container-3 .article:nth-child(2) {
+      width: 48.121%; } }
+  @media screen and (min-width: 768px) {
+    .vu-astuces .article .title {
+      margin-top: 0.8rem; } }
+  @media screen and (min-width: 1024px) {
+    .vu-astuces .article .title {
+      margin-top: 2.5rem; } }
+
+.foire-aux-questions .section-title {
   letter-spacing: 0.05em; }
   @media screen and (max-width: 767px) {
-    .fan-de-vu .section-title {
+    .foire-aux-questions .section-title {
       font-size: 4.5rem; } }
   @media screen and (min-width: 768px) {
-    .fan-de-vu .section-title {
+    .foire-aux-questions .section-title {
       font-size: 2rem; } }
   @media screen and (min-width: 1024px) {
-    .fan-de-vu .section-title {
+    .foire-aux-questions .section-title {
       font-size: 3rem; } }
-  .fan-de-vu .section-title .subTitle-1 {
+  @media screen and (min-width: 1024px) {
+    .foire-aux-questions .section-title {
+      margin-bottom: 2.5rem; } }
+  .foire-aux-questions .section-title .subTitle-1 {
     letter-spacing: 0em;
     font-weight: 400;
     font-family: Airways; }
     @media screen and (max-width: 767px) {
-      .fan-de-vu .section-title .subTitle-1 {
+      .foire-aux-questions .section-title .subTitle-1 {
         font-size: 5rem; } }
     @media screen and (min-width: 768px) {
-      .fan-de-vu .section-title .subTitle-1 {
+      .foire-aux-questions .section-title .subTitle-1 {
         font-size: 2rem; } }
     @media screen and (min-width: 1024px) {
-      .fan-de-vu .section-title .subTitle-1 {
+      .foire-aux-questions .section-title .subTitle-1 {
         font-size: 3rem; } }
-  .fan-de-vu .section-title .subTitle-2 {
+  .foire-aux-questions .section-title .subTitle-2 {
     letter-spacing: 0em;
-    font-weight: 900; }
+    font-weight: 900;
+    display: block; }
     @media screen and (max-width: 767px) {
-      .fan-de-vu .section-title .subTitle-2 {
+      .foire-aux-questions .section-title .subTitle-2 {
         font-size: 4rem; } }
     @media screen and (min-width: 768px) {
-      .fan-de-vu .section-title .subTitle-2 {
+      .foire-aux-questions .section-title .subTitle-2 {
         font-size: 2rem; } }
     @media screen and (min-width: 1024px) {
-      .fan-de-vu .section-title .subTitle-2 {
+      .foire-aux-questions .section-title .subTitle-2 {
         font-size: 3.2rem; } }
 
-.fan-de-vu .container-1 .inner:nth-child(1) .article-body {
-  padding-left: 9%;
-  padding-right: 2%;
-  padding-top: 4rem;
-  padding-bottom: 6.5rem; }
-  @media screen and (min-width: 768px) {
-    .fan-de-vu .container-1 .inner:nth-child(1) .article-body {
-      padding-left: 7.5%;
-      padding-right: 2%;
-      padding-top: 3.3rem;
-      padding-bottom: 2rem; } }
-  @media screen and (min-width: 1024px) {
-    .fan-de-vu .container-1 .inner:nth-child(1) .article-body {
-      padding-left: 7.5%;
-      padding-right: 5%;
-      padding-top: 5rem;
-      padding-bottom: 8rem; } }
+.foire-aux-questions .article-land-to-port {
+  background-color: transparent; }
+  .foire-aux-questions .article-land-to-port .article-body {
+    background-color: transparent; }
 
 .hero-slider {
   position: relative;

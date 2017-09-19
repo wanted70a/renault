@@ -1,0 +1,51 @@
+.foire-aux-questions{
+	
+	position:relative;
+	border-top:1px solid $gray;
+	@include breakpoint(tablet){ 
+		
+	 }
+
+	@include breakpoint(desktop){ 
+		
+	}
+
+	.inner{
+		
+		background-color: $gray;
+		position:relative;
+		min-height:calculateRem(517);
+
+		@include breakpoint(tablet){ 
+			min-height:calculateRem(204);
+			width:100%;
+		 }
+
+		@include breakpoint(desktop){ 
+			min-height:calculateRem(397);
+			width:93.703%; 
+		}
+	}
+
+	.foire-aux-questions-slider{
+		width:67.193%;
+		position:absolute;
+		left:20.45%;
+		top:-23.3%;
+
+		@include breakpoint(tablet){ 
+			width:69.230%;
+			position:absolute;
+			left:19.2%;
+			top:-44%;
+		}
+
+		@include breakpoint(desktop){ 
+			width:67.193%;
+			position:absolute;
+			left:20.45%;
+			top:-23.3%;
+		}
+	}
+
+}

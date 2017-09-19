@@ -14,16 +14,47 @@
 
 	&.article--s-equal{
 		width:50%;
+		padding-right:2%;
 		
 
 		@include breakpoint(tablet){
-			width:33.333% ;
+			width:33.333%;
+			padding-right:2%;
 		}
 
 		@include breakpoint(desktop){
 			width:33.333%;
+			padding-right:2%;
 		}
 	}
+
+	&.article--vu-l{
+			width:51%;
+		@include breakpoint(tablet){
+			width:57.500%;
+		}
+
+		@include breakpoint(desktop){
+			width:51.879%;
+			
+		}
+	}
+
+	&.article--vu-m{
+		width:49%;
+		
+		@include breakpoint(tablet){
+			width:42.500%;
+			
+		}
+
+		@include breakpoint(desktop){
+			width:48.121%;
+			
+		}
+	}
+
+
 
 	&.article--m{
 		width:61.204%;
@@ -42,7 +73,7 @@
 	}
 
 	&.fix-top{
-		margin-top:34%;
+		margin-top:32.2%;
 
 		@include breakpoint(tablet){
 			margin-top:14.9%;
@@ -58,14 +89,14 @@
 	}
 
 	&.article--padded-r{
-		padding-right:3.5%;
+		padding-right:2%;
 
 		@include breakpoint(tablet){
-
+			padding-right:3.5%;
 		}
 
 		@include breakpoint(desktop){
-			
+			padding-right:3.5%;
 		}
 	}
 

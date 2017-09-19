@@ -1,0 +1,95 @@
+.vu-astuces{
+	.separator{
+		position:absolute;
+		height:1px;
+		background-color: $gray;
+		display: none;
+
+		@include breakpoint(tablet){ 
+			display: block;
+			top:0.8rem;
+			left:-4rem;
+		}
+
+		@include breakpoint(desktop){ 
+			top:4.3rem;
+			left:0;
+			display: block;
+		}
+	}
+
+	.inner{
+		padding-left:0;
+		width:87.352%;
+		margin:0 auto;
+	
+			@include breakpoint(tablet){ 
+				width:100%;
+				padding-left:0;
+			}
+
+			@include breakpoint(desktop){ 
+				padding-left:6.333%;
+				margin:0;
+			}
+
+		.container-1{
+			float:none;
+			display:block;
+			width:100%;
+			margin-bottom:7.1rem;
+			padding-top:0rem;
+
+			@include breakpoint(tablet){ 
+				margin-bottom:0;
+				float:left;
+				width:57.230%;
+				padding-top:3rem;
+				padding-right:1.8%;
+			}
+
+			@include breakpoint(desktop){ 
+				width:54.344%;
+				float:left;
+				padding-right:1.8%;
+				padding-top:9rem;
+			}
+		}
+
+		.container-2{
+			float:none;
+			display:block;
+			width:100%;
+			margin-bottom:8.3rem;
+			
+			@include breakpoint(tablet){ 
+				float:left;
+				width:42.770%;
+				margin-bottom:0rem;
+			}
+
+			@include breakpoint(desktop){ 
+				width:45.656%;
+				float:left;
+			}
+
+		}
+
+		.container-3{
+			position: relative;
+
+			@include breakpoint(tablet){ 
+				width:55.527%;
+				left:31.8%;
+				top:-6.3rem;
+			}
+
+			@include breakpoint(desktop){ 
+				width:52.527%;
+				left:27.2%;
+				top:-5.3rem;
+			}
+		}
+	}
+	
+}
