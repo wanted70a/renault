@@ -1,0 +1,102 @@
+.page-not-found{
+	margin:0 auto;
+	width:91%;
+	padding-top:13rem;
+	
+	@include breakpoint(tablet){
+		margin:0 auto;
+		width:88.5%;
+		padding-top:13.6rem;
+	}
+
+	@include breakpoint(desktop){
+		margin:0 auto;
+		width:69.5%;	
+		padding-top:0;	
+	}
+
+	.inner{
+		position:relative;
+		
+			@include breakpoint(tablet){
+				
+			}
+
+			@include breakpoint(desktop){
+				margin-top:0;
+				top:auto;
+				left:auto;
+			}
+
+		.breadcrumbs{
+		
+			@include breakpoint(tablet){
+				
+			}
+
+			@include breakpoint(desktop){
+				padding-top:4.5rem;	
+			}
+
+			span{
+				margin:0;
+				//margin-right:0rem; 
+				margin-left:0.5em; 
+			}
+
+		}
+
+		.not-found-img{
+			position:relative;
+			left:1%;
+
+			@include breakpoint(tablet){
+				left:0%;
+			}
+
+			@include breakpoint(desktop){
+				position: relative;
+				margin-top:15.3rem;
+				left:1%;	
+		
+			}
+
+		}
+
+		.btn--page-not-found{
+			position:relative;
+			@include fontSize(21.12,12,12);
+			letter-spacing: 0.05em;
+			margin-top:13rem;
+			padding:3.2rem 6.2rem;
+
+
+			@include breakpoint(tablet){
+				margin-top:10.5rem;
+				padding:1.9rem 2.2rem;
+				letter-spacing: 0.1em;
+				
+			}
+
+			@include breakpoint(desktop){
+				margin-top:8.8rem;
+				padding:2rem 2.3rem;
+				letter-spacing: 0.1em;	
+			}
+		}
+	}
+}
+
+.footer-404{
+	padding-top:17rem;
+
+	@include breakpoint(tablet){
+		padding-top:14.5rem;
+		
+	}
+
+	@include breakpoint(desktop){
+		padding-top:12.5rem;
+	}
+}
+

@@ -1,0 +1,14 @@
+.breadcrumbs{
+	@include fontSize(14,14,14);
+	letter-spacing:0.05em;
+	display:none;
+	line-height:1.285;
+
+	@include breakpoint(tablet){
+		display:none;	
+	}
+
+	@include breakpoint(desktop){
+		display:block;	
+	}
+}

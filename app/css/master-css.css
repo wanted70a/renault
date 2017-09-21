@@ -1014,7 +1014,7 @@ body {
         margin-top: 1rem;
         padding: 2rem 2rem; } }
   .btn.btn--shdw {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0px 12px 60px 2px rgba(0, 0, 0, 0.3); }
   .btn.btn--white-black {
     background-color: #ffffff;
     color: #000000; }
@@ -1799,6 +1799,26 @@ body {
       .footer__link {
         font-size: 1rem; } }
 
+.breadcrumbs {
+  letter-spacing: 0.05em;
+  display: none;
+  line-height: 1.285; }
+  @media screen and (max-width: 767px) {
+    .breadcrumbs {
+      font-size: 1.4rem; } }
+  @media screen and (min-width: 768px) {
+    .breadcrumbs {
+      font-size: 1.4rem; } }
+  @media screen and (min-width: 1024px) {
+    .breadcrumbs {
+      font-size: 1.4rem; } }
+  @media screen and (min-width: 768px) {
+    .breadcrumbs {
+      display: none; } }
+  @media screen and (min-width: 1024px) {
+    .breadcrumbs {
+      display: block; } }
+
 .news-de-la-semaine .section-title {
   position: absolute;
   font-weight: 900;
@@ -2180,6 +2200,173 @@ body {
   @media screen and (min-width: 1024px) {
     .business .article .article-body .description {
       margin-top: 1.5rem; } }
+
+.page-not-found {
+  margin: 0 auto;
+  width: 91%;
+  padding-top: 13rem; }
+  @media screen and (min-width: 768px) {
+    .page-not-found {
+      margin: 0 auto;
+      width: 88.5%;
+      padding-top: 13.6rem; } }
+  @media screen and (min-width: 1024px) {
+    .page-not-found {
+      margin: 0 auto;
+      width: 69.5%;
+      padding-top: 0; } }
+  .page-not-found .inner {
+    position: relative; }
+    @media screen and (min-width: 1024px) {
+      .page-not-found .inner {
+        margin-top: 0;
+        top: auto;
+        left: auto; } }
+    @media screen and (min-width: 1024px) {
+      .page-not-found .inner .breadcrumbs {
+        padding-top: 4.5rem; } }
+    .page-not-found .inner .breadcrumbs span {
+      margin: 0;
+      margin-left: 0.5em; }
+    .page-not-found .inner .not-found-img {
+      position: relative;
+      left: 1%; }
+      @media screen and (min-width: 768px) {
+        .page-not-found .inner .not-found-img {
+          left: 0%; } }
+      @media screen and (min-width: 1024px) {
+        .page-not-found .inner .not-found-img {
+          position: relative;
+          margin-top: 15.3rem;
+          left: 1%; } }
+    .page-not-found .inner .btn--page-not-found {
+      position: relative;
+      letter-spacing: 0.05em;
+      margin-top: 13rem;
+      padding: 3.2rem 6.2rem; }
+      @media screen and (max-width: 767px) {
+        .page-not-found .inner .btn--page-not-found {
+          font-size: 2.112rem; } }
+      @media screen and (min-width: 768px) {
+        .page-not-found .inner .btn--page-not-found {
+          font-size: 1.2rem; } }
+      @media screen and (min-width: 1024px) {
+        .page-not-found .inner .btn--page-not-found {
+          font-size: 1.2rem; } }
+      @media screen and (min-width: 768px) {
+        .page-not-found .inner .btn--page-not-found {
+          margin-top: 10.5rem;
+          padding: 1.9rem 2.2rem;
+          letter-spacing: 0.1em; } }
+      @media screen and (min-width: 1024px) {
+        .page-not-found .inner .btn--page-not-found {
+          margin-top: 8.8rem;
+          padding: 2rem 2.3rem;
+          letter-spacing: 0.1em; } }
+
+.footer-404 {
+  padding-top: 17rem; }
+  @media screen and (min-width: 768px) {
+    .footer-404 {
+      padding-top: 14.5rem; } }
+  @media screen and (min-width: 1024px) {
+    .footer-404 {
+      padding-top: 12.5rem; } }
+
+.cgu {
+  margin: 0 auto;
+  width: 87.5%; }
+  @media screen and (min-width: 768px) {
+    .cgu {
+      width: 85%; } }
+  @media screen and (min-width: 1024px) {
+    .cgu {
+      width: 69.5%; } }
+  .cgu .inner .breadcrumbs {
+    padding-top: 4.5rem; }
+    .cgu .inner .breadcrumbs span {
+      margin-left: 0.5em; }
+  .cgu .inner .section-title {
+    font-weight: 900;
+    text-align: center;
+    padding-top: 9.1rem;
+    letter-spacing: 0em; }
+    @media screen and (max-width: 767px) {
+      .cgu .inner .section-title {
+        font-size: 7rem; } }
+    @media screen and (min-width: 768px) {
+      .cgu .inner .section-title {
+        font-size: 3.6rem; } }
+    @media screen and (min-width: 1024px) {
+      .cgu .inner .section-title {
+        font-size: 7rem; } }
+    @media screen and (min-width: 768px) {
+      .cgu .inner .section-title {
+        padding-top: 7.8rem; } }
+    @media screen and (min-width: 1024px) {
+      .cgu .inner .section-title {
+        letter-spacing: -0.025em;
+        margin-top: 5.9rem; } }
+  .cgu .inner .articles {
+    position: relative;
+    top: 4.5rem; }
+    @media screen and (min-width: 768px) {
+      .cgu .inner .articles {
+        top: 2.8rem; } }
+    @media screen and (min-width: 1024px) {
+      .cgu .inner .articles {
+        top: 3rem; } }
+    .cgu .inner .articles .text-block {
+      margin-top: 3.3rem; }
+      @media screen and (min-width: 768px) {
+        .cgu .inner .articles .text-block {
+          margin-top: 4.5rem; } }
+      @media screen and (min-width: 1024px) {
+        .cgu .inner .articles .text-block {
+          margin-top: 4.5rem; } }
+    .cgu .inner .articles .title {
+      letter-spacing: 0.05em;
+      font-weight: 700;
+      text-transform: uppercase; }
+      @media screen and (max-width: 767px) {
+        .cgu .inner .articles .title {
+          font-size: 3.2rem; } }
+      @media screen and (min-width: 768px) {
+        .cgu .inner .articles .title {
+          font-size: 2.4rem; } }
+      @media screen and (min-width: 1024px) {
+        .cgu .inner .articles .title {
+          font-size: 2.4rem; } }
+    .cgu .inner .articles .paragraph {
+      letter-spacing: 0.05em;
+      line-height: 1.5;
+      margin-top: 2.8rem; }
+      @media screen and (max-width: 767px) {
+        .cgu .inner .articles .paragraph {
+          font-size: 2.8rem; } }
+      @media screen and (min-width: 768px) {
+        .cgu .inner .articles .paragraph {
+          font-size: 1.8rem; } }
+      @media screen and (min-width: 1024px) {
+        .cgu .inner .articles .paragraph {
+          font-size: 1.8rem; } }
+      @media screen and (min-width: 768px) {
+        .cgu .inner .articles .paragraph {
+          line-height: 1.5;
+          margin-top: 2.8rem; } }
+      @media screen and (min-width: 1024px) {
+        .cgu .inner .articles .paragraph {
+          line-height: 1.44;
+          margin-top: 2.8rem; } }
+
+.footer-cgu {
+  padding-top: 18rem; }
+  @media screen and (min-width: 768px) {
+    .footer-cgu {
+      padding-top: 10.7rem; } }
+  @media screen and (min-width: 1024px) {
+    .footer-cgu {
+      padding-top: 10.9rem; } }
 
 .hero-slider {
   position: relative;
