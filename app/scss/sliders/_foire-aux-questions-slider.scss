@@ -1,0 +1,53 @@
+.foire-aux-questions{
+
+	.controls{
+		position:absolute;
+		right: 4.3rem;
+		bottom: 3.5rem;
+		color:#505050;
+		@include fontSize(26,11.76,14)
+		font-weight: 700;
+		letter-spacing: 0.05em;
+
+		@include breakpoint(tablet){ 
+			right: 2.5rem;
+			top: auto;
+			bottom:1.4rem;
+		}
+
+		@include breakpoint(desktop){ 
+			right: 5.3rem;
+			top: 6.5rem;
+		}
+
+		.slider__controls{
+			float:left;
+			
+			@include fontSize(26,13,16)
+		}
+
+		.slider__counter{
+			float:left;
+			margin:0 1.5rem;
+
+			@include breakpoint(tablet){ 
+				margin:0 1.2rem;
+			}
+
+			@include breakpoint(desktop){ 
+				margin:0 1.5rem;
+			}
+		}
+
+		.current{
+			color:$yellow;
+		}
+	}
+
+	.slide{
+		margin-bottom:4rem;
+		margin-right: 1px;
+		
+
+	}
+}

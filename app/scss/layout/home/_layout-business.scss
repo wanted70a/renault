@@ -1,0 +1,49 @@
+.business{
+	width:87.5%;
+	margin:0 auto;
+
+	@include breakpoint(tablet){ 
+		width:100%;
+		margin:0;
+	 }
+
+	@include breakpoint(desktop){ 
+		width:100%;
+		margin:0;
+	}
+
+	.container-1{
+		float:none;
+		display: block;
+
+		@include breakpoint(tablet){ 
+			width: 50.888%;
+			padding-right:1.5%;
+			float:left;
+		 }
+
+		@include breakpoint(desktop){ 
+			width: 50.888%;
+			padding-right:1.5%;
+			float:left;
+		}
+
+	}
+
+	.container-2{
+		float:none;
+		display: block;
+		@include breakpoint(tablet){ 
+			width: 49.112%;
+			float:left;
+		 }
+
+		@include breakpoint(desktop){ 
+			width: 49.112%;
+			float:left;
+		}
+
+	}
+
+
+}

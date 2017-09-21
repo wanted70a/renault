@@ -72,6 +72,26 @@
 		}
 	}
 
+	&.btn--business-slider{
+		position:relative;
+		z-index: 100;
+		padding:1.25rem 2.7rem;
+		margin-bottom:1.8rem;
+		@include fontSize(12,10,12);
+		letter-spacing: 0.01em;
+
+		@include breakpoint(tablet){ 
+			padding:1rem 1.7rem;
+			margin-bottom:1.8rem;
+
+		}
+
+		@include breakpoint(desktop){ 
+			padding:1.3rem 2.6rem;
+			margin-bottom:1.8rem;
+		}
+	}
+
 
 	&.btn--heroSlider{
 		background-color:$yellow;

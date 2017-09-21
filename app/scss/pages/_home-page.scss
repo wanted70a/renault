@@ -313,18 +313,22 @@
 
 
 .foire-aux-questions{
-
+	
 	.section-title{
 		@include fontSize(45,20,30);
 		
 		letter-spacing:0.05em;
+		margin-bottom: 18.5rem;
+		margin-left:4rem;
 
 		@include breakpoint(tablet){
-			
+			margin-bottom: 0.6rem;
+			margin-left: 0rem;
 		}
 
 		@include breakpoint(desktop){
 			margin-bottom: 2.5rem;
+			margin-left: 0rem;
 		}
 		
 		.subTitle-1{
@@ -349,11 +353,134 @@
 		background-color: transparent;
 
 		.article-body{
+
 			background-color: transparent;
+			font-weight: 900;
+			outline: none;
+			border:none;
+			padding-top:4.6rem;
+			padding-left:0;
+
+			@include breakpoint(tablet){ 
+				padding-top:10rem;
+				padding-left:6.2%;
+			}
+
+			@include breakpoint(desktop){ 
+				padding-top:15.6rem;
+				padding-left:2.8%;
+			}
+
+			.title{
+				@include fontSize(28, 16, 22);
+				letter-spacing: 0.05em;
+				line-height: 1.14;
+				
+				@include breakpoint(tablet){ 
+					line-height: 1.25;
+				}
+
+				@include breakpoint(desktop){ 
+					line-height: 1.36;
+				}
+			}
+
+			.description{
+				margin-top: 2.3rem;
+
+				@include breakpoint(tablet){ 
+					margin-top: 2rem;
+				}
+
+				@include breakpoint(desktop){ 
+					margin-top: 2.3rem;
+				}
+
+			}
 		}
 	}
 }
 
+
+.business{
+	padding-top:7.8rem;
+
+	@include breakpoint(tablet){ 
+		margin-top:4.7rem;
+		padding-top:7.8rem;
+		border-top:1px solid $gray;
+	 }
+
+	@include breakpoint(desktop){ 
+		margin-top:8.8rem;
+		padding-top:8rem;
+		border-top:1px solid $gray;
+	}
+
+	.section-title{
+		@include fontSize(50,20,30);
+		position:relative;
+		
+		letter-spacing:0em;
+		font-family: Airways;
+		font-weight:400;
+
+		margin-bottom: 4.2rem;
+
+		@include breakpoint(tablet){
+			margin-bottom: 1.8rem;
+			margin-left: 0rem;
+			top:-1rem;
+		}
+
+		@include breakpoint(desktop){
+			margin-bottom: 5.5rem;
+			margin-left: 0rem;
+			top:-1rem;
+		}
+		
+		.subTitle{
+			@include fontSize(45,20,30);
+			letter-spacing:0em;
+			font-weight:900;
+			font-family: 'Lato';
+			display: block;
+		}
+	}
+
+	.article{
+
+		.article-body{
+			
+			.title{
+
+				@include breakpoint(tablet){ 
+					margin-top:0.7rem;
+					width:98%;
+					letter-spacing: 0.05em;
+
+	 			}
+
+	 			@include breakpoint(desktop){ 
+					margin-top:2.1rem;
+	 			}
+			}
+
+			.description{
+
+				@include breakpoint(tablet){ 
+
+	 			}
+
+	 			@include breakpoint(desktop){ 
+					margin-top:1.5rem;
+	 			}
+			}
+		}
+
+
+	}
+}
 
 
 

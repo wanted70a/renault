@@ -1,13 +1,16 @@
 .most-read-articles{
 	background-color:$gray;
 	padding-bottom:4.5rem;
+	margin-top:9.2rem;
 	
 	@include breakpoint(tablet){
 		padding-bottom:1.8rem;
+		margin:0;
 	}
 
 	@include breakpoint(desktop){
 		padding-bottom:1.8rem;
+		margin:0;
 	}
 	
 	.container-1{

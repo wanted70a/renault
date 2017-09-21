@@ -2,12 +2,17 @@
 	
 	position:relative;
 	border-top:1px solid $gray;
+	margin-top:4.8rem;
+	padding-top: 7.9rem;
+
 	@include breakpoint(tablet){ 
-		
+		padding-top: 4rem;
+		margin-top:-3.2rem;
 	 }
 
 	@include breakpoint(desktop){ 
-		
+		padding-top: 7.6rem;
+		margin-top:3rem;
 	}
 
 	.inner{
@@ -16,8 +21,9 @@
 		position:relative;
 		min-height:calculateRem(517);
 
+
 		@include breakpoint(tablet){ 
-			min-height:calculateRem(204);
+			min-height:calculateRem(200);
 			width:100%;
 		 }
 
@@ -28,16 +34,20 @@
 	}
 
 	.foire-aux-questions-slider{
-		width:67.193%;
+		width:87.5%;
 		position:absolute;
-		left:20.45%;
-		top:-23.3%;
+		margin:0 auto;
+		left:0;
+		right:0;
+		top:-14.5rem;
+		
 
 		@include breakpoint(tablet){ 
 			width:69.230%;
 			position:absolute;
 			left:19.2%;
-			top:-44%;
+			top:-28.5%;
+			margin:0;
 		}
 
 		@include breakpoint(desktop){ 
@@ -45,6 +55,7 @@
 			position:absolute;
 			left:20.45%;
 			top:-23.3%;
+			margin:0;
 		}
 	}
 

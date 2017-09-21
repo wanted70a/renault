@@ -1,6 +1,15 @@
 .start-quiz{
 	width:100%;
 	margin:0 auto;
+	margin-top:8.5rem;
+	
+	@include breakpoint(tablet){
+		margin-top:7rem;
+	}
+
+	@include breakpoint(desktop){
+		margin-top:13.5rem;
+	}
 
 	
 
@@ -8,9 +17,23 @@
 		background: url('../assets/images/quiz-start-banner/quiz-start-mobile.jpg') no-repeat;
 		width:100%;
 		padding-top:6.6rem;
-		padding-bottom:42.2rem;
+		padding-bottom:35rem;
 		position:relative;
 		background-size:cover;
+
+		@include breakpoint(tablet){
+			background: url('../assets/images/quiz-start-banner/quiz-start-tablet.jpg') no-repeat;
+			background-size:cover;
+			padding-top:3.8rem;
+			padding-bottom:14.2rem;
+		}
+
+		@include breakpoint(desktop){
+			background: url('../assets/images/quiz-start-banner/quiz-start-desk.jpg') no-repeat;
+			background-size:cover;
+			padding-top:9.3rem;
+			padding-bottom:30.8rem;
+		}
 
 		&__content{
 			position:absolute;
@@ -93,21 +116,6 @@
 				margin-top:1.6rem;
 				width:38%;
 			}
-		}
-		
-
-		@include breakpoint(tablet){
-			background: url('../assets/images/quiz-start-banner/quiz-start-tablet.jpg') no-repeat;
-			background-size:cover;
-			padding-top:3.8rem;
-			padding-bottom:14.2rem;
-		}
-
-		@include breakpoint(desktop){
-			background: url('../assets/images/quiz-start-banner/quiz-start-desk.jpg') no-repeat;
-			background-size:cover;
-			padding-top:9.3rem;
-			padding-bottom:30.8rem;
 		}
 	}
 }
