@@ -141,7 +141,32 @@
 		}
 	}
 
+	&.article--results{
+		width:48.5%;
 
+		@include breakpoint(tablet){
+			
+		}
+
+		@include breakpoint(desktop){
+			width:48.5%;
+		}
+	}
+
+	&.article--results-padded{
+		width:51.5%;
+		padding-right:3.5%;
+
+		@include breakpoint(tablet){
+			
+		}
+
+		@include breakpoint(desktop){
+			width:51.5%;
+			padding-right:3.5%;
+
+		}
+	}
 
 	&.article--m{
 		width:61.204%;

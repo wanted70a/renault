@@ -1,0 +1,152 @@
+.tags{
+	margin:0 auto;
+	width:80%;
+
+	@include breakpoint(tablet){
+		width:85.5%;
+	}
+
+	@include breakpoint(desktop){
+		width:69.4%;
+	}
+
+	.inner{
+
+		.breadcrumbs{
+			padding-top: 4.5rem;
+
+			span{
+				margin-left:0.5em; 
+			}
+		}
+
+		.section-title{
+			position:relative;
+			@include fontSize(70,36,70);
+			font-weight:900;
+			text-align: center;
+			//margin-top:5.9rem;
+			padding-top:10.7rem;
+			letter-spacing:0em;
+
+			@include breakpoint(tablet){
+				padding-top:7.8rem;
+			}
+
+			@include breakpoint(desktop){
+				letter-spacing:-0.015em;
+				padding-top:5.9rem;
+				left:0.4rem;
+			}
+		}
+
+		.all-tags{
+			
+			margin-top: 1.5rem;
+
+			@include breakpoint(tablet){
+				margin-top: 4.5rem;	
+			}
+
+			@include breakpoint(desktop){
+				margin-top: 3.2rem;
+			}
+
+			.tags-holder{
+				display:inline-block;
+				vertical-align:top;
+				width:57.5%; 
+				margin-top: 6.9rem;
+
+				&:nth-child(2n+2){
+					width:42%;
+					position:relative;
+					left:0.9rem;
+					
+				}
+
+				@include breakpoint(tablet){
+					width:40.5%; 
+					margin-top: 4.5rem;
+					
+					&:nth-child(3n+1){
+						width:40.5%;
+						left:auto;
+						
+					}
+
+					&:nth-child(3n+2){
+						width:39%;
+						left:auto;
+						
+					}
+					
+					&:nth-child(3n+3){
+						width:15%;
+						left:auto;
+						
+					}
+	
+				}
+
+				@include breakpoint(desktop){
+					margin-top: 5.8rem;
+					width:20%; 
+
+					&:nth-child(4n+1){
+						width:29%;
+						left:auto;
+						
+					}
+
+					&:nth-child(4n+2){
+						width:29%;
+						left:auto;	
+					}
+					
+					&:nth-child(4n+3){
+						width:29%;
+						left:auto;
+					}
+
+					&:nth-child(4n+4){
+						width:12%;
+						left:auto;
+					}
+
+				}
+			
+				.tag-index{
+					font-family: Airways;
+					color:$yellow;
+					@include fontSize(70, 50, 50);
+					line-height: calculateRem(48);
+					letter-spacing:0;
+					margin-bottom:1.3rem;	
+
+					@include breakpoint(tablet){
+						margin-bottom:0.4rem;	
+					}
+
+					@include breakpoint(desktop){
+						margin-bottom:1.4rem;	
+					}
+				}
+
+				.tag{
+					@include fontSize(28,18,18);
+					line-height: calculateRem(50);
+					letter-spacing: 0.05em;
+
+					@include breakpoint(tablet){
+						line-height: calculateRem(37);	
+					}
+
+					@include breakpoint(desktop){
+						line-height: calculateRem(26);
+					}
+				}
+			}
+		}
+	}	
+}
