@@ -29,6 +29,12 @@
 	
 	}
 
+	&.label--article-pages{
+		display: inline-block;
+		padding:1.4rem 2.5rem;
+		text-align:center;
+	}
+
 	&.label--page-title{
 		text-align: center;
 		position:relative;

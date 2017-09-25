@@ -1,4 +1,4 @@
-.results{
+.live-news{
 	margin:0 auto;
 	width:87.63%;	
 
@@ -54,91 +54,87 @@
 		}
 	}
 
-	.section-title{
-		position:relative;
-		@include fontSize(52,32,32);
-		font-weight:900;
-		text-align: center;
-		padding-top:11.1rem;
-		letter-spacing:0em;
-		line-height: calculateRem(48);
-
-		@include breakpoint(tablet){
-			padding-top:7.8rem;
-		}
-
-		@include breakpoint(desktop){
-			
-			padding-top:5.1rem;
-			
-		}
-	}
-
-	.search{
-		position:relative;
-		margin-top:6.5rem;
-
-		@include breakpoint(tablet){
-			margin-top:3.8rem;
-		}
-
-		@include breakpoint(desktop){
-			margin-top:3.4rem;	
-		}
-
-		input{
-			outline: none;
-			border:1px solid $yellow;
-			width: 100%;
-			@include fontSize(42, 18, 32);
-			padding:4.9rem 2.8rem;
-			
-
-			@include breakpoint(tablet){
-				padding:2.5rem 4rem;
-			}
-
-			@include breakpoint(desktop){
-				padding:5.6rem 8.5rem;
-			}
-		}
-
-		i{
-			position:absolute;
-			@include fontSize(46, 21, 46);
-			right:5%;
-			top:4.5rem;
-
-			@include breakpoint(tablet){
-				right:4.8%;
-				top:2.7rem;
-			}
-
-			@include breakpoint(desktop){
-				right:8.5%;
-				top:5.4rem;
-			}
-		}
-	}
-
 	.inner{
 		padding-top:0.6rem;
+
 		@include breakpoint(tablet){
-			padding-top:4.5rem;
+			padding-top:5.2rem;
 		}
 
 		@include breakpoint(desktop){
 			padding-top:0.5rem;
 		}
 
-		.container-1{
+
+		.section-title{
+			position:relative;
+			@include fontSize(70,36,69.6);
+			font-weight:900;
+			text-align: center;
+			//padding-top:11.1rem;
+			letter-spacing:0em;
+			line-height: calculateRem(48);
+			position:relative;
+			padding-top:4.9rem;
+			margin-bottom:9rem;
+
+			@include breakpoint(tablet){
+				padding-top:1rem;
+				margin-bottom:3.5rem;
+				
+			}
+
+			@include breakpoint(desktop){
+				letter-spacing:-0.025em;
+				padding-top:12rem;
+				margin-bottom:8.5rem;
+				left:-0.6rem;
+			}
+		}
+
+		.container-0{
+			width:100%;
+			float:left;
+			padding-top:7.5rem;
+
+			@include breakpoint(tablet){
+				width:49%;	
+				padding-right:6.5%;
+				padding-top:0rem;
+			}
+
+			@include breakpoint(desktop){
+				width:49%;	
+				padding-right:6.3%;
+				padding-top:4.3rem;
+			}
+		}
+
+		.container-0b{
 			width:100%;
 			float:left;
 			padding-top:6.5rem;
 			@include breakpoint(tablet){
 				width:51%;	
 				padding-right:1.9%;
-				padding-top:1rem;
+				padding-top:0.7rem;
+			}
+
+			@include breakpoint(desktop){
+				width:51%;	
+				padding-right:1.9%;
+				padding-top:0rem;
+			}
+		}
+
+		.container-1{
+			width:100%;
+			float:left;
+			padding-top:10.2rem;
+			@include breakpoint(tablet){
+				width:51%;	
+				padding-right:1.9%;
+				padding-top:1.2rem;
 			}
 
 			@include breakpoint(desktop){
@@ -154,7 +150,7 @@
 			padding-top:6.5rem;
 			@include breakpoint(tablet){
 				width:49%;
-				padding-top:1rem;	
+				padding-top:1.2rem;	
 			}
 
 			@include breakpoint(desktop){

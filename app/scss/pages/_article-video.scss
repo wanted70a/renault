@@ -1,0 +1,71 @@
+.article-video{
+
+	@include breakpoint(tablet){
+			
+	}
+
+	@include breakpoint(desktop){
+			
+	}
+
+	.section-title{
+		position:relative;
+	}
+
+	.inner{
+
+		.col-01{
+
+			width:100%;	
+			float:none;
+			display: block;
+			
+			@include breakpoint(tablet){
+				display:block;
+				width:100%;	
+				float:none;
+			}
+
+			@include breakpoint(desktop){
+				float:left;
+				width:12.795%	
+			}
+		}
+
+		.col-02{
+
+			width:100%;
+			float:none;
+			display: block;
+			@include breakpoint(tablet){
+				display:block;
+				width:100%;	
+				float:none;
+			}
+
+			@include breakpoint(desktop){
+				width:57.322%;
+				float:left;	
+			}
+		}
+
+		.col-03{
+
+			width:100%;
+			float:none;
+			display: block;
+			
+			@include breakpoint(tablet){
+				display:block;
+				width:100%;	
+				float:none;
+			}
+
+			@include breakpoint(desktop){
+				float:left;
+				width:29.833%;
+			}
+		}
+	}
+
+}

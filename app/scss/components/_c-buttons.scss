@@ -145,4 +145,31 @@
 
 		}
 	}
+
+	&.btn--start-quiz-article{
+		letter-spacing:0.10em;
+		position:relative;
+		padding:2.5rem 1.2rem;
+		left:-0.3rem;
+		margin:0 auto;
+		top:31rem;
+		
+		@include breakpoint(tablet){ 
+			left:auto;
+			padding:1rem 1.3rem;
+			letter-spacing:0em;
+			top:6.6rem;
+
+
+		}
+
+		@include breakpoint(desktop){ 
+			margin:0;
+			padding:1.3rem 3.1rem;
+			left:18%;
+			top:23.7rem;
+			letter-spacing:0em;
+
+		}
+	}
 }
