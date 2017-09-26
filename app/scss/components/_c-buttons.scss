@@ -119,6 +119,30 @@
 		}
 	}
 
+	&.btn--diaporama{
+		position:absolute;
+		z-index:200;
+		@include fontSize(16,16,16);
+		letter-spacing: 0.01em;
+		line-height: calculateRem(36);
+		font-weight:700;
+		
+		@include breakpoint(tablet){ 
+			
+
+		}
+
+		@include breakpoint(desktop){ 
+			margin-left:auto;
+			margin-right:auto;
+			left:50%;
+			margin-left:-5.9%;
+			top:54.5%;
+			display: block;
+			padding:1.3rem 4.5rem;
+		}
+	}
+
 	&.btn--start-quiz{
 		letter-spacing:0.10em;
 		position:relative;
