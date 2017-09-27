@@ -51,80 +51,93 @@
 	&-next{
 
 		display:inline-block;
-		right:5.5rem;
+		right:4.2rem;
+		top:43.2%;
 		background:url('../assets/images/sliders/hero/control-right-yellow.png') no-repeat;
 		background-size:100% 100%;
-		height:3.2vw;
-		width:3.2vw;
-		visibility:hidden;
+		height:8.1vw;
+		width:8.1vw;
+		visibility:visible;
 		
 		@include breakpoint(tablet){ 
-			right:2.4rem;
+			right:3rem;
 			visibility:visible;
-			
+			top:49%;
+			height:4vw;
+			width:4vw;
 		}
 
 		@include breakpoint(desktop){ 
 			right:5.5rem;
-			visibility:visible;
+			visibility:hidden;
 		}
 
 		&:hover{
 			background:url('../assets/images/sliders/hero/control-right-white.png') no-repeat;
 			background-size:100% 100%;
-			height:3.2vw;
-			width:3.2vw;
+			height:8.1vw;
+			width:8.1vw;
+
+			@include breakpoint(tablet){ 
+				height:4vw;
+				width:4vw;
+			}
 		}
 	}
 
 	&-prev{
 
 		display:inline-block;
-		left:4.9rem;
+		left:4.2rem;
+		top:43.2%;
 		background:url('../assets/images/sliders/hero/control-left-yellow.png') no-repeat;
 		background-size:100% 100%;
-		height:3.2vw;
-		width:3.2vw;
-		visibility:hidden;
+		height:8.1vw;
+		width:8.1vw;
+		visibility:visible;
 		transition:all 0.3s ease;
 
 		@include breakpoint(tablet){ 
-			left:2.1rem;
+			top:49%;
+			left:2.9rem;
+			height:4vw;
+			width:4vw;
 			visibility:visible;
-			
 		}
 
 		@include breakpoint(desktop){ 
 			left:4.9rem;
-			visibility:visible;
+			visibility:hidden;
 		}
 
 		&:hover{
 			background:url('../assets/images/sliders/hero/control-left-white.png') no-repeat;
 			background-size:100% 100%;
-			height:3.2vw;
-			width:3.2vw;
-		}
+			height:8.1vw;
+			width:8.1vw;
 
+			@include breakpoint(tablet){ 
+				height:4vw;
+				width:4vw;
+			}
+		}
 	}
 
 	&-nav{
+		
 		position:absolute;
 		z-index:350;
 		left:50%;
 		margin-left:-18%;
+		display: none;
+		
 		@include breakpoint(tablet){
-			
+			display: none;
 		}
 
 		@include breakpoint(desktop){
 			bottom:6rem;
-		}
-
-		&-controlos{
-			position:absolute;
-			z-index:400;
-			cursor:pointer;
+			display: block;
 		}
 
 		&-prev{
@@ -132,7 +145,7 @@
 			display:inline-block;
 			left:4.9rem;
 			background:url('../assets/images/sliders/hero/control-left-yellow.png') no-repeat;
-			background-size:100% 100%;
+			background-size:60% 60%;
 			height:3.2vw;
 			width:3.2vw;
 			visibility:hidden;
@@ -145,13 +158,15 @@
 			}
 
 			@include breakpoint(desktop){ 
-				left:4.9rem;
+				left:-10.1%;
+				top:2.2rem;
 				visibility:visible;
+				display: block;
 			}
 
 			&:hover{
 				background:url('../assets/images/sliders/hero/control-left-white.png') no-repeat;
-				background-size:100% 100%;
+				background-size:60% 60%;
 				height:3.2vw;
 				width:3.2vw;
 			}
@@ -162,7 +177,7 @@
 			display:inline-block;
 			right:5.5rem;
 			background:url('../assets/images/sliders/hero/control-right-yellow.png') no-repeat;
-			background-size:100% 100%;
+			background-size:60% 60%;
 			height:3.2vw;
 			width:3.2vw;
 			visibility:hidden;
@@ -174,16 +189,24 @@
 			}
 
 			@include breakpoint(desktop){ 
-				right:5.5rem;
+				right:-13.7%;
+				top:2.2rem;
 				visibility:visible;
+				display: block;
 			}
 
 			&:hover{
 				background:url('../assets/images/sliders/hero/control-right-white.png') no-repeat;
-				background-size:100% 100%;
+				background-size:60% 60%;
 				height:3.2vw;
 				width:3.2vw;
 			}
+		}
+
+		&-controls{
+			position:absolute;
+			z-index:400;
+			cursor:pointer;
 		}
 
 		&-slider{
@@ -205,7 +228,7 @@
 			}
 
 			@include breakpoint(desktop){
-				margin:0 1rem;	
+				margin:0 0.95rem;	
 			}
 		}
 	}

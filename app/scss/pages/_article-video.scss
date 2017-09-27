@@ -43,11 +43,11 @@
 		.breadcrumbs{
 			
 			@include breakpoint(tablet){
-
+					
 			}
 
 			@include breakpoint(desktop){
-				margin-left:6.30%;
+				margin-left:6%;
 				margin-top: 5.5rem;	
 			}
 
@@ -79,7 +79,7 @@
 			}
 
 			@include breakpoint(desktop){
-				margin-left:6.30%;
+				margin-left:6%;
 				padding:1.2rem 2rem;
 				margin-top: 4.7rem;
 			}
@@ -104,7 +104,7 @@
 
 			@include breakpoint(desktop){
 				letter-spacing:0;
-				margin-left:6.3%;
+				margin-left:6%;
 				width:70%;
 				margin-top: 2.5rem;
 				

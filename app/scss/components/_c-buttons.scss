@@ -126,15 +126,25 @@
 		letter-spacing: 0.01em;
 		line-height: calculateRem(36);
 		font-weight:700;
+
+		left:50%;
+		margin-left:-15%;
+		top:41.5%;
+		display: block;
+		padding:1.3rem 4.5rem;
 		
 		@include breakpoint(tablet){ 
 			
+			left:50%;
+			margin-left:-12.3%;
+			top:45%;
+			display: block;
+			padding:1.3rem 4.5rem;
 
 		}
 
 		@include breakpoint(desktop){ 
-			margin-left:auto;
-			margin-right:auto;
+			
 			left:50%;
 			margin-left:-5.9%;
 			top:54.5%;

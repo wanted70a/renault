@@ -1082,7 +1082,12 @@ body {
     z-index: 200;
     letter-spacing: 0.01em;
     line-height: 3.6rem;
-    font-weight: 700; }
+    font-weight: 700;
+    left: 50%;
+    margin-left: -15%;
+    top: 41.5%;
+    display: block;
+    padding: 1.3rem 4.5rem; }
     @media screen and (max-width: 767px) {
       .btn.btn--diaporama {
         font-size: 1.6rem; } }
@@ -1092,10 +1097,15 @@ body {
     @media screen and (min-width: 1024px) {
       .btn.btn--diaporama {
         font-size: 1.6rem; } }
+    @media screen and (min-width: 768px) {
+      .btn.btn--diaporama {
+        left: 50%;
+        margin-left: -12.3%;
+        top: 45%;
+        display: block;
+        padding: 1.3rem 4.5rem; } }
     @media screen and (min-width: 1024px) {
       .btn.btn--diaporama {
-        margin-left: auto;
-        margin-right: auto;
         left: 50%;
         margin-left: -5.9%;
         top: 54.5%;
@@ -3601,7 +3611,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .article-video .inner .breadcrumbs {
-    margin-left: 6.30%;
+    margin-left: 6%;
     margin-top: 5.5rem; } }
 
 @media screen and (min-width: 1024px) {
@@ -3630,7 +3640,7 @@ body {
       margin-left: 6.4%; } }
   @media screen and (min-width: 1024px) {
     .article-video .inner .label {
-      margin-left: 6.30%;
+      margin-left: 6%;
       padding: 1.2rem 2rem;
       margin-top: 4.7rem; } }
 
@@ -3660,7 +3670,7 @@ body {
   @media screen and (min-width: 1024px) {
     .article-video .inner .article-title {
       letter-spacing: 0;
-      margin-left: 6.3%;
+      margin-left: 6%;
       width: 70%;
       margin-top: 2.5rem; } }
 
@@ -4188,10 +4198,6 @@ body {
           margin-top: .5rem;
           letter-spacing: -0.03em; } }
 
-.kontrola {
-  background: url("../assets/images/sliders/hero/control-left-yellow.png") no-repeat;
-  background-size: 100% 100%; }
-
 .most-read-articles {
   background-color: #f6f6f6;
   padding-bottom: 4.5rem;
@@ -4541,64 +4547,81 @@ body {
     cursor: pointer; }
   .diaporama-next {
     display: inline-block;
-    right: 5.5rem;
+    right: 4.2rem;
+    top: 43.2%;
     background: url("../assets/images/sliders/hero/control-right-yellow.png") no-repeat;
     background-size: 100% 100%;
-    height: 3.2vw;
-    width: 3.2vw;
-    visibility: hidden; }
+    height: 8.1vw;
+    width: 8.1vw;
+    visibility: visible; }
     @media screen and (min-width: 768px) {
       .diaporama-next {
-        right: 2.4rem;
-        visibility: visible; } }
+        right: 3rem;
+        visibility: visible;
+        top: 49%;
+        height: 4vw;
+        width: 4vw; } }
     @media screen and (min-width: 1024px) {
       .diaporama-next {
         right: 5.5rem;
-        visibility: visible; } }
+        visibility: hidden; } }
     .diaporama-next:hover {
       background: url("../assets/images/sliders/hero/control-right-white.png") no-repeat;
       background-size: 100% 100%;
-      height: 3.2vw;
-      width: 3.2vw; }
+      height: 8.1vw;
+      width: 8.1vw; }
+      @media screen and (min-width: 768px) {
+        .diaporama-next:hover {
+          height: 4vw;
+          width: 4vw; } }
   .diaporama-prev {
     display: inline-block;
-    left: 4.9rem;
+    left: 4.2rem;
+    top: 43.2%;
     background: url("../assets/images/sliders/hero/control-left-yellow.png") no-repeat;
     background-size: 100% 100%;
-    height: 3.2vw;
-    width: 3.2vw;
-    visibility: hidden;
+    height: 8.1vw;
+    width: 8.1vw;
+    visibility: visible;
     transition: all 0.3s ease; }
     @media screen and (min-width: 768px) {
       .diaporama-prev {
-        left: 2.1rem;
+        top: 49%;
+        left: 2.9rem;
+        height: 4vw;
+        width: 4vw;
         visibility: visible; } }
     @media screen and (min-width: 1024px) {
       .diaporama-prev {
         left: 4.9rem;
-        visibility: visible; } }
+        visibility: hidden; } }
     .diaporama-prev:hover {
       background: url("../assets/images/sliders/hero/control-left-white.png") no-repeat;
       background-size: 100% 100%;
-      height: 3.2vw;
-      width: 3.2vw; }
+      height: 8.1vw;
+      width: 8.1vw; }
+      @media screen and (min-width: 768px) {
+        .diaporama-prev:hover {
+          height: 4vw;
+          width: 4vw; } }
   .diaporama-nav {
     position: absolute;
     z-index: 350;
     left: 50%;
-    margin-left: -18%; }
+    margin-left: -18%;
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .diaporama-nav {
+        display: none; } }
     @media screen and (min-width: 1024px) {
       .diaporama-nav {
-        bottom: 6rem; } }
-    .diaporama-nav-controlos {
-      position: absolute;
-      z-index: 400;
-      cursor: pointer; }
+        bottom: 6rem;
+        display: block; } }
     .diaporama-nav-prev {
       display: inline-block;
       left: 4.9rem;
       background: url("../assets/images/sliders/hero/control-left-yellow.png") no-repeat;
-      background-size: 100% 100%;
+      background-size: 60% 60%;
       height: 3.2vw;
       width: 3.2vw;
       visibility: hidden;
@@ -4609,18 +4632,20 @@ body {
           visibility: visible; } }
       @media screen and (min-width: 1024px) {
         .diaporama-nav-prev {
-          left: 4.9rem;
-          visibility: visible; } }
+          left: -10.1%;
+          top: 2.2rem;
+          visibility: visible;
+          display: block; } }
       .diaporama-nav-prev:hover {
         background: url("../assets/images/sliders/hero/control-left-white.png") no-repeat;
-        background-size: 100% 100%;
+        background-size: 60% 60%;
         height: 3.2vw;
         width: 3.2vw; }
     .diaporama-nav-next {
       display: inline-block;
       right: 5.5rem;
       background: url("../assets/images/sliders/hero/control-right-yellow.png") no-repeat;
-      background-size: 100% 100%;
+      background-size: 60% 60%;
       height: 3.2vw;
       width: 3.2vw;
       visibility: hidden; }
@@ -4630,15 +4655,282 @@ body {
           visibility: visible; } }
       @media screen and (min-width: 1024px) {
         .diaporama-nav-next {
-          right: 5.5rem;
-          visibility: visible; } }
+          right: -13.7%;
+          top: 2.2rem;
+          visibility: visible;
+          display: block; } }
       .diaporama-nav-next:hover {
         background: url("../assets/images/sliders/hero/control-right-white.png") no-repeat;
-        background-size: 100% 100%;
+        background-size: 60% 60%;
         height: 3.2vw;
         width: 3.2vw; }
+    .diaporama-nav-controls {
+      position: absolute;
+      z-index: 400;
+      cursor: pointer; }
     .diaporama-nav-slide {
       display: inline-block; }
       @media screen and (min-width: 1024px) {
         .diaporama-nav-slide {
-          margin: 0 1rem; } }
+          margin: 0 0.95rem; } }
+
+.diaporama-overlay {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  background-color: white;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  display: block; }
+  .diaporama-overlay .containers {
+    width: 100%;
+    position: relative; }
+    .diaporama-overlay .containers .container-01 {
+      float: left;
+      display: none; }
+      @media screen and (min-width: 1024px) {
+        .diaporama-overlay .containers .container-01 {
+          float: left;
+          width: 58.823%;
+          height: 100vh; } }
+    .diaporama-overlay .containers .container-02 {
+      float: none;
+      background-color: #ffcc33;
+      width: 100vw;
+      height: 10vh;
+      position: absolute;
+      display: none;
+      display: block; }
+      @media screen and (min-width: 768px) {
+        .diaporama-overlay .containers .container-02 {
+          float: none;
+          height: 20vh;
+          width: 100vw;
+          position: static;
+          display: block; } }
+      @media screen and (min-width: 1024px) {
+        .diaporama-overlay .containers .container-02 {
+          float: right;
+          height: 100vh;
+          width: 41.177%;
+          position: static;
+          display: block; } }
+    .diaporama-overlay .containers .slider-container {
+      position: relative;
+      background-color: #ffcc33; }
+      @media screen and (min-width: 768px) {
+        .diaporama-overlay .containers .slider-container {
+          background-color: #ffcc33; } }
+      @media screen and (min-width: 1024px) {
+        .diaporama-overlay .containers .slider-container {
+          position: absolute;
+          width: 79.529%;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
+          top: 11.8rem;
+          background-color: transparent; } }
+      .diaporama-overlay .containers .slider-container .carousel-controls {
+        display: block;
+        position: absolute;
+        z-index: 2000; }
+        @media screen and (min-width: 768px) {
+          .diaporama-overlay .containers .slider-container .carousel-controls {
+            display: block; } }
+        @media screen and (min-width: 1024px) {
+          .diaporama-overlay .containers .slider-container .carousel-controls {
+            display: none;
+            visibility: none; } }
+      .diaporama-overlay .containers .slider-container .carousel-next {
+        display: inline-block;
+        right: 2.8rem;
+        top: 26.2rem;
+        background: url("../assets/images/sliders/diaporama/control-right-black.png") no-repeat;
+        background-size: 100% 100%;
+        height: 6vw;
+        width: 6vw; }
+        @media screen and (min-width: 768px) {
+          .diaporama-overlay .containers .slider-container .carousel-next {
+            display: block; } }
+        @media screen and (min-width: 1024px) {
+          .diaporama-overlay .containers .slider-container .carousel-next {
+            display: none;
+            visibility: none; } }
+      .diaporama-overlay .containers .slider-container .carousel-prev {
+        display: inline-block;
+        left: 2.8rem;
+        top: 26.2rem;
+        background: url("../assets/images/sliders/diaporama/control-left-black.png") no-repeat;
+        background-size: 100% 100%;
+        height: 6vw;
+        width: 6vw; }
+        @media screen and (min-width: 768px) {
+          .diaporama-overlay .containers .slider-container .carousel-prev {
+            display: block; } }
+        @media screen and (min-width: 1024px) {
+          .diaporama-overlay .containers .slider-container .carousel-prev {
+            display: none;
+            visibility: none; } }
+      .diaporama-overlay .containers .slider-container .slide .slide-img {
+        float: none;
+        display: block;
+        width: 100%; }
+        @media screen and (min-width: 1024px) {
+          .diaporama-overlay .containers .slider-container .slide .slide-img {
+            float: left;
+            width: 70.044%; } }
+      .diaporama-overlay .containers .slider-container .slide .slide-body {
+        float: none;
+        display: block;
+        width: 94%;
+        padding-top: 4.8rem;
+        padding-bottom: 6rem;
+        padding-left: 6.4%; }
+        @media screen and (min-width: 768px) {
+          .diaporama-overlay .containers .slider-container .slide .slide-body {
+            padding-left: 8.1%;
+            padding-top: 3.5rem;
+            padding-bottom: 5rem;
+            width: 94%; } }
+        @media screen and (min-width: 1024px) {
+          .diaporama-overlay .containers .slider-container .slide .slide-body {
+            float: left;
+            width: 29.956%;
+            padding: 0;
+            padding-left: 6.3%; } }
+        .diaporama-overlay .containers .slider-container .slide .slide-body .slide-counter {
+          letter-spacing: 0;
+          font-weight: 900; }
+          @media screen and (max-width: 767px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-counter {
+              font-size: 3.2rem; } }
+          @media screen and (min-width: 768px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-counter {
+              font-size: 2.4rem; } }
+          @media screen and (min-width: 1024px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-counter {
+              font-size: 2.4rem; } }
+          .diaporama-overlay .containers .slider-container .slide .slide-body .slide-counter .current {
+            font-weight: 900; }
+          .diaporama-overlay .containers .slider-container .slide .slide-body .slide-counter .total {
+            font-weight: 900;
+            color: #ffffff; }
+        .diaporama-overlay .containers .slider-container .slide .slide-body .slide-title {
+          letter-spacing: 0;
+          line-height: 4.2rem;
+          font-weight: 900;
+          text-transform: uppercase;
+          margin-top: 2.4rem; }
+          @media screen and (max-width: 767px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-title {
+              font-size: 4rem; } }
+          @media screen and (min-width: 768px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-title {
+              font-size: 3.2rem; } }
+          @media screen and (min-width: 1024px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-title {
+              font-size: 2.4rem; } }
+          @media screen and (min-width: 768px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-title {
+              line-height: 3.2rem;
+              margin-top: 3.1rem; } }
+          @media screen and (min-width: 1024px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-title {
+              line-height: 2.8rem;
+              margin-top: 2.7rem; } }
+        .diaporama-overlay .containers .slider-container .slide .slide-body .slide-text {
+          letter-spacing: 0.05em;
+          line-height: 4.2rem;
+          margin-top: 2.5rem; }
+          @media screen and (max-width: 767px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-text {
+              font-size: 2.8rem; } }
+          @media screen and (min-width: 768px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-text {
+              font-size: 1.6rem; } }
+          @media screen and (min-width: 1024px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-text {
+              font-size: 1.6rem; } }
+          @media screen and (min-width: 768px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-text {
+              line-height: 2.4rem;
+              margin-top: 3rem; } }
+          @media screen and (min-width: 1024px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-text {
+              line-height: 2.4rem;
+              margin-top: 2.7rem; } }
+        .diaporama-overlay .containers .slider-container .slide .slide-body .slide-social {
+          margin-top: 4rem; }
+          @media screen and (max-width: 767px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-social {
+              font-size: 7.6rem; } }
+          @media screen and (min-width: 768px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-social {
+              font-size: 5.4rem; } }
+          @media screen and (min-width: 1024px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-social {
+              font-size: 3rem; } }
+          @media screen and (min-width: 768px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-social {
+              margin-top: 3rem; } }
+          @media screen and (min-width: 1024px) {
+            .diaporama-overlay .containers .slider-container .slide .slide-body .slide-social {
+              margin-top: 3rem; } }
+      .diaporama-overlay .containers .slider-container .carousel-nav {
+        display: none;
+        position: relative;
+        width: 70%; }
+        @media screen and (min-width: 768px) {
+          .diaporama-overlay .containers .slider-container .carousel-nav {
+            display: none; } }
+        @media screen and (min-width: 1024px) {
+          .diaporama-overlay .containers .slider-container .carousel-nav {
+            display: block;
+            margin-top: 2rem; } }
+        .diaporama-overlay .containers .slider-container .carousel-nav .slider {
+          width: 79.619%;
+          position: relative; }
+          .diaporama-overlay .containers .slider-container .carousel-nav .slider .slide {
+            width: 12.80%;
+            float: left; }
+        .diaporama-overlay .containers .slider-container .carousel-nav-controls {
+          position: absolute;
+          top: 19%;
+          cursor: pointer;
+          outline: none; }
+        .diaporama-overlay .containers .slider-container .carousel-nav-next {
+          display: inline-block;
+          right: 4.2rem;
+          background: url("../assets/images/sliders/diaporama/control-right-black.png") no-repeat;
+          background-size: 90% 90%;
+          height: 3.2vw;
+          width: 3.2vw;
+          visibility: visible; }
+        .diaporama-overlay .containers .slider-container .carousel-nav-prev {
+          display: inline-block;
+          right: 14.7%;
+          background: url("../assets/images/sliders/diaporama/control-left-black.png") no-repeat;
+          background-size: 90% 90%;
+          height: 3.2vw;
+          width: 3.2vw;
+          visibility: visible; }
+    .diaporama-overlay .containers .close-diaporama {
+      position: absolute;
+      right: 3rem;
+      top: 2rem; }
+      @media screen and (max-width: 767px) {
+        .diaporama-overlay .containers .close-diaporama {
+          font-size: 3.8rem; } }
+      @media screen and (min-width: 768px) {
+        .diaporama-overlay .containers .close-diaporama {
+          font-size: 3.2rem; } }
+      @media screen and (min-width: 1024px) {
+        .diaporama-overlay .containers .close-diaporama {
+          font-size: 5rem; } }
+      @media screen and (min-width: 1024px) {
+        .diaporama-overlay .containers .close-diaporama {
+          right: 3rem;
+          top: 2rem; } }
