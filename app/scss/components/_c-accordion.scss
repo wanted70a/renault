@@ -1,0 +1,132 @@
+.accordion{
+	
+	@include breakpoint(tablet){
+			
+	}
+
+	@include breakpoint(desktop){
+			
+	}
+	&-tab{
+		position: relative;
+		background-color: $gray;
+		border-bottom:1px solid #e1dede;
+		display: block;
+		min-height:17rem;
+		width:100%;
+
+		@include breakpoint(tablet){
+			min-height:10rem;
+		}
+
+		@include breakpoint(desktop){
+			
+		}
+	}
+
+	&-title{
+		@include fontSize(28,16,18);
+		letter-spacing: 0.05em;
+		line-height: calculateRem(42);
+		font-weight: 900;
+		color:#6e6e6e;
+		min-height:17rem;
+		padding-left:2.5rem;
+		width:80%;
+		display: table;	
+		
+
+
+		@include breakpoint(tablet){
+			line-height: calculateRem(22);	
+			//padding-top: 4.2rem;
+			//padding-bottom:3.8rem;
+			padding-left:2.8rem;
+			width:85%;
+			min-height:10.2rem;	
+		}
+
+		@include breakpoint(desktop){
+			line-height: calculateRem(26);
+			//padding-top: 4.6rem;
+			//padding-bottom:4.2rem;
+			//padding-left:6.2rem;
+			min-height:11.5rem;
+			width:83%;	
+		}
+
+		h3{
+			display: table-cell;
+    	vertical-align: middle;
+		}
+	}
+
+	&-body{
+		@include fontSize(28,14,16);
+		letter-spacing: 0.05em;
+		line-height: calculateRem(42);
+		color:$light-gray;
+		display: none;
+		padding-left:5.1rem;
+		width:78%;	
+		margin-bottom:5.5rem;
+
+		@include breakpoint(tablet){
+			line-height: calculateRem(18);	
+			padding-left:5.5rem;
+			width:78%;	
+			margin-bottom:4rem;
+		}
+
+		@include breakpoint(desktop){
+			line-height: calculateRem(22);	
+			padding-left:6.3rem;
+			width:78%;
+			margin-bottom:5.5rem;
+		}
+
+		&.active{
+			//display: block;
+		}
+	}
+
+	&-btn{
+		@include fontSize(22,16,18);
+		position:absolute;
+		right:6%;
+		top:6.1rem;
+		background-color:$white;
+		width:8.5vw;
+		height:8.5vw; 
+		border-radius:100%;
+		text-align:center;
+		
+		@include breakpoint(tablet){
+			width:5.8vw;
+			height:5.8vw; 	
+			top:3.3rem;
+			right:7%;
+		}
+
+		@include breakpoint(desktop){
+			width:3vw;
+			height:3vw; 	
+			top:3.3rem;
+			right:7.5%;
+		}
+
+		i{
+			color:#6e6d6d;
+			position:relative;
+			top:30%;
+
+			@include breakpoint(tablet){
+				top:30%;
+			}
+
+			@include breakpoint(desktop){
+				top:35%;
+			}
+		}
+	}
+}

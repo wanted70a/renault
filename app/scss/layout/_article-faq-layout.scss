@@ -1,0 +1,119 @@
+.faq-articles{
+	
+	@include breakpoint(tablet){
+		margin-bottom: 12.1rem;	
+	}
+
+	@include breakpoint(desktop){
+		margin-bottom: 17.5rem;
+	}		
+
+	&:before{
+		display: none;
+	    content: "";
+	    position: relative;
+	    width: 100%;
+	    height: 1px;
+	    background: #f6f6f6;
+	    clear: both;
+	    top:-8rem;
+
+	    @include breakpoint(tablet){
+			 top:-5rem;	
+			 display: block;
+		}
+
+		@include breakpoint(desktop){
+			 top:-8rem;
+			 display: block;
+		}
+	}
+
+	&:after{
+		visibility:none;
+
+	    @include breakpoint(tablet){
+			
+		}
+
+		@include breakpoint(desktop){
+			display: block;
+		    content: "";
+		    position: relative;
+		    width: 100%;
+		    height: 1px;
+		    background: #f6f6f6;
+		    clear: both;
+		    top:3rem; 
+		}
+	}
+
+	.column-1{
+		width:87.5%;
+		margin:0 auto;
+		@include breakpoint(tablet){
+			width:12.700%;	
+			float:left;
+			margin:0;
+		}
+
+		@include breakpoint(desktop){
+			width:12.924%;	
+			float:left;
+			padding-left: 3.7rem;
+		}		
+	}
+
+	.column-2{
+		width:87.5%;
+		margin:0 auto;
+
+		@include breakpoint(tablet){
+			width:87.300%;	
+			float:left;
+			margin:0;
+		}
+
+		@include breakpoint(desktop){
+			width:61.742%;	
+			float:left;
+		}
+
+		.column-2b{
+			padding-top:6.1rem;
+			padding-left:0%;
+			@include breakpoint(tablet){
+				display:block;
+				width:100%;
+				padding-left:0%;
+				padding-top:2.7rem;
+			}
+
+			@include breakpoint(desktop){
+				padding-left:20.5%;
+				padding-top:3.8rem;
+				
+			}
+		}
+	}
+
+	.column-3{
+		width:87.5%;
+		margin:0 auto;
+
+		@include breakpoint(tablet){
+			display:block;
+			float:none;
+			width:87.300%;
+			margin:0;
+			margin-left: 12.700%;
+		}
+
+		@include breakpoint(desktop){
+			width:25.334%;	
+			float:left;
+			padding-left:2.4rem;
+			margin-left: auto;;
+		}
+	}
+}
