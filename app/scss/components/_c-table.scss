@@ -1,0 +1,115 @@
+.table{
+	margin-top:7.8rem;
+	@include breakpoint(tablet){
+		margin-top:4.7rem;		
+	}
+
+	@include breakpoint(desktop){
+		margin-top:4.7rem;		
+	}
+
+	&-col{
+		
+		float:none;	
+		@include breakpoint(tablet){
+			float:left;	
+			width:50%;	
+		}
+
+		@include breakpoint(desktop){
+			
+			float:left;
+			width:50%;
+
+		}
+	}
+
+
+	&-row{
+		border:1px dashed $yellow;
+		padding:2.3rem 0;	
+		padding-left:3%;
+
+		@include breakpoint(tablet){
+			padding:1.8rem 0;	
+			padding-left:6.5%;	
+		}
+
+		@include breakpoint(desktop){
+			
+			padding:1.6rem 0;	
+			padding-left:6.2%;
+		}
+
+		&-txt{
+			//padding:2rem 0;	
+			
+			border:1px dashed $yellow;
+			position:relative;
+			min-height: calculateRem(235);
+			padding-left:3.5%;
+
+			@include breakpoint(tablet){
+				padding-left:6.2%;
+				min-height: calculateRem(170);
+
+			}
+
+			@include breakpoint(desktop){
+				padding-left:6.2%;
+				min-height: calculateRem(155);
+			}
+		}
+	}
+
+	&-row--title{
+		//border:1px dashed $yellow;
+		
+		@include breakpoint(tablet){
+				
+		}
+
+		@include breakpoint(desktop){
+				
+		}
+	}
+
+	&-title{
+
+		@include fontSize(28,18,18);
+		line-height: calculateRem(22);
+		letter-spacing: 0.05em;
+		font-weight:700;
+		color:#404040;
+		
+		@include breakpoint(tablet){
+				
+		}
+
+		@include breakpoint(desktop){
+				
+		}
+	}
+
+	&-text{
+		position:absolute;
+		top:50%;
+		margin-top:-8.4rem;
+		width:87%;
+		
+		@include breakpoint(tablet){
+			position:absolute;
+			top:50%;
+			margin-top:-5.4rem;
+			width:87%;
+
+		}
+
+		@include breakpoint(desktop){
+			position:absolute;
+			top:50%;
+			margin-top:-4.4rem;	
+			width:99%;
+		}
+	}
+}

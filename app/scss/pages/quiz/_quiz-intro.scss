@@ -1,0 +1,138 @@
+.quiz-intro{
+
+	.col{
+		
+		display: block;
+		float:none;
+		width:100%;
+		
+		@include breakpoint(tablet){
+				
+		}
+
+		@include breakpoint(desktop){
+			float:left;	
+		}
+
+		&-01{
+			
+			@include breakpoint(desktop){
+				width:44.117%;
+			}
+
+			.hero-img{
+				position: relative;
+
+				@include breakpoint(tablet){
+				
+				}
+
+				@include breakpoint(desktop){
+					
+				}
+			}
+
+			.title{
+				font-weight:900;
+				@include fontSize(45, 22, 32);
+				line-height:1.15;
+				position:absolute;
+
+
+				@include breakpoint(tablet){
+					
+				}
+
+				@include breakpoint(desktop){
+					line-height:1.15;
+					top:39%;
+					left:30.5%;
+				
+				}
+
+				.subTitle{
+					display:block;
+					font-family: Airways;
+					font-weight:400;
+					
+					@include fontSize(42.48, 22, 30);
+
+					@include breakpoint(tablet){
+					
+					}
+
+					@include breakpoint(desktop){
+						
+
+					}
+					
+					span{
+						@include fontSize(42.48, 22, 30);
+						font-weight:400;
+						font-family: 'Lato';
+						letter-spacing: 0.065em;
+						position:relative;
+						left:0.5rem;
+
+						@include breakpoint(tablet){
+							left:0rem;
+							top:0.1rem;
+							letter-spacing: 0.055em;
+						}
+
+						@include breakpoint(desktop){
+							left:0.5rem;
+						}
+					}
+				}
+			}
+		}
+
+		&-02{
+			@include breakpoint(desktop){
+				width:55.883%;
+			}
+
+			.inner{
+
+				@include breakpoint(tablet){
+				
+				}
+
+				@include breakpoint(desktop){
+
+				}	
+
+				.title{
+					@include breakpoint(tablet){
+				
+					}
+
+					@include breakpoint(desktop){
+					}
+				}
+
+				.text{
+					@include breakpoint(tablet){
+									
+					}
+
+					@include breakpoint(desktop){
+					
+					}
+				}
+
+				.btn{
+
+					@include breakpoint(tablet){
+								
+					}
+
+					@include breakpoint(desktop){
+								
+					}	
+				}
+			}
+		}
+	}
+}

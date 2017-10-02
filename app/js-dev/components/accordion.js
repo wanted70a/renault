@@ -6,7 +6,6 @@
 		$body = $root.find('.accordion-body'),
 		$btn = $root.find('.accordion-btn'),
 		$icon = $btn.find('i');
-		console.log($tab);
 		
 		$tab.click(function(){
 			//console.log($(this));

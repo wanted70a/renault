@@ -1,0 +1,112 @@
+.article-portrait{
+	.col-02{
+		.diaporama{
+			margin-top:4.2rem;	
+			
+			@include breakpoint(tablet){
+				margin-top:3.8rem;	
+			}
+
+			@include breakpoint(desktop){
+				margin-top:4.2rem;		
+			}
+
+			.diaporama-controls{
+				visibility: visible;
+
+				@include breakpoint(tablet){
+					visibility: hidden;
+				}
+
+				@include breakpoint(desktop){
+					display: block;		
+				}
+			}
+
+			.diaporama-slider{
+
+				.slide{
+
+					.btn--diaporama{
+						display: block;
+						margin-left:-17%;
+
+
+						@include breakpoint(tablet){
+							margin-left:-14%;
+							padding:0.8rem 3.1rem;
+						}
+
+						@include breakpoint(desktop){
+							display: none;
+
+						}
+					}
+				}
+			}
+		}
+
+
+		.diaporama-nav{
+			
+
+			@include breakpoint(tablet){
+				display: block;
+				position:relative;
+				margin-left: 3.5rem;
+				left:auto;
+				margin-top: 1.5rem;	
+			}	
+
+			@include breakpoint(desktop){
+				display: block;
+				position:relative;
+				margin-left: 3.5rem;
+				left:auto;
+				margin-top: 7.7rem;	
+			}
+
+			&-prev{
+				
+				@include breakpoint(tablet){
+					background-size: 100% 100%;
+					left: -6.1%;
+				}
+
+				@include breakpoint(desktop){
+					left: -5.1%;
+					background-size: 60% 60%;
+
+				}
+			}
+
+			&-next{
+				
+
+			
+
+				@include breakpoint(tablet){
+					background-size: 100% 100%;
+					right: 0;
+				}
+
+				@include breakpoint(desktop){
+					right: -3.1%;
+					background-size: 60% 60%;
+
+				}
+			}
+
+			&-slide{
+				@include breakpoint(tablet){
+					margin-right:1.65rem;
+					
+				}
+
+				@include breakpoint(desktop){
+					margin-right:0.8rem;
+				}
+			}
+		}
+	}
+}

@@ -1551,7 +1551,6 @@
 		$body = $root.find('.accordion-body'),
 		$btn = $root.find('.accordion-btn'),
 		$icon = $btn.find('i');
-		console.log($tab);
 		
 		$tab.click(function(){
 			//console.log($(this));
@@ -1953,14 +1952,3 @@ $(window).on('load', function() {
 });
 
 })(jQuery);
-
-var slider = '1.Homepage';
-
-function x (y){
-	return y +10;
-}
-
-var person = {
-	name:'Bojana',
-	age:34
-};

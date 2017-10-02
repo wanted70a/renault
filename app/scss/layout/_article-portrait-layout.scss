@@ -1,34 +1,41 @@
 .article-portrait{
+	
 	@include breakpoint(tablet){
-				
+		margin: 0 auto;
+    	width: 73.8%;		
 	}
 
 	@include breakpoint(desktop){
-		margin-left:40.705%;
+		//margin-left:40.705%;
+		margin: 0 auto;
+    	width: 100%;
 	}
 
 	.slider{
-		
 		position:relative;
+		display: block;
+		width: 100%;
 		@include breakpoint(tablet){
-				
+			
 		}
 
 		@include breakpoint(desktop){
 			width:40.705%;
 			float:left;
-			position:fixed;
-			left:0;
-			z-index: 5500;
+			//position:fixed;
+			//left:0;
+			//z-index: 5500;
 		}
 
-		.img{
+		img{
 			width:100%;
+			
 		}
 
 		.label{
 			z-index: 100;
 			padding:1rem 1.5rem;
+			
 			@include breakpoint(tablet){
 				padding:1.5rem 2.8rem;
 			}
@@ -42,15 +49,15 @@
 	.inner{
 
 		@include breakpoint(tablet){
-			//width:73.5%;
-			//margin:0 auto;		
+			width:100%;
+			margin:0 auto;		
 		}
 
 		@include breakpoint(desktop){
-			width:83.117%;
+			width:59.295%;
 			float: left;
-			padding-left:8.15%;
-			padding-top:4rem;
+			padding-left:4.95%;
+			padding-top:3.8rem;
 		}
 
 		.breadcrumbs{
@@ -82,13 +89,13 @@
 			letter-spacing: 0.05em;
 			font-weight: 700;
 			padding:1.1rem 1.3rem;
-			margin-top: 4.5rem;
+			margin-top: 5.5rem;
 			margin-left:6.4%;
 
 			@include breakpoint(tablet){
 				padding:0.9rem 1.1rem;
-				margin-top: 5.1rem;
-				margin-left:6.4%;
+				margin-top: 3.3rem;
+				margin-left:0%;
 			}
 
 			@include breakpoint(desktop){
@@ -110,15 +117,15 @@
 			@include breakpoint(tablet){
 				letter-spacing:-0.025em;
 				margin-top: 1.7rem;
-				width:98.7%;
-				margin-left:6.4%;
-				width:86%;
+				width:100%;
+				margin-left:0;
+				
 			}
 
 			@include breakpoint(desktop){
 				letter-spacing:0;
 				margin-left:0;
-				width:88%;
+				width:71%;
 				margin-top: 2.6rem;	
 			}
 		}
@@ -126,7 +133,7 @@
 		.columns{
 
 			@include breakpoint(tablet){
-					
+				width: 100%;		
 			}
 
 			@include breakpoint(desktop){
@@ -143,8 +150,8 @@
 			
 			@include breakpoint(tablet){
 				display:block;
-				width:87%;
-				margin:0 auto;	
+				width:83%;
+				margin:0;	
 				float:none;
 			}
 
@@ -167,7 +174,7 @@
 				@include breakpoint(tablet){
 					margin-top:7rem;
 					left:auto;
-					width:50.5%;
+					width:60.5%;
 					padding-bottom:1rem;
 				}
 
@@ -255,12 +262,12 @@
 			width:87.5%;
 			float:none;
 			display: block;
-			padding-top:4.6rem;
+			padding-top:5.8rem;
 
 			@include breakpoint(tablet){
 				display:block;
-				width:87%;
-				margin:0 auto;
+				width:100%;
+				margin:0;
 				float:none;
 				padding-top:4.2rem;
 			}
@@ -268,8 +275,9 @@
 			@include breakpoint(desktop){
 				width:100%;
 				float:left;
-				padding-right:8%;	
+				padding-right:25%;	
 				padding-top:6.9rem;
+				margin:0 auto;
 			}
 
 			.meta{
@@ -310,11 +318,11 @@
 				@include fontSize(28,16,16);
 				letter-spacing: 0.05em;
 				line-height: calculateRem(42);
-				padding-top:5.8rem;		
+				padding-top:6.2rem;		
 
 				@include breakpoint(tablet){
 					line-height: calculateRem(23);
-					padding-top:3.5rem;		
+					padding-top:4rem;		
 				}
 
 				@include breakpoint(desktop){
@@ -329,12 +337,32 @@
 					font-weight:700;
 					text-transform: uppercase;
 					letter-spacing: 0.05em;
+					margin-bottom: 2.5rem;
+					
 					@include breakpoint(tablet){
-							
+						margin-bottom: 2.5rem;	
 					}
 
 					@include breakpoint(desktop){
 						margin-bottom: 2.5rem;
+					}
+
+					&-2{
+						@include fontSize(34,22,22);
+						font-weight:700;
+						text-transform: uppercase;
+						letter-spacing: 0.05em;
+						margin-bottom: 2.5rem;
+						
+						@include breakpoint(tablet){
+							margin-bottom: 2.5rem;
+							padding-top: 1.9rem;
+						}
+
+						@include breakpoint(desktop){
+							margin-bottom: 2.5rem;
+							padding-top:0;
+						}
 					}
 				}
 
@@ -343,9 +371,10 @@
 					@include fontSize(34,18,18);
 					font-weight:700;
 					letter-spacing: 0.05em;
+					margin-bottom: 2.5rem;	
 					
 					@include breakpoint(tablet){
-							
+						margin-bottom: 2.5rem;	
 					}
 
 					@include breakpoint(desktop){
@@ -358,14 +387,36 @@
 					}
 				}
 
+				&-subtitle{
+
+					@include fontSize(34,18,18);
+					font-weight:700;
+					letter-spacing: 0.05em;
+					color:$black;
+					margin-top: 6.2rem;
+
+					@include breakpoint(tablet){
+						color:#404040;	
+						margin-top: 4.2rem;
+					}
+
+					@include breakpoint(desktop){
+						color:#404040;
+						margin-top: 5.5rem;
+					}
+				}
+
 				p{
+					color:#404040;
 					margin-bottom: 4rem;
 					@include breakpoint(tablet){
 						margin-bottom: 2.2rem;
+						//width: 99%;
 					}
 
 					@include breakpoint(desktop){
 						margin-bottom: 2.2rem;
+						//width:100%;
 					}
 
 
@@ -392,12 +443,16 @@
 					font-weight:700;
 					text-transform: uppercase;
 					letter-spacing: 0.05em;
+					margin-bottom: 5rem;
+					
 					@include breakpoint(tablet){
-							
+						margin-bottom: 4.4rem;
+						padding-top:1.1rem;
 					}
 
 					@include breakpoint(desktop){
 						margin-bottom: 4.1rem;
+						padding-top:0;
 					}
 				}
 
@@ -406,46 +461,101 @@
 					@include fontSize(28,16,16);
 					font-weight:400;
 					letter-spacing: 0.05em;
+					position:relative;
+					margin-top:6rem;
+					left:4.55rem;
+					width:92%;
 					
 					@include breakpoint(tablet){
-							
+						margin-top:3.3rem;
+						left:2.7rem;
+						width:auto;
+
 					}
 
 					@include breakpoint(desktop){
-						margin-bottom:2rem;
+						margin-top:3.5rem;
+						left:2.7rem;
+						width:auto;
 					}
 
 					li{
+						color:#404040;
+						text-indent: -4.55rem;
 
 						@include breakpoint(tablet){
-							
+							text-indent: -2.55rem;
 						}
 
 						@include breakpoint(desktop){
-							margin-bottom:2rem;
-							padding-left-left:2rem;
-							text-indent: 2.55rem;
+							text-indent: -2.55rem;
 						}
 
 						&:before{
 							background-color:$yellow;
-							width:5px;
-							height: 5px;
+							width:13px;
+							height:13px;
 							content:' ';
 							display:inline-block;
-							//margin-left:-2rem;
+							margin:0;
+							margin-right:3rem;
+
+							@include breakpoint(tablet){
+								width:4px;
+								height: 4px;
+								margin:0;
+								margin-right:2rem;
+							}
+
+							@include breakpoint(desktop){
+								width:4px;
+								height: 4px;
+								margin:0;
+								margin-right:2rem;
+							}
+							
+						}
+					}
+				}
+
+				.figure{
+					margin-top:7.8rem;
+					@include breakpoint(tablet){
+						margin-top:3.5rem;
+					}
+
+					@include breakpoint(desktop){
+						margin-top:4.5rem;
+					}
+
+					.caption{
+						@include fontSize(24,14,14);
+						letter-spacing: 0.05em;
+						line-height:calculateRem(30);
+						padding-top:1.5rem;
+						margin-bottom:4.8rem;
+
+						@include breakpoint(tablet){
+							line-height:calculateRem(18);
+							padding-top:1.8rem;
+							margin-bottom:3.7rem;
+						}
+
+						@include breakpoint(desktop){
+							padding-top:1.5rem;
+							margin-bottom:3.9rem;
 						}
 					}
 				}	
 			}
 
 			.article-tags{
-				@include fontSize(28,16,12);
+				@include fontSize(28,12,12);
 				letter-spacing: 0.05em;
 				color:$yellow;
 
 				@include breakpoint(tablet){
-						
+					padding-top: 5.8rem;	
 				}
 
 				@include breakpoint(desktop){
