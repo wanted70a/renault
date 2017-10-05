@@ -19,5 +19,11 @@
 	float:right;
 }
 
+.non-mobile{
+  @include breakpoint(mobile){
+    display:none;
+  }
+}
+
 
 

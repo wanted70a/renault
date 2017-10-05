@@ -32,7 +32,9 @@ $header-height-desktop:6.6rem;
 		top:2.5rem; 
 		font-size:calculateRem(40);
 
-		@include breakpoint(tablet){}
+		@include breakpoint(tablet){
+			
+		}
 
 		&.active{
 

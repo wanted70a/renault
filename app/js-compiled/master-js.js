@@ -1731,9 +1731,28 @@ $(window).on('load', function() {
 
 	//endQuiz
 	$endQuiz.click(function(){
-		console.log('end');
+		//console.log('end');
 		$quizQuestions.fadeOut(300,function(){
 			$quizResults.fadeIn(300);
+
+			//INITIALIZE SLICK SLIDER
+			var $root = $('.most-read-articles-quiz'),
+				$carousel = $root.find('.most-read-articles__slider'),
+				$nextArrow = $root.find('.most-read-articles__slider__next'),
+				$prevArrow = $root.find('.most-read-articles__slider__prev'),
+				$windowWidth = $(window).outerWidth();
+
+			
+			if($windowWidth > 767){
+				
+				$carousel.slick({
+					slidesToShow: 4,
+		  			slidesToScroll: 1,
+		  			nextArrow:$nextArrow,
+					prevArrow:$prevArrow,
+				});
+			}
+
 		});
 	});
 
@@ -1741,6 +1760,24 @@ $(window).on('load', function() {
 		console.log('end');
 		$quizQuestions.fadeOut(300,function(){
 			$quizResults.fadeIn(300);
+
+			//INITIALIZE SLICK SLIDER
+			var $root = $('.most-read-articles-quiz'),
+				$carousel = $root.find('.most-read-articles__slider'),
+				$nextArrow = $root.find('.most-read-articles__slider__next'),
+				$prevArrow = $root.find('.most-read-articles__slider__prev'),
+				$windowWidth = $(window).outerWidth();
+
+			
+			if($windowWidth > 767){
+				
+				$carousel.slick({
+					slidesToShow: 4,
+		  			slidesToScroll: 1,
+		  			nextArrow:$nextArrow,
+					prevArrow:$prevArrow,
+				});
+			}
 		});
 	});
 	

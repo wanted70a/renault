@@ -3,6 +3,23 @@
 	//display:block;
 	display:none;
 
+	.img-mobile{
+		position:absolute;
+		top:6%;
+		z-index:-1;
+		//max-width:none;
+		//width:110%;
+
+
+		@include breakpoint(tablet){
+			display:none;
+		}
+
+		@include breakpoint(desktop){
+	
+		}		
+	}
+
 
 	.result{
 		position: relative;
@@ -69,23 +86,24 @@
 
 			.car-img{
 				position:relative;
-				width:150%;
-				left:-18%;
-				top:1rem;
+				//width:150%;
+				//left:-18%;
+				//top:1rem;
 				z-index:-1;
+				visibility: hidden;
 				
 				@include breakpoint(tablet){
 					width:115%;
 					left:-6%;
 					top:-2rem;
+					visibility: visible;
 				
 				}
 
 				@include breakpoint(desktop){
-					//left:10.5%;
-					//z-index:-1;
-					//width:100%;
-					//top:auto;
+					left:10.5%;
+					width:100%;
+					top:auto;
 				}
 
 				img{
@@ -109,6 +127,8 @@
 					}
 				}
 			}
+
+
 		}
 
 		.col-02{
