@@ -1,0 +1,322 @@
+.quiz-results{
+	position:relative;
+	//display:block;
+	display:none;
+
+
+	.result{
+		position: relative;
+		@include container(87.97%,0,0 auto);
+		padding-top:11rem;
+		margin-bottom: 8rem;
+		
+		@include breakpoint(tablet){
+			@include container(84.63%,0,0 auto);
+			padding-top:10.5rem;
+			margin-bottom: 13rem;
+		}
+
+		@include breakpoint(desktop){
+			@include container(79.47%,0,0 auto);
+			padding-top:9.9rem;
+			margin-bottom: 14.5rem;
+			
+		}
+
+		.col{
+
+			display:block;
+			float:none;
+
+			@include breakpoint(tablet){
+
+			}
+
+			@include breakpoint(desktop){
+				float:left;
+				//margin-bottom: 14.8rem;
+			}
+		}
+
+		.col-01{
+			@include breakpoint(tablet){
+
+			}
+
+			@include breakpoint(desktop){
+				width: 63.669%;
+			}
+
+			.title{
+				@include fontSize(50,44,44);
+				color:$yellow;
+				letter-spacing: 0.05em;
+				font-weight:900;
+
+				@include breakpoint(tablet){
+					position:relative;
+					text-align:center;
+				}
+
+				@include breakpoint(desktop){
+					position:absolute;
+					right:-0.5rem;
+					//top:5.5rem;
+					top:15.5rem;
+				}
+
+			}
+
+			.car-img{
+				position:relative;
+				width:150%;
+				left:-18%;
+				top:1rem;
+				z-index:-1;
+				
+				@include breakpoint(tablet){
+					width:115%;
+					left:-6%;
+					top:-2rem;
+				
+				}
+
+				@include breakpoint(desktop){
+					//left:10.5%;
+					//z-index:-1;
+					//width:100%;
+					//top:auto;
+				}
+
+				img{
+
+					//position:relative;
+					//top:1rem;
+					//z-index:-1;
+
+					@include breakpoint(tablet){
+						//width:125%;
+						//left:-9%;
+						//top:-2rem;
+						
+					}
+
+					@include breakpoint(desktop){
+						//left:10.5%;
+						//z-index:-1;
+						//width:100%;
+						//top:auto;
+					}
+				}
+			}
+		}
+
+		.col-02{
+
+
+			width:100%;	
+			float:none;
+			display: block;
+			position:relative;
+			
+			@include breakpoint(tablet){
+				display:block;
+				width:87%;
+				margin:0 auto;	
+				float:none;
+			}
+
+			@include breakpoint(desktop){
+				float:left;
+				width:12.795%;
+				padding-right:7%;
+				padding-top:9rem;
+				position:absolute;	
+			}
+
+			.social-follow{
+				background-color: $gray;
+				@include fontSize(37,22,24);
+				position:relative;
+				margin:0 auto;
+				margin-top:10.5rem;
+				left:auto;
+				width:75%;
+				padding-bottom:0rem;
+
+				@include breakpoint(tablet){
+					margin:0 auto;
+					margin-top:2.7rem;
+					left:1rem;
+					width:50%;
+					padding-bottom:1rem;
+				}
+
+				@include breakpoint(desktop){
+					padding-top:4rem;
+					padding-bottom:1rem;
+					left:2rem;
+					width: 100%;
+					margin:0;
+					margin-top:0;
+				}
+
+				.soc-icons{
+					position:relative;
+					left:2.2rem;
+					bottom:3.7rem;
+
+					@include breakpoint(tablet){
+						left:2.2rem;
+						bottom:2.2rem;		
+					}
+
+					@include breakpoint(desktop){
+						left:-3rem;	
+						bottom:auto;
+					}
+
+					.fa-twitter{
+							padding:3rem 3.2rem;
+							margin-right:3rem;
+						@include breakpoint(tablet){
+							padding:2rem 2rem;
+							margin-right:2rem;
+						}
+
+						@include breakpoint(desktop){
+							text-align:center;
+							display: block;
+							padding:1.8rem 0rem;
+							margin:0 0.8rem;
+							margin-bottom: 3.65rem;
+							
+						}
+					}
+
+					.fa-envelope{
+						padding:3rem 3rem;
+						margin-right:2rem;
+
+						@include breakpoint(tablet){
+							padding:2rem 1.9rem;
+							margin-right:2rem;	
+						}
+
+						@include breakpoint(desktop){
+								text-align:center;
+								display: block;
+								padding:1.8rem 0rem;
+								margin:0 0.8rem;
+								margin-bottom: 3.65rem;
+								
+						}
+					}
+				}
+
+				i{
+					color:$yellow;
+					border:1px solid $yellow;
+					background-color:$white;
+					position:relative;
+					padding:3rem 3.8rem;
+					margin-right:2.7rem;
+					box-shadow: 6px 6px 27px -1px rgba(0, 0, 0, 0.2);
+
+					@include breakpoint(tablet){
+						padding:2rem 2.5rem;
+						margin-right:2rem;
+						box-shadow: 6px 6px 27px -1px rgba(0, 0, 0, 0.2);
+					}
+
+					@include breakpoint(desktop){
+						text-align:center;
+						display: block;
+						padding:1.8rem 0rem;
+						margin:0 0.8rem;
+						margin-bottom: 3.65rem;
+						box-shadow: 6px 6px 27px -1px rgba(0, 0, 0, 0.2);
+					}
+				}
+			}
+		}
+
+		.col-03{
+			@include fontSize(28,16,16);
+			letter-spacing: 0.05em;
+			color:$light-gray;
+			line-height: calculateRem(42);
+			padding-top:4rem;
+			
+			@include breakpoint(tablet){
+				line-height: calculateRem(23);
+				padding-top:6.5rem;
+				padding-left:4.2rem;
+				width: 93%;
+			}
+
+			@include breakpoint(desktop){
+				width: 36.331%;
+				padding-top:12.2rem;
+				padding-left:0;
+				line-height: calculateRem(22);
+			}
+
+			.text{
+				margin-bottom: 7.2rem;
+				@include breakpoint(tablet){
+					margin-bottom: 6rem;
+				}
+
+				@include breakpoint(desktop){
+					margin-bottom: 3rem;
+				}
+			}
+
+			.buttons{
+				text-align:center;
+				
+				@include breakpoint(tablet){
+					text-align:center;
+				}
+
+				@include breakpoint(desktop){
+					
+				}
+
+				.btn{
+					@include fontSize(21.12,14,14);
+					letter-spacing: 0.05em;
+					display: inline-block;
+					padding:3.5rem 0;
+					width:63%;
+
+					@include breakpoint(tablet){
+						display: inline-block;
+						width:41%;
+						padding:2.2rem 0;
+					}
+
+					@include breakpoint(desktop){
+						display: inline-block;
+						width:47.1%;
+						padding:2.2rem 0;
+					}
+
+					&:nth-child(1){
+						margin-bottom:2.5rem;
+						@include breakpoint(tablet){
+							margin-bottom:0;
+							margin-right:3%;
+						}
+
+						@include breakpoint(desktop){
+							margin-right:5%;
+						}
+					}
+				}
+			}
+		}
+		
+	}
+}

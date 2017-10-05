@@ -1,0 +1,159 @@
+.quiz-questions{
+	display:none;
+	@include breakpoint(tablet){
+		
+	}
+
+	@include breakpoint(desktop){
+			
+	}
+
+	.quiz-page{
+		
+		position:relative;
+		margin:0 auto;
+		padding-top:8.9rem;
+		@include container(87.7%,0,0 auto);
+		
+		@include breakpoint(tablet){
+			@include container(84.63%,0,0 auto);
+			padding-top:9.7rem;
+		}
+
+		@include breakpoint(desktop){
+			@include container(79.47%,0,0 auto);
+			padding-top:5.1rem;
+			
+		}
+
+		&-intro{
+			letter-spacing: 0.05em;
+			margin:0 auto;
+
+			@include breakpoint(tablet){
+					
+			}
+
+			@include breakpoint(desktop){
+				
+				width:71%;
+			}
+
+
+			
+
+			.counter{
+				@include fontSize(30,30,30);
+				line-height: calculateRem(34);
+				font-weight: 900;
+				color:$yellow;
+				display: block;
+				position:relative;
+
+				@include breakpoint(tablet){
+					display:inline-block;
+					bottom:1.5rem
+				}
+
+				@include breakpoint(desktop){
+					bottom:1.5rem
+				}
+
+
+				.total{
+					color:$black;
+					font-weight: 900;
+				}
+
+				.current{
+					color:$black;
+					font-weight: 900;
+				}
+
+			}
+
+			.title{
+				@include fontSize(40,30,30);
+				line-height: calculateRem(42);
+				font-weight: 900;
+				display:block;
+				letter-spacing: 0.05em;
+				margin-top:4.5rem;
+
+				@include breakpoint(tablet){
+					line-height: calculateRem(34);
+					display:inline-block;
+					width:70%;
+					margin-left:6.5rem;
+					margin-top:0;
+				
+				}
+
+				@include breakpoint(desktop){
+					width:70%;
+					margin-left:6.5rem;
+					margin-top:0;
+						
+				}
+			}
+		}
+
+		&>.col{
+		
+			display: block;
+			float:none;
+			width:100%;
+			padding-top:7rem;
+			
+			@include breakpoint(tablet){
+				padding-top:0rem;	
+			}
+
+			@include breakpoint(desktop){
+				float:left;	
+				width:50%;
+			}
+
+
+			&-01{
+				
+				@include breakpoint(tablet){
+					padding-top:9.7rem;	
+				}
+				@include breakpoint(desktop){
+					padding-top:4.5rem;	
+				}
+			}
+
+			&-02{
+				margin-bottom:4rem;
+				padding-top:0rem;
+				
+				@include breakpoint(tablet){
+					
+				}
+
+				@include breakpoint(desktop){
+					padding-top:4.5rem;	
+					margin-bottom:0;
+				}
+			}
+		}
+	}
+
+	.confirm-btn{
+		padding-top:5.2rem;
+		display:none;
+		
+		@include breakpoint(tablet){
+			
+		}
+		@include breakpoint(desktop){
+			display:block;
+		}
+
+		.btn{
+			padding:2.2rem 6.5rem;
+		}	
+	}
+}

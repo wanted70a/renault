@@ -178,40 +178,355 @@
 <!-- MAIN CONTENT -->
 	<div class='tint'></div>
 	<div class='wrapper wrapper--main'>
+		<!-- START QUIZ INTRO -->
 		<section class='quiz-intro clearfix'>
 			<div class='col col-01'>
-				<div class='hero-img'>
-					<picture>
-					  <source srcset="https://dummyimage.com/750x875/f7f7f7/000.jpg" media="(min-width: 1024px)">
-					  <source srcset="https://dummyimage.com/768x397/f7f7f7/000.jpg" media="(min-width: 768px)">
-					  <img srcset="https://dummyimage.com/640x510/f7f7f7/000.jpg" alt='slide'>
-					</picture>
-					<h3 class='title'>WHICH VEHICLE <span class='subTitle'>est fait <span>POUR VOUS ?</span> </span></h3>
-				</div>
+				<h3 class='title'>WHICH VEHICLE <span class='subTitle'>est fait <span>POUR VOUS ?</span> </span></h3>
 			</div>
+
 			<div class='col col-02'>
 				<div class='inner'>
 					<h2 class='title'>Curabitur scelerisque mauris mi, sed consectetur dui tempor et. </h2>
 					<p class='text'>
-						Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. Suspendisse id commodo tellus. Phasellus ac cursus elit, ac tincidunt nulla. Duis eget sapien sem. Fusce eu dolor sit amet nunc efficitur laoreet. Mauris interdum felis sit amet leo fringilla ullamcorper. Mauris enim turpis, condimentum in libero ac, posuere pulvinar purus. Aenean at justo nibh. Curabitur scelerisque mauris mi, sed consectetur dui tempor et. Praesent molestie ex sed euismod dapibus. Nunc in suscipit ligula. Curabitur metus elit, fermentum ac condimentum eu, condimentum sit amet tortor. Aliquam sed hendrerit augue. Sed facilisis sodales turpis, et varius quam viverra a.
+						Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. Suspendisse id commodo tellus. Phasellus ac cursus elit, ac tincidunt nulla. Duis eget sapien sem. Fusce eu dolor sit amet nunc efficitur laoreet. Mauris interdum felis sit amet leo fringilla ullamcorper. Mauris enim turpis, condimentum in libero ac, posuere pulvinar purus. Aenean at justo nibh. Curabitur scelerisque mauris mi, sed consectetur dui tempor et. Praesent molestie ex sed euismod dapibus. Nunc in suscipit ligula. Curabitur metus elit, fermentum ac condimentum eu, condimentum sit amet tortor. Aliquam sed hendrerit augue. Sed facilisis sodales turpis, et varius quam viverra
 					</p>
-					<button class='btn btn--yellow-black'>START</button>
+					<button class='btn btn--yellow-black' id='start-quiz-btn'>START</button>
+				</div>
+			</div>
+		</section>
+		
+		<!-- QUIZ QUESTIONS PAGE -->
+		<section class='quiz-questions'>
+			<div class='quiz-page clearfix' id='quiz-page-1'>
+				<div class='quiz-page-intro'>
+					<p class='counter'><span class='current'>1</span> / <span class='total'>12</span></p>
+					<h1 class='title'>Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</h1>
+				</div>
+			
+				<div class='col col-01 clearfix'>
+					<!-- MO QUESTION 01-->
+					<div class='mo-question clearfix question'>
+						<div class='mo-question mo-question-overlay'>
+							<div class='close'>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</div>
+							<button class='btn btn-mobile btn--shdw btn--yellow-black end-quiz'>CONFIRM</button>
+						</div>
+						<div class='col col-01'>
+							<div class='img'>
+								<picture>
+									  <source srcset="https://dummyimage.com/150x185/000/fff.jpg" media="(min-width: 1024px)">
+									  <source srcset="https://dummyimage.com/155x190/000/fff.jpg" media="(min-width: 768px)">
+									  <img srcset="https://dummyimage.com/145x185/000/fff.jpg" alt='slide'>
+								</picture>
+							</div>
+
+							<div class='checkbox'>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</div>
+						</div>
+						
+						<div class='col col-02 col-02--bordered'>
+							<div class='body'>
+								<h3 class='title'>Lorem ipsum dolor sit amet ?</h3>
+
+								<p class='text'>
+									Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. 
+								</p>
+							</div>
+							
+						</div>
+					</div>
+					<!-- END OF QUESTION -->
+
+					<!-- MO QUESTION 02-->
+					<div class='mo-question clearfix question'>
+						<div class='mo-question mo-question-overlay'>
+							<div class='close'>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</div>
+							<button class='btn btn-mobile btn--shdw btn--yellow-black end-quiz'>CONFIRM</button>
+						</div>
+
+						<div class='col col-01'>
+							<div class='img'>
+								<picture>
+									  <source srcset="https://dummyimage.com/150x185/000/fff.jpg" media="(min-width: 1024px)">
+									  <source srcset="https://dummyimage.com/155x190/000/fff.jpg" media="(min-width: 768px)">
+									  <img srcset="https://dummyimage.com/145x185/000/fff.jpg" alt='slide'>
+								</picture>
+							</div>
+
+							<div class='checkbox'>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</div>
+						</div>
+						
+						<div class='col col-02 col-02--bordered'>
+							<div class='body'>
+								<h3 class='title'>Lorem ipsum dolor sit amet ?</h3>
+
+								<p class='text'>
+									Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. 
+								</p>
+							</div>
+							
+						</div>
+					</div>
+					<!-- END OF QUESTION -->
+
+					<!-- MO QUESTION 03-->
+					<div class='mo-question mo-question-no-img clearfix question'>
+						<div class='mo-question mo-question-overlay'>
+							<div class='close'>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</div>
+							<button class='btn btn-mobile btn--shdw btn--yellow-black end-quiz'>CONFIRM</button>
+						</div>
+						<div class='col col-01'>
+
+							<div class='checkbox'>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</div>
+						</div>
+						
+						<div class='col col-02'>
+							<div class='body'>
+								<h3 class='title'>Lorem ipsum dolor sit amet ?</h3>
+
+								<p class='text'>
+									Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. 
+								</p>
+							</div>
+							
+						</div>
+					</div>
+					<!-- END OF QUESTION -->
+				</div>
+
+				<div class='col col-02 clearfix'>
+					<!-- MO QUESTION 04-->
+					<div class='mo-question clearfix question'>
+						<div class='mo-question mo-question-overlay'>
+							<div class='close'>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</div>
+							<button class='btn btn-mobile btn--shdw btn--yellow-black end-quiz'>CONFIRM</button>
+						</div>
+						<div class='col col-01'>
+							<div class='img'>
+								<picture>
+									  <source srcset="https://dummyimage.com/150x185/000/fff.jpg" media="(min-width: 1024px)">
+									  <source srcset="https://dummyimage.com/155x190/000/fff.jpg" media="(min-width: 768px)">
+									  <img srcset="https://dummyimage.com/145x185/000/fff.jpg" alt='slide'>
+								</picture>
+							</div>
+
+							<div class='checkbox'>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</div>
+						</div>
+						
+						<div class='col col-02 col-02--bordered'>
+							<div class='body'>
+								<h3 class='title'>Lorem ipsum dolor sit amet ?</h3>
+
+								<p class='text'>
+									Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. 
+								</p>
+							</div>
+							
+						</div>
+					</div>
+					<!-- END OF QUESTION -->
+
+					<!-- MO QUESTION 05-->
+					<div class='mo-question clearfix question'>
+						<div class='mo-question mo-question-overlay'>
+							<div class='close'>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</div>
+							<button class='btn btn-mobile btn--shdw btn--yellow-black end-quiz'>CONFIRM</button>
+						</div>
+						<div class='col col-01'>
+							<div class='img'>
+								<picture>
+									  <source srcset="https://dummyimage.com/150x185/000/fff.jpg" media="(min-width: 1024px)">
+									  <source srcset="https://dummyimage.com/155x190/000/fff.jpg" media="(min-width: 768px)">
+									  <img srcset="https://dummyimage.com/145x185/000/fff.jpg" alt='slide'>
+								</picture>
+							</div>
+
+							<div class='checkbox'>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</div>
+						</div>
+						
+						<div class='col col-02 col-02--bordered'>
+							<div class='body'>
+								<h3 class='title'>Lorem ipsum dolor sit amet ?</h3>
+
+								<p class='text'>
+									Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. 
+								</p>
+							</div>
+							
+						</div>
+					</div>
+					<!-- END OF QUESTION -->
+
+					<!-- MO QUESTION 06-->
+					<div class='mo-question clearfix question'>
+						<div class='mo-question mo-question-overlay'>
+							<div class='close'>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</div>
+							<button class='btn btn-mobile btn--shdw btn--yellow-black'>CONFIRM</button>
+						</div>
+						<div class='col col-01'>
+							<div class='img'>
+								<picture>
+									  <source srcset="https://dummyimage.com/150x185/000/fff.jpg" media="(min-width: 1024px)">
+									  <source srcset="https://dummyimage.com/155x190/000/fff.jpg" media="(min-width: 768px)">
+									  <img srcset="https://dummyimage.com/145x185/000/fff.jpg" alt='slide'>
+								</picture>
+							</div>
+
+							<div class='checkbox'>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</div>
+						</div>
+						
+						<div class='col col-02'>
+							<div class='body'>
+								<h3 class='title'>Lorem ipsum dolor sit amet ?</h3>
+
+								<p class='text'>
+									Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. 
+								</p>
+							</div>
+							
+						</div>
+					</div>
+					<!-- END OF QUESTION -->
+				</div>
+			</div> 
+			<!-- END OF QUIZ PAGE -->
+			<div class='confirm-btn'>
+					<button class='btn btn--center  btn--desktop  btn--shdw btn--yellow-black'>CONFIRM</button>
+			</div>
+		</section>
+		<!-- END OF QUIZ QUESETIONS -->
+		
+		<!-- QUIZ RESULTS -->
+		<section class='quiz-results'>
+			<div class='result clearfix'>
+				<div class='col col-01'>
+					<h1 class='title'>The Kangoo is for you!</h1>
+					<div class='car-img'>
+						<picture>
+							  <source srcset="assets/images/quiz-result.png" media="(min-width: 1024px)">
+							  <source srcset="assets/images/quiz-result-tablet2.png" media="(min-width: 768px)">
+							  <img srcset="assets/images/quiz-result-mobile2.png" alt='slide'>
+						</picture>
+					</div>
+				</div>
+				
+				<div class='col col-02'>
+					<div class="social-follow">
+						<div class="soc-icons">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</div>	
+					</div>
+				</div>
+				
+				<div class='col col-03'>
+					<p class='text'>
+						Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. Suspendisse id commodo tellus. Phasellus ac cursus elit, ac tincidunt nulla. Duis eget sapien sem. Fusce eu dolor sit amet nunc efficitur laoreet. Mauris interdum felis sit amet leo fringilla ullamcorper. Mauris enim turpis, condimentum in libero ac. Posuere pulvinar purus. Aenean at justo nibh. Curabitur scelerisque mauris mi, sed consectetur dui tempor et. Praesent molestie ex sed euismod dapibus. Nunc in suscipit ligula. 
+					</p>
+					<div class='buttons'>
+						<button class='btn btn--shdw btn--yellow-black'>DISCOVER THE KANGOO</button>
+						<button class='btn btn--shdw btn--white-black'>RESTART</button>
+
+					</div>
+				</div>
+			</div>
+			
+
+			<!-- MOST READ ARTICLES -->
+			<div class='row most-read-articles'>
+				<div class='wrapper clearfix'>
+					<div class='container-1'>
+						<h2 class='section-title most-read'><span class='cursive'>les</span>PLUS <span class='bold-text'>LUS</span></h2>
+					</div>
+
+					<div class='container-7'>
+						<!-- SLIDER CONTROLS -->		
+						<div class='most-read-articles__slider__prev'></div> 
+						<div class='most-read-articles__slider__next'></div>
+
+						<!-- SLIDER -->
+						<div class='most-read-articles__slider clearfix'>
+							<div class='most-read-articles__slide'>
+								<picture>
+								  <source srcset="https://dummyimage.com/234x192/000/fff.jpg" media="(min-width: 768px)">
+								  <img srcset="https://dummyimage.com/272x222/000/fff.jpg" alt='slide'>
+								</picture>
+
+								<p>Renault Véhicule utilitaire propose un système de motricité sur terrain instable</p>
+							</div>
+
+							<div class='most-read-articles__slide'>
+								<picture>
+								  <source srcset="https://dummyimage.com/234x192/000/fff.jpg" media="(min-width: 768px)">
+								  <img srcset="https://dummyimage.com/272x222/000/fff.jpg" alt='slide'>
+								</picture>
+								<p>Renault Véhicule utilitaire propose un système de motricité sur terrain instable</p>
+							</div>
+
+							<div class='most-read-articles__slide'>
+								<picture>
+								  <source srcset="https://dummyimage.com/234x192/000/fff.jpg" media="(min-width: 768px)">
+								  <img srcset="https://dummyimage.com/272x222/000/fff.jpg" alt='slide'>
+								</picture>
+								<p>Renault Véhicule utilitaire propose un système de motricité sur terrain instable</p>
+							</div>
+
+							<div class='most-read-articles__slide'>
+								<picture>
+								  <source srcset="https://dummyimage.com/234x192/000/fff.jpg" media="(min-width: 768px)">
+								  <img srcset="https://dummyimage.com/272x222/000/fff.jpg" alt='slide'>
+								</picture>
+								<p>Renault Véhicule utilitaire propose un système de motricité sur terrain instable</p>
+							</div>
+
+							<div class='most-read-articles__slide no-mobile'>
+								<picture>
+								  <source srcset="https://dummyimage.com/234x192/000/fff.jpg" media="(min-width: 768px)">
+								  <img srcset="https://dummyimage.com/272x222/000/fff.jpg" alt='slide'>
+								</picture>
+								<p>Renault Véhicule utilitaire propose un système de motricité sur terrain instable</p>
+							</div>
+
+						</div>
+					</div>	
 				</div>
 			</div>
 
+			<!-- FOOTER -->
+			<footer class='footer wrapper text--center'>
+				<div class='footer__logo'>
+					<img src='assets/images/renault-logo-footer.png' alt='logo-footer'/>
+				</div>
+				<ul class='footer__links'>
+					<li><a class='footer__link' href="#">CGU</a></li>
+					<li><a class='footer__link' href="#">MENTIONS LEGALES</a></li>
+				</ul>
+			</footer>
 		</section>
 
-
-		<!-- FOOTER -->
-		<footer class='footer wrapper text--center'>
-			<div class='footer__logo'>
-				<img src='assets/images/renault-logo-footer.png' alt='logo-footer'/>
-			</div>
-			<ul class='footer__links'>
-				<li><a class='footer__link' href="#">CGU</a></li>
-				<li><a class='footer__link' href="#">MENTIONS LEGALES</a></li>
-			</ul>
-		</footer>
 	</div>
 <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -222,7 +537,7 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<script type="text/javascript" src='/js-compiled/master-js.js'></script>
+<script type="text/javascript" src='js-compiled/master-js.js'></script>
 </body>
 </html>
 	</div>

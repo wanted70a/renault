@@ -1,4 +1,6 @@
 .quiz-intro{
+	//display:none;
+	display:block;
 
 	.col{
 		
@@ -15,38 +17,41 @@
 		}
 
 		&-01{
+			text-align:center;
+			background: url('https://dummyimage.com/640x510/f7f7f7/000.jpg') no-repeat center;
+			//background-size:cover;
+			background-size: 100% 100%;
+			min-height:calculateRem(510);
+
+			@include breakpoint(tablet){
+				background: url('https://dummyimage.com/768x397/f7f7f7/000.jpg') no-repeat center;
+				min-height:calculateRem(397);
+			}
 			
 			@include breakpoint(desktop){
 				width:44.117%;
+				background: url('https://dummyimage.com/750x875/f7f7f7/000.jpg') no-repeat center;
+				min-height:calculateRem(875);
+				//background-size: 100% 100%;
 			}
-
-			.hero-img{
-				position: relative;
-
-				@include breakpoint(tablet){
-				
-				}
-
-				@include breakpoint(desktop){
-					
-				}
-			}
+			
 
 			.title{
+				
 				font-weight:900;
-				@include fontSize(45, 22, 32);
+				@include fontSize(50.16, 48.2, 32);
 				line-height:1.15;
-				position:absolute;
-
+				padding-top:34%;
 
 				@include breakpoint(tablet){
-					
+					padding-top:18.5%;
 				}
 
 				@include breakpoint(desktop){
 					line-height:1.15;
-					top:39%;
-					left:30.5%;
+					padding-top:45.5%;
+					
+
 				
 				}
 
@@ -55,7 +60,7 @@
 					font-family: Airways;
 					font-weight:400;
 					
-					@include fontSize(42.48, 22, 30);
+					@include fontSize(47.02, 45.19, 30);
 
 					@include breakpoint(tablet){
 					
@@ -67,7 +72,7 @@
 					}
 					
 					span{
-						@include fontSize(42.48, 22, 30);
+						@include fontSize(47.02, 45.19, 30);
 						font-weight:400;
 						font-family: 'Lato';
 						letter-spacing: 0.065em;
@@ -94,18 +99,31 @@
 			}
 
 			.inner{
+				position:relative;
+				margin:0 auto;
+				width:87.7%;
+				padding-top: 4.9rem;
 
 				@include breakpoint(tablet){
-				
+					width:63.2%;
+					padding-top: 4.8rem;
 				}
 
 				@include breakpoint(desktop){
+					padding-top: 22.4%;
+					width:54.5%;
+					left:0.9rem;
 
 				}	
 
 				.title{
+					@include fontSize(40,24,24);
+					letter-spacing: 0.05em;
+					line-height: calculateRem(42);
+					font-weight: 900;
+
 					@include breakpoint(tablet){
-				
+						line-height: calculateRem(30);
 					}
 
 					@include breakpoint(desktop){
@@ -113,23 +131,39 @@
 				}
 
 				.text{
+					@include fontSize(28,16,16);
+					letter-spacing: 0.05em;
+					line-height: calculateRem(42);
+					color:$light-gray;
+					margin-top:1.8rem;
+
 					@include breakpoint(tablet){
-									
+						line-height: calculateRem(23);	
+						margin-top: 2.1rem;		
 					}
 
 					@include breakpoint(desktop){
-					
+						margin-top: 2.1rem;
+						line-height: calculateRem(22);	
 					}
 				}
 
 				.btn{
+					margin:0 auto;
+					margin-top:5.9rem;
+					margin-bottom:4.5rem;	
+					padding:3.4rem 6rem;		
 
 					@include breakpoint(tablet){
-								
+						margin:0 auto;
+						margin-top:4.5rem;	
+						padding:2.4rem 4.4rem;	
 					}
 
 					@include breakpoint(desktop){
-								
+						margin:0;
+						margin-top:6.5rem;	
+						padding:2.2rem 4.2rem;
 					}	
 				}
 			}

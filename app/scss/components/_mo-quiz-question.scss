@@ -1,0 +1,401 @@
+.mo-question{
+	position: relative;
+	background-color:$gray;
+	border-bottom:1px solid #e1dede;
+
+	@include breakpoint(mobile){
+		height:calculateRem(457);
+		
+	}
+
+	@include breakpoint(desktop){
+		border-bottom:none;
+	}
+
+	
+	&-overlay{
+		position:absolute;
+		background-color:rgba(0,0,0,0.2);
+		width: 100%;
+		height: 100%;
+		display:block;
+		visibility: hidden;
+		z-index: 1000000;
+
+		@include breakpoint(tablet){
+			
+		}
+
+		@include breakpoint(desktop){
+			display:none;
+		}
+		
+
+		.close{
+			width:8.5vw;
+			height: 8.5vw;
+			border-radius:100%;
+			position:absolute;
+			background-color:$yellow;
+			text-align:center;
+			z-index:1000;
+			right:-1vw;
+			top:-1.5vw;
+			
+			
+			@include breakpoint(tablet){
+				right:-0.8vw;
+				top:-1.4vw;
+				width:5vw;
+				height:5vw;
+			}
+
+			@include breakpoint(desktop){
+				right:-1vw;
+				top:-1vw;
+				width:2vw;
+				height: 2vw;
+				
+			}
+
+			i{
+				@include fontSize(34,28,28);
+				color:$white;
+				position:relative;
+				top:1.2vw;
+
+				@include breakpoint(tablet){
+					top:0.8vw;
+				}
+
+				@include breakpoint(desktop){
+					top:auto;		
+				}
+			}
+		}
+
+		.btn{
+			//position:absolute;
+			padding:3rem 8.3rem;
+			margin:0 auto;
+			margin-top:20.5rem;
+
+			@include breakpoint(tablet){
+				padding:2.4rem 7rem;
+				margin-top:6.2rem;
+			}
+
+			@include breakpoint(desktop){
+
+				margin-top:10rem;
+				padding:1.8rem 3.5rem;
+			}
+		}
+	}
+
+	&>.col{
+		
+		float:left;
+		
+		@include breakpoint(tablet){
+			
+		}
+
+		@include breakpoint(desktop){
+					
+		}
+
+		&-01{
+				
+			width:25.5%;
+			@include breakpoint(tablet){
+				width:23.83%;
+			}
+
+			@include breakpoint(desktop){
+				width:21.73%;	
+			}
+
+			.image{
+
+			}
+
+
+			.checkbox{
+				width:8vw;
+				height: 8vw;
+				border-radius:100%;
+				position:relative;
+				border:2px solid #e6e3e3;
+				background-color:$white;
+				text-align: center;
+				z-index:999;
+				top:11rem;
+				left:4.5rem;
+				
+
+				@include breakpoint(tablet){
+					position:absolute;	
+					right:2.3rem;;
+					top:35.7%;	
+					width:6.5vw;
+					height: 6.5vw;
+					left:auto;
+				}
+
+				@include breakpoint(desktop){
+					position:absolute;
+					width:3vw;
+					height: 3vw;
+					right:4.8rem;
+					top:35.7%;	
+					left:auto;
+				}
+
+				i{
+					position:relative;	
+					@include fontSize(34,28,28);
+					color:$yellow;
+					visibility: hidden;
+					top:0.5rem;
+
+
+					@include breakpoint(tablet){
+						top:1rem;
+					}
+
+					@include breakpoint(desktop){
+						top:1rem;
+					}
+				}
+			}
+		}
+
+		&-02{
+			
+			width:74.5%;
+			height:calculateRem(457);
+			border-left:1px solid #e1dede;
+
+			
+			@include breakpoint(tablet){
+				height:auto;
+				width:76.17%;
+				border-left:none;
+			}
+
+			@include breakpoint(desktop){
+				width:78.27%;	
+			}
+
+			&--bordered{
+				
+				&:after{
+					content: ' ';
+					height: 1px;
+					position:absolute;
+					bottom:0;
+					background-color: #e1dede;
+					width:74.5%;
+					display:none;
+
+					@include breakpoint(tablet){
+						width:76.17%;
+
+					}
+
+					@include breakpoint(desktop){
+						width:78.27%;
+						display:block;	
+					}
+				}
+			}
+
+			.body{
+					width:97%;
+					padding-top: 7.6rem;
+					padding-left:4.8rem;
+
+
+				@include breakpoint(tablet){
+					width:72%;
+					padding-top: 4.5rem;
+					padding-left:4.2rem;	
+				}
+
+				@include breakpoint(desktop){
+					width:72%;
+					padding-top: 4.2rem;
+					padding-left:4.8rem;	
+				}
+
+				.title{
+					@include fontSize(28,18,18);
+					letter-spacing: 0.05em;
+					line-height: calculateRem(42);
+					font-weight: 900;
+					color:#6e6d6d;
+					
+					@include breakpoint(tablet){
+						line-height: calculateRem(22);
+					}
+
+					@include breakpoint(desktop){
+			
+					}
+				}
+
+				.text{
+					@include fontSize(28,16,16);
+					letter-spacing: 0.05em;
+					line-height: calculateRem(42);
+					color:$light-gray;
+					margin-top:2.8rem;
+					
+					@include breakpoint(tablet){
+						line-height: calculateRem(22);
+						margin-top:1.1rem;
+					}
+
+					@include breakpoint(desktop){
+						margin-top:1.1rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+.mo-question.active{
+	
+	.mo-question-overlay{
+
+		visibility: visible;
+		@include breakpoint(tablet){
+	
+		}
+
+		@include breakpoint(desktop){	
+
+		}				
+	}
+
+
+	&>.col{
+
+
+		&-01{
+			
+			.checkbox{
+				border:3px solid $white;
+				background-color:#e6e3e3;
+
+
+				i{
+					visibility: visible;
+					@include breakpoint(tablet){
+						
+					}
+
+					@include breakpoint(desktop){
+						
+					}
+				}
+			}
+		}
+
+		&-02{
+			
+
+			@include breakpoint(tablet){
+			
+			}
+
+			@include breakpoint(desktop){
+					
+			}
+
+			&--bordered{
+				
+				&:after{
+					content: ' ';
+					height: 1px;
+					position:absolute;
+					bottom:0;
+					width:74.5%;
+					background-color: #e1dede;
+					display: none;
+
+					@include breakpoint(tablet){
+						
+					}
+
+					@include breakpoint(desktop){
+						width:78.27%;	
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+.mo-question-no-img{
+	
+	&>.col{
+		&-01{
+			float:left;
+			
+			.checkbox{
+				
+				top:19rem;
+
+				@include breakpoint(tablet){
+					top:35.7%;	
+								
+					
+				}
+
+				@include breakpoint(desktop){
+					top:35.7%;	
+								
+				}
+			}
+		}
+
+		&-02{
+				margin-left:0;
+				top:0;
+				width:74.5%;
+				
+
+			@include breakpoint(tablet){
+				
+				height:calculateRem(190);
+			}
+
+			@include breakpoint(desktop){
+				height:calculateRem(182);
+				width:78.27%;
+			}
+
+			.body{
+				width:97%;
+				padding-top: 7.6rem;
+				padding-left:4.8rem;
+
+
+				@include breakpoint(tablet){
+					width:98%;
+					padding-top: 4.5rem;
+					padding-left:4.2rem;	
+				}
+
+				@include breakpoint(desktop){
+					width:90%;
+					padding-top: 4.2rem;
+					padding-left:4.8rem;	
+				}
+			}
+		}
+	}
+}
