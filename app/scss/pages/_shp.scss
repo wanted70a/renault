@@ -1,0 +1,161 @@
+.editor-picks{
+	margin: 0 auto;
+   	width: 87.5%;
+   	padding-top:14.3rem;
+   	position:relative;	
+
+	@include breakpoint(tablet){
+		padding-left:0rem;
+		padding-top:7.6rem;	
+		margin-bottom:2rem;
+		width:100%;
+	}
+
+	@include breakpoint(desktop){
+		padding-left:8.3rem;
+		padding-top:4.5rem;	
+		margin-bottom:4.3rem;
+		width:100%;
+	}
+	
+	.section-title{
+		@include fontSize(42,20,30);
+		position:relative;
+		font-weight:900;
+		//font-family: Airways;
+		letter-spacing: 0.05em;
+		position:absolute;
+		top:7.1rem;
+		line-height: calculateRem(50);
+
+		@include breakpoint(tablet){
+			position:static;
+			padding-top:1.7rem;
+			margin-bottom:1rem; 
+			line-height: calculateRem(21);
+		}
+
+		@include breakpoint(desktop){
+			position:static;
+			padding-top:0rem;
+			margin-bottom:6rem; 
+			line-height: calculateRem(32);
+		}
+		
+		.subTitle{
+			@include fontSize(45,20,30);
+			letter-spacing:0.05em;
+			display: block;
+			//font-family: Airways;
+			font-weight:400;
+		}		
+	}
+
+	.col-01{
+		@include breakpoint(tablet){
+			width:44.6%;
+			float:left;
+			padding-right:1.9%;		
+		}
+
+		@include breakpoint(desktop){
+			width:47.6%;
+			float:left;
+			padding-right:1.9%;	
+		}
+	}
+
+	.col-02{
+		padding-top:3.5rem;
+		@include breakpoint(tablet){
+			width:55.4%;
+			float:left;
+			padding-top:0;
+				
+		}
+
+		@include breakpoint(desktop){
+			width:52.4%;
+			float:left;
+			padding-top:4.1rem;
+				
+		}
+	}
+
+	.article-landsc{
+		float:left;
+		margin-top:5rem;
+
+		@include breakpoint(tablet){
+			margin-top:6.7rem;	
+		}
+
+		@include breakpoint(desktop){
+			margin-top:10rem;
+
+		}
+
+		.img--m{
+			width:49.215%;
+
+			@include breakpoint(tablet){
+				width:54.518%;
+			}
+
+			@include breakpoint(desktop){
+				width:55%;
+			}
+		}
+
+		.body--m{
+			width:50.785%;
+
+			@include breakpoint(tablet){
+				width:45.482%;
+			}
+
+			@include breakpoint(desktop){
+				width:45%;
+			}
+		}
+	}
+
+}
+
+.shp-title{
+	position:relative;
+	@include fontSize(45,20,32);
+	font-weight:400;
+	font-family: Airways;
+	padding-top:15.5rem;
+	margin-bottom:4rem;
+
+	@include breakpoint(tablet){
+		padding-top:4rem;
+		margin-bottom:1.3rem;
+	}
+
+	@include breakpoint(desktop){
+		padding-top:15rem;
+		margin-bottom:4rem;
+	}
+
+	.subtitle{
+		@include fontSize(46,20,30);
+		letter-spacing:0em;
+		font-weight:900;
+		font-family: 'Lato';
+		margin-left:2rem;
+
+		@include breakpoint(tablet){
+			display: inline;
+			display: block;
+			margin-left:0rem;
+
+		}
+
+		@include breakpoint(desktop){
+			display: block;
+		}
+	}
+}

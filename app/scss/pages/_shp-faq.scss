@@ -141,12 +141,12 @@
 		margin-bottom: 10rem;
 		@include breakpoint(tablet){
 			width:100%;
-			padding-top:13.9rem;	
+			padding-top:11.7rem;	
 			margin-bottom: 5rem;
 		}
 
 		@include breakpoint(desktop){
-			padding-top:9.3rem;
+			padding-top:0rem;
 			margin-bottom: 10rem;
 		}
 
@@ -160,16 +160,18 @@
 			margin-left:0;
 
 			@include breakpoint(tablet){
-				padding-top:1rem;
-				margin-left:1.3rem;
+				padding-top:0rem;
+				margin-left:3rem;
 				margin-bottom:0rem; 
+				top:10.5rem;
 				
 			}
 
 			@include breakpoint(desktop){
-				margin-left: 0rem;
+				margin-left: 5.9rem;
 				padding-top:6.3rem;
 				margin-bottom:0rem; 
+				top:15.3rem;
 			}
 			
 			.subTitle{
